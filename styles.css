@@ -1,0 +1,149 @@
+:root {
+  --bg: #050505;
+  --text: #f2f2f2;
+  --muted: #9a9a9a;
+  --line: #222;
+  --card: #101010;
+  --accent: #d7ff64;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(215, 255, 100, 0.12), transparent 30%),
+    var(--bg);
+  color: var(--text);
+}
+
+.page {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.eyebrow {
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: clamp(3rem, 10vw, 9rem);
+  line-height: 0.9;
+  margin: 0;
+  letter-spacing: -0.08em;
+}
+
+h2 {
+  font-size: clamp(2rem, 6vw, 5rem);
+  line-height: 1;
+  margin: 40px 0 20px;
+  font-weight: 500;
+}
+
+.intro {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  width: fit-content;
+  color: var(--bg);
+  background: var(--accent);
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.section {
+  padding: 100px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section h3 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 0 0 30px;
+  letter-spacing: -0.05em;
+}
+
+.section p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: linear-gradient(180deg, #121212, #0b0b0b);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 28px;
+  min-height: 280px;
+}
+
+.card span {
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+.card h4 {
+  font-size: 1.6rem;
+  margin: 50px 0 20px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 40px 0;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+}
