@@ -146,3 +146,79 @@ h2 {
     padding: 60px 0;
   }
 }
+.journey {
+  overflow: hidden;
+}
+
+.journey-line {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 60px;
+  position: relative;
+}
+
+.journey-line::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+.journey-place {
+  position: relative;
+  padding: 60px 20px 30px;
+}
+
+.journey-place::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.journey-place span {
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.journey-place strong {
+  display: block;
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+.journey-place small {
+  color: var(--muted);
+}
+.hero-image {
+  padding: 20 0 80px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 28px;
+  border: 1px solid var(--line);
+  filter: grayscale(100%) contrast(1.08);
+  transition: transform 0.4s ease;
+}
+.hero-image img:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 800px) {
+  .hero-image img {
+    height: 55vh;
+    border-radius: 20px;
+  }
+}
