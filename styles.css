@@ -243,9 +243,61 @@ h2 {
   }
 }
 
-@media (max-width: 800px) {
-  .hero-image img {
-    height: 55vh;
-    border-radius: 20px;
+
+  @media (max-width: 800px) {
+
+  .journey-line {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
+
+  .journey-line::before {
+    left: 24px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+  }
+
+  .journey-place {
+    padding: 0 0 30px 60px;
+  }
+
+  .journey-place::after {
+    top: 8px;
+    left: 20px;
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-logo {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: var(--accent);
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.nav-links a:hover {
+  opacity: 1;
 }
