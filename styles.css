@@ -132,6 +132,94 @@ h2 {
   justify-content: space-between;
   gap: 20px;
 }
+/* HISTORIA */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-intro {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+#historia p {
+  max-width: 850px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Línea horizontal */
+/* Línea horizontal */
+
+.city-line {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 70px;
+}
+
+.city-line::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.5;
+}
+
+.city-point {
+  position: relative;
+  text-align: center;
+  width: 18%;
+  z-index: 2;
+}
+
+.city-point h4 {
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 28px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 24px;
+  position: relative;
+  z-index: 3;
+}
+
+.city-point p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+
+  .city-line {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 0;
+  }
+
+  .city-line::before {
+    display: none;
+  }
+
+  .city-point {
+    width: 100%;
+  }
+}
 
 @media (max-width: 800px) {
   .grid {
@@ -300,4 +388,88 @@ h2 {
 
 .nav-links a:hover {
   opacity: 1;
+}
+.section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.section-intro {
+  font-size: 1.2rem;
+  max-width: 760px;
+  margin-bottom: 40px;
+  opacity: 0.85;
+}
+
+.story-content {
+  max-width: 850px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.city-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.city-item {
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.city-item span {
+  display: block;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.city-item small {
+  opacity: 0.75;
+}
+
+.career-timeline {
+  display: grid;
+  gap: 24px;
+  max-width: 900px;
+}
+
+.career-item {
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid currentColor;
+}
+
+.career-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.career-item p {
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+@media (max-width: 800px) {
+  .city-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
 }
