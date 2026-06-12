@@ -591,3 +591,18 @@ h2 {
   max-width: 850px;
   letter-spacing: 0;
 }
+#contacto a {
+
+  color: var(--accent);
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+}
+
+#contacto a:hover {
+
+  opacity: 0.8;
+
+}
