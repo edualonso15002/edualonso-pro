@@ -680,11 +680,11 @@ img {
   }
 
   .quote {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1.55;
   }
 
   .final-quote {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
   }
 }
