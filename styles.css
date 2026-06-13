@@ -598,11 +598,11 @@ h2 {
   }
 
   .quote {
-    font-size: 0.85rem;
-    line-height: 1.55;
+    font-size: 1.3rem;
+    line-height: 1.15;
   }
 
   .final-quote {
-    font-size: 0.95rem;
+    font-size: 1.3rem;
   }
 }
