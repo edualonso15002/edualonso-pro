@@ -378,7 +378,7 @@ h2 {
   max-width: 850px;
   font-size: 1.25rem;
   font-weight: 600;
-  margin: 100px 100px 10px;
+  margin: 100px 0px 10px;
   letter-spacing: 0;
 }
 
@@ -388,7 +388,7 @@ h2 {
   height: 260px;
   object-fit: cover;
   display: block;
-  margin: 10px 100px 50px;
+  margin: 0px 0px 50px;
   border-radius: 12px;
 }
 
