@@ -578,9 +578,12 @@ h2 {
   }
 
   .project img {
-    height: auto;
-    max-height: none;
-    object-fit: contain;
+  width: 85%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin: 15px 0;
+}
   }
 
   .hero-cycling img {
