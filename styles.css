@@ -73,6 +73,26 @@ img {
 .nav-links a:hover {
   opacity: 1;
 }
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.language-switcher a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.language-switcher a:hover {
+  color: var(--accent);
+}
+
+.language-switcher span {
+  color: var(--line);
+}
 
 /* HERO */
 
