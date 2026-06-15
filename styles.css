@@ -113,14 +113,6 @@ img {
   transform: scale(1.01);
 }
 
-.eyebrow {
-  color: var(--accent);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  margin-bottom: 30px;
-}
-
 h1 {
   font-size: clamp(3rem, 10vw, 9rem);
   line-height: 0.9;
@@ -140,18 +132,6 @@ h2 {
   color: var(--muted);
   font-size: 1.2rem;
   line-height: 1.6;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 30px;
-  width: fit-content;
-  color: var(--bg);
-  background: var(--accent);
-  text-decoration: none;
-  padding: 14px 22px;
-  border-radius: 999px;
-  font-weight: 700;
 }
 
 /* SECTIONS */
@@ -186,40 +166,8 @@ h2 {
   opacity: 0.85;
 }
 
-/* CARDS */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.card {
-  background: linear-gradient(180deg, #121212, #0b0b0b);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 28px;
-  min-height: 280px;
-}
-
-.card span {
-  color: var(--accent);
-  font-size: 0.85rem;
-}
-
-.card h4 {
-  font-size: 1.6rem;
-  margin: 50px 0 20px;
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
 /* HISTORIA */
 
-.story-content,
 #historia p {
   max-width: 850px;
   line-height: 1.8;
@@ -262,12 +210,12 @@ h2 {
 .dot {
   width: 14px;
   height: 14px;
-  background: var(--accent);
-  border-radius: 50%;
   display: block;
-  margin: 0 auto 24px;
   position: relative;
   z-index: 3;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .city-point p {
@@ -280,96 +228,27 @@ h2 {
 /* TRAYECTORIA */
 
 .career-timeline {
-
   display: grid;
-
   gap: 24px;
-
   max-width: 900px;
-
 }
 
 .career-item {
-
   padding: 28px;
-
-  border-radius: 20px;
-
-  background: rgba(255, 255, 255, 0.08);
-
   border-left: 4px solid var(--accent);
-
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .career-item h3 {
-
   margin-bottom: 10px;
-
   font-size: 1.3rem;
-
   letter-spacing: 0;
-
 }
 
 .career-item p {
-
   line-height: 1.7;
-
   opacity: 0.9;
-
-}
-
-.journey {
-  overflow: hidden;
-}
-
-.journey-line {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin-top: 60px;
-  position: relative;
-}
-
-.journey-line::before {
-  content: "";
-  position: absolute;
-  top: 45px;
-  left: 5%;
-  width: 90%;
-  height: 1px;
-  background: var(--accent);
-  opacity: 0.4;
-}
-
-.journey-place {
-  position: relative;
-  padding: 60px 20px 30px;
-}
-
-.journey-place::after {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 20px;
-  width: 10px;
-  height: 10px;
-  background: var(--accent);
-  border-radius: 50%;
-}
-
-.journey-place span {
-  color: var(--accent);
-  font-size: 0.8rem;
-}
-
-.journey-place strong {
-  display: block;
-  margin-top: 15px;
-  font-size: 1.4rem;
-}
-
-.journey-place small {
-  color: var(--muted);
 }
 
 /* PROYECTOS */
@@ -378,7 +257,7 @@ h2 {
   max-width: 850px;
   font-size: 1.25rem;
   font-weight: 600;
-  margin: 100px 0px 10px;
+  margin: 100px 0 10px;
   letter-spacing: 0;
 }
 
@@ -388,7 +267,7 @@ h2 {
   height: 260px;
   object-fit: cover;
   display: block;
-  margin: 0px 0px 50px;
+  margin: 0 0 50px;
   border-radius: 12px;
 }
 
@@ -426,24 +305,24 @@ h2 {
 .cycling-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 25px;
   padding: 60px;
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .quote {
   max-width: 750px;
   color: white;
-  font-size: 0.85rem;
+  font-size: 1.15rem;
   line-height: 1.6;
   margin: 0;
 }
 
 .final-quote {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-top: 15px;
 }
@@ -463,12 +342,12 @@ h2 {
 /* FOOTER */
 
 .footer {
-  border-top: 1px solid var(--line);
-  padding: 40px 0;
-  color: var(--muted);
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding: 40px 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
 }
 
 /* TABLET */
@@ -491,10 +370,6 @@ h2 {
 /* MOBILE */
 
 @media (max-width: 800px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   .hero {
     padding: 60px 0;
   }
@@ -512,27 +387,6 @@ h2 {
     width: min(300px, 80vw);
   }
 
-  .journey-line {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .journey-line::before {
-    left: 24px;
-    top: 0;
-    width: 1px;
-    height: 100%;
-  }
-
-  .journey-place {
-    padding: 0 0 30px 60px;
-  }
-
-  .journey-place::after {
-    top: 8px;
-    left: 20px;
-  }
-
   .footer {
     flex-direction: column;
   }
@@ -540,15 +394,15 @@ h2 {
 
 @media (max-width: 700px) {
   .navbar {
-    padding: 18px 20px;
     flex-direction: column;
     gap: 14px;
+    padding: 18px 20px;
   }
 
   .nav-links {
-    gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 16px;
     font-size: 0.9rem;
   }
 
@@ -578,12 +432,11 @@ h2 {
   }
 
   .project img {
-  width: 85%;
-  max-width: 400px;
-  height: auto;
-  object-fit: contain;
-  margin: 15px 0;
-}
+    width: 85%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    margin: 15px 0;
   }
 
   .hero-cycling img {
@@ -598,11 +451,11 @@ h2 {
   }
 
   .quote {
-    font-size: 1.3rem;
-    line-height: 1.15;
+    font-size: 0.95rem;
+    line-height: 1.45;
   }
 
   .final-quote {
-    font-size: 1.3rem;
+    font-size: 0.95rem;
   }
 }
