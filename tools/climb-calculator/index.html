@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -46,7 +46,7 @@
       </div>
 
       <span class="edition">
-        HERRAMIENTAS CICLISTAS
+        CYCLING TOOLS
         <span class="edition-divider">/</span>
         V0.2
       </span>
@@ -66,17 +66,17 @@
 
       <div class="eyebrow">
         <span class="eyebrow-line"></span>
-        TU SUBIDA, DOS POSIBILIDADES
+        ONE CLIMB, TWO POSSIBILITIES
       </div>
 
       <h1 id="page-title">
-        ¿Y si pudieras<br />
-        <em>subir de otra forma?</em>
+        What if you could<br />
+        <em>climb it differently?</em>
       </h1>
 
       <p>
-        Una subida. Dos escenarios. Cambia peso, potencia,
-        neumáticos o postura y descubre cuánto tiempo podrías ganar.
+        One climb. Two scenarios. Change your weight, power,
+        tyres or riding position and see how much time you could gain.
       </p>
 
     </section>
@@ -86,7 +86,7 @@
          CALCULATOR
          ========================= -->
 
-    <section class="workspace" aria-label="Calculadora de subida">
+    <section class="workspace" aria-label="Cycling climb calculator">
 
 
       <!-- =========================
@@ -98,8 +98,8 @@
         <div class="section-heading">
 
           <div>
-            <span class="step">01 / LA RUTA</span>
-            <h2>Define la subida</h2>
+            <span class="step">01 / THE CLIMB</span>
+            <h2>Define the climb</h2>
           </div>
 
           <span class="section-symbol" aria-hidden="true">⌁</span>
@@ -113,7 +113,7 @@
 
           <label class="field">
 
-            <span>Distancia</span>
+            <span>Distance</span>
 
             <span class="input-wrap">
               <input
@@ -135,12 +135,12 @@
 
           <div class="field">
 
-            <span>Desnivel de la ruta</span>
+            <span>Climb definition</span>
 
             <div
               class="segmented"
               role="group"
-              aria-label="Modo de desnivel"
+              aria-label="Climb definition mode"
             >
 
               <button
@@ -149,7 +149,7 @@
                 data-mode="elevation"
                 aria-pressed="true"
               >
-                Metros
+                Elevation
               </button>
 
               <button
@@ -157,7 +157,7 @@
                 data-mode="grade"
                 aria-pressed="false"
               >
-                Pendiente
+                Gradient
               </button>
 
             </div>
@@ -169,7 +169,7 @@
 
           <label class="field">
 
-            <span id="climb-label">Desnivel positivo</span>
+            <span id="climb-label">Elevation gain</span>
 
             <span class="input-wrap">
 
@@ -196,25 +196,25 @@
 
         <label class="field atmosphere-field">
 
-          <span>Altitud y densidad del aire</span>
+          <span>Altitude & air density</span>
 
           <span class="select-wrap">
 
             <select id="air" aria-describedby="air-help">
               <option value="low">
-                Cerca del mar · aprox. 200 m
+                Near sea level · approx. 200 m
               </option>
 
               <option value="medium">
-                Media montaña · aprox. 1.000 m
+                Mid altitude · approx. 1,000 m
               </option>
 
               <option value="high">
-                Alta montaña · aprox. 2.000 m
+                High altitude · approx. 2,000 m
               </option>
 
               <option value="veryHigh">
-                Muy alta montaña · aprox. 3.000 m
+                Very high altitude · approx. 3,000 m
               </option>
             </select>
 
@@ -223,16 +223,16 @@
         </label>
 
         <p class="field-hint" id="air-help">
-          Elige la altitud aproximada de la subida, no su desnivel.
-          Se aplica a A y B.
+          Choose the approximate altitude of the climb, not its elevation gain.
+          The same value is applied to scenarios A and B.
         </p>
 
 
         <!-- Average gradient -->
 
         <div class="grade-strip">
-          <span>PENDIENTE MEDIA</span>
-          <strong id="grade-output">6,01 %</strong>
+          <span>AVERAGE GRADIENT</span>
+          <strong id="grade-output">6.01 %</strong>
         </div>
 
         <p
@@ -251,14 +251,13 @@
 
       <div class="scenarios-title">
 
-        <span class="step">02 / LOS ESCENARIOS</span>
+        <span class="step">02 / THE SCENARIOS</span>
 
-        <h2>Cambia las variables</h2>
+        <h2>Change the variables</h2>
 
         <p>
-          La ruta es la misma para ambos.
-          La velocidad y la densidad del aire modifican
-          el efecto de cada postura.
+          The climb is the same for both scenarios.
+          Speed and air density affect the impact of each riding position.
         </p>
 
       </div>
@@ -279,8 +278,8 @@
           <div class="scenario-head">
 
             <div>
-              <span class="scenario-index">ESCENARIO A</span>
-              <h3 id="scenario-a-title">Punto de partida</h3>
+              <span class="scenario-index">SCENARIO A</span>
+              <h3 id="scenario-a-title">Starting point</h3>
             </div>
 
             <span class="badge badge-a">A</span>
@@ -294,7 +293,7 @@
 
             <label class="field">
 
-              <span>Peso ciclista</span>
+              <span>Rider weight</span>
 
               <span class="input-wrap">
 
@@ -319,7 +318,7 @@
 
             <label class="field">
 
-              <span>Peso bici + equipo</span>
+              <span>Bike + equipment</span>
 
               <span class="input-wrap">
 
@@ -340,11 +339,11 @@
             </label>
 
 
-            <!-- POWER -->
+            <!-- Power -->
 
             <label class="field full">
 
-              <span>Potencia media durante la subida</span>
+              <span>Average power during the climb</span>
 
               <span class="input-wrap">
 
@@ -370,26 +369,26 @@
 
             <label class="field">
 
-              <span>Neumáticos y firme</span>
+              <span>Tyres & road surface</span>
 
               <span class="select-wrap">
 
                 <select id="a-rolling">
 
                   <option value="fast">
-                    Rápidos · asfalto liso
+                    Fast tyres · smooth asphalt
                   </option>
 
                   <option value="normal" selected>
-                    Carretera · asfalto normal
+                    Road tyres · normal asphalt
                   </option>
 
                   <option value="rough">
-                    Carretera · asfalto rugoso
+                    Road tyres · rough asphalt
                   </option>
 
                   <option value="veryRough">
-                    Firme muy rugoso
+                    Very rough surface
                   </option>
 
                 </select>
@@ -399,30 +398,30 @@
             </label>
 
 
-            <!-- Position -->
+            <!-- Riding position -->
 
             <label class="field">
 
-              <span>Posición en la bici</span>
+              <span>Riding position</span>
 
               <span class="select-wrap">
 
                 <select id="a-position">
 
                   <option value="upright">
-                    Erguida
+                    Upright
                   </option>
 
                   <option value="hoods" selected>
-                    Manos en manetas
+                    On the hoods
                   </option>
 
                   <option value="drops">
-                    Manos abajo
+                    In the drops
                   </option>
 
                   <option value="tucked">
-                    Acoplada y baja
+                    Low aero tuck
                   </option>
 
                 </select>
@@ -447,7 +446,7 @@
           <div class="scenario-result">
 
             <div>
-              <span>TIEMPO ESTIMADO</span>
+              <span>ESTIMATED TIME</span>
               <strong id="a-time">—</strong>
             </div>
 
@@ -459,12 +458,12 @@
             <div class="metrics">
 
               <div>
-                <span>VELOCIDAD</span>
+                <span>SPEED</span>
                 <strong id="a-speed">—</strong>
               </div>
 
               <div>
-                <span>W/KG CICLISTA</span>
+                <span>RIDER W/KG</span>
                 <strong id="a-wkg">—</strong>
               </div>
 
@@ -487,8 +486,8 @@
           <div class="scenario-head">
 
             <div>
-              <span class="scenario-index">ESCENARIO B</span>
-              <h3 id="scenario-b-title">¿Y si…?</h3>
+              <span class="scenario-index">SCENARIO B</span>
+              <h3 id="scenario-b-title">What if…?</h3>
             </div>
 
             <span class="badge badge-b">B</span>
@@ -502,7 +501,7 @@
 
             <label class="field">
 
-              <span>Peso ciclista</span>
+              <span>Rider weight</span>
 
               <span class="input-wrap">
 
@@ -527,7 +526,7 @@
 
             <label class="field">
 
-              <span>Peso bici + equipo</span>
+              <span>Bike + equipment</span>
 
               <span class="input-wrap">
 
@@ -548,11 +547,11 @@
             </label>
 
 
-            <!-- POWER -->
+            <!-- Power -->
 
             <label class="field full">
 
-              <span>Potencia media durante la subida</span>
+              <span>Average power during the climb</span>
 
               <span class="input-wrap">
 
@@ -578,26 +577,26 @@
 
             <label class="field">
 
-              <span>Neumáticos y firme</span>
+              <span>Tyres & road surface</span>
 
               <span class="select-wrap">
 
                 <select id="b-rolling">
 
                   <option value="fast">
-                    Rápidos · asfalto liso
+                    Fast tyres · smooth asphalt
                   </option>
 
                   <option value="normal" selected>
-                    Carretera · asfalto normal
+                    Road tyres · normal asphalt
                   </option>
 
                   <option value="rough">
-                    Carretera · asfalto rugoso
+                    Road tyres · rough asphalt
                   </option>
 
                   <option value="veryRough">
-                    Firme muy rugoso
+                    Very rough surface
                   </option>
 
                 </select>
@@ -607,30 +606,30 @@
             </label>
 
 
-            <!-- Position -->
+            <!-- Riding position -->
 
             <label class="field">
 
-              <span>Posición en la bici</span>
+              <span>Riding position</span>
 
               <span class="select-wrap">
 
                 <select id="b-position">
 
                   <option value="upright">
-                    Erguida
+                    Upright
                   </option>
 
                   <option value="hoods" selected>
-                    Manos en manetas
+                    On the hoods
                   </option>
 
                   <option value="drops">
-                    Manos abajo
+                    In the drops
                   </option>
 
                   <option value="tucked">
-                    Acoplada y baja
+                    Low aero tuck
                   </option>
 
                 </select>
@@ -655,7 +654,7 @@
           <div class="scenario-result">
 
             <div>
-              <span>TIEMPO ESTIMADO</span>
+              <span>ESTIMATED TIME</span>
               <strong id="b-time">—</strong>
             </div>
 
@@ -667,12 +666,12 @@
             <div class="metrics">
 
               <div>
-                <span>VELOCIDAD</span>
+                <span>SPEED</span>
                 <strong id="b-speed">—</strong>
               </div>
 
               <div>
-                <span>W/KG CICLISTA</span>
+                <span>RIDER W/KG</span>
                 <strong id="b-wkg">—</strong>
               </div>
 
@@ -692,7 +691,7 @@
       <section
         class="difference"
         aria-live="polite"
-        aria-label="Comparación de tiempos"
+        aria-label="Time comparison"
       >
 
         <div
@@ -705,11 +704,11 @@
         <div>
 
           <span class="difference-label">
-            DIFERENCIA ENTRE ESCENARIOS
+            DIFFERENCE BETWEEN SCENARIOS
           </span>
 
           <p id="difference-description">
-            En B llegarías antes
+            You would reach the top sooner in B
           </p>
 
         </div>
@@ -726,39 +725,39 @@
       <details class="method">
 
         <summary>
-          ¿Cómo se calcula esta estimación?
+          How is this estimate calculated?
         </summary>
 
         <p>
-          La calculadora supone pendiente constante, ausencia de viento
-          y potencia media constante. Combina gravedad, rodadura y
-          resistencia del aire, con una eficiencia de transmisión del
-          97,5 %. Cada posición tiene un CdA orientativo fijo, pero su
-          efecto no es fijo: la potencia necesaria para vencer el aire es
+          The calculator assumes a constant gradient, no wind and constant
+          average power. It combines gravity, rolling resistance and
+          aerodynamic drag, with a drivetrain efficiency of 97.5%.
+          Each riding position uses an indicative fixed CdA, but its effect
+          is not fixed: the power required to overcome aerodynamic drag is
           <strong>
-            ½ × densidad del aire × CdA × velocidad³
+            ½ × air density × CdA × speed³
           </strong>.
-          Por eso la aerodinámica pesa mucho más a 40 km/h que a 15 km/h;
-          a mayor altitud, la menor densidad del aire reduce ese efecto.
+          This is why aerodynamics matter much more at 40 km/h than at
+          15 km/h. At higher altitude, lower air density reduces this effect.
         </p>
 
         <p>
-          Las opciones de neumáticos y firme usan Crr de
-          0,003 / 0,004 / 0,006 / 0,008; las posiciones usan CdA de
-          0,40 / 0,32 / 0,28 / 0,25 m². Las cuatro opciones de aire usan
-          densidades de 1,20 / 1,11 / 1,01 / 0,91 kg/m³ para altitudes
-          aproximadas de 200 / 1.000 / 2.000 / 3.000 m.
+          The tyre and road-surface options use Crr values of
+          0.003 / 0.004 / 0.006 / 0.008, while the riding positions use
+          CdA values of 0.40 / 0.32 / 0.28 / 0.25 m². The four altitude
+          options use air densities of 1.20 / 1.11 / 1.01 / 0.91 kg/m³
+          for approximate altitudes of 200 / 1,000 / 2,000 / 3,000 m.
         </p>
 
         <p>
-          Son valores orientativos, no medidas personales: el Crr depende
-          también del neumático y su presión, y el CdA real puede variar
-          con el ciclista, la postura, el equipo y las condiciones de flujo.
-          La herramienta no dispone de una medición individual para
-          recalcular ese CdA con cada velocidad. La potencia indicada es
-          la media que mantienes toda la subida, no necesariamente tu FTP.
-          La pendiente real por tramos, el viento, la temperatura, el firme
-          y las paradas pueden cambiar el tiempo final.
+          These are indicative values, not personal measurements.
+          Crr also depends on the tyre and its pressure, while actual CdA
+          can vary with the rider, position, equipment and airflow conditions.
+          This tool does not have an individual aerodynamic measurement
+          with which to recalculate your CdA at different speeds.
+          The power entered is the average power you maintain throughout
+          the climb, not necessarily your FTP. Changes in gradient, wind,
+          temperature, road surface and stops can all affect the final time.
         </p>
 
 
@@ -766,55 +765,56 @@
 
         <div class="method-sources">
 
-          <strong>Fuentes y criterio</strong>
+          <strong>Sources & methodology</strong>
 
           <ul>
 
             <li>
               <a href="https://pubmed.ncbi.nlm.nih.gov/28121252/">
-                Martin y colaboradores: modelo de potencia ciclista
+                Martin et al.: cycling power model
               </a>
-              para combinar gravedad, rodadura y resistencia aerodinámica.
+              for combining gravity, rolling resistance and aerodynamic drag.
             </li>
 
             <li>
               <a href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-coefficient/">
-                NASA: ecuación de resistencia aerodinámica
+                NASA: aerodynamic drag equation
               </a>
-              para la relación entre CdA, densidad y velocidad.
+              for the relationship between CdA, air density and speed.
             </li>
 
             <li>
               <a href="https://www.bicyclerollingresistance.com/the-test">
-                Bicycle Rolling Resistance: método de ensayo
+                Bicycle Rolling Resistance: testing methodology
               </a>
-              y
+              and
               <a href="https://www.bicyclerollingresistance.com/road-bike-reviews">
-                resultados de neumáticos de carretera
+                road tyre test results
               </a>
-              para orientar las opciones de rodadura.
+              as guidance for the rolling-resistance categories.
             </li>
 
             <li>
               <a href="https://link.springer.com/article/10.1007/s12283-017-0234-1">
-                Revisión de aerodinámica ciclista
+                Review of cycling aerodynamics
               </a>
-              para el efecto de la postura sobre el CdA.
+              for the effect of riding position on CdA.
             </li>
 
             <li>
               <a href="https://ntrs.nasa.gov/api/citations/20040021326/downloads/20040021326.pdf">
-                NASA: tabla de atmósfera estándar
+                NASA: standard atmosphere tables
               </a>
-              para la relación aproximada entre altitud y densidad del aire.
+              for the approximate relationship between altitude and air density.
             </li>
 
           </ul>
 
           <p>
-            Los valores concretos de Crr y CdA son categorías simplificadas
-            elegidas para esta herramienta; no se han medido en tu bicicleta
-            ni proceden como conjunto exacto de una de estas fuentes.
+            The specific Crr and CdA values are simplified categories selected
+            for this tool. They have not been measured on your bicycle and
+            should not be interpreted as an exact set of values taken from
+            any single source above.
           </p>
 
         </div>
@@ -836,7 +836,7 @@
       </span>
 
       <span>
-        Explora el cambio. Disfruta la subida.
+        Explore the change. Enjoy the climb.
       </span>
 
     </footer>

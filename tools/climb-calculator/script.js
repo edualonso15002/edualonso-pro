@@ -80,7 +80,12 @@ function update() {
     return;
   }
   const delta = b.seconds - a.seconds;
-  $('difference-description').textContent = Math.abs(delta) < 0.5 ? 'Los dos escenarios tardan lo mismo' : delta < 0 ? 'En B llegarías antes' : 'En B llegarías después';
+  $('difference-description').textContent =
+  Math.abs(delta) < 0.5
+    ? 'Both scenarios take the same time'
+    : delta < 0
+      ? 'You would reach the top sooner in B'
+      : 'You would reach the top later in B';
   $('difference-time').textContent = duration(Math.abs(delta));
 }
 
