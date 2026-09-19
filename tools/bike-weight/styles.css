@@ -30,7 +30,9 @@ input {
 }
 
 .tool-header {
-  height: 64px;
+  min-height: 64px;
+  gap: 18px;
+  flex-wrap: wrap;
   padding: 0 28px;
   display: flex;
   align-items: center;
@@ -46,11 +48,6 @@ input {
   letter-spacing: 0.05em;
 }
 
-.header-right {
-  font-size: 0.82rem;
-  color: #bdbdb8;
-  letter-spacing: 0.08em;
-}
 
 .calculator {
   width: min(1180px, calc(100% - 32px));
@@ -390,9 +387,6 @@ input {
     padding: 0 16px;
   }
 
-  .header-right {
-    display: none;
-  }
 
   .calculator-layout {
     grid-template-columns: 1fr;
@@ -419,4 +413,35 @@ input {
     padding: 18px;
     border-radius: 16px;
   }
+}
+
+/* Navigation applies at every screen size. */
+.tool-header .logo { white-space: nowrap; }
+.tool-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+.tool-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.tool-nav span { color: #bdbdb8; }
+.tool-header a:hover { opacity: 0.7; }
+.tool-header a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+@media (max-width: 600px) {
+  .tool-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 12px;
+  }
+  .tool-nav { width: 100%; }
 }

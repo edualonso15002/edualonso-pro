@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tools | Edu Alonso</title>
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    .tools-page {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 70px 0 90px;
+    }
+
+    .tools-intro {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .tools-intro p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .tool-card {
+      display: block;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .tool-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+    }
+
+    .tool-card h2 {
+      margin: 0 0 10px;
+      font-size: 1.7rem;
+    }
+
+    .tool-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 720px) {
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tools-page {
+        padding-top: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header class="navbar">
+      <div class="nav-logo">EDU ALONSO</div>
+
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/tools/">Tools</a>
+      </div>
+    </header>
+
+    <main class="tools-page">
+
+      <section class="tools-intro">
+        <h1>Tools</h1>
+
+        <p>
+          Interactive tools for cycling, performance and bike setup.
+        </p>
+      </section>
+
+      <section class="tools-grid">
+
+        <a class="tool-card" href="/tools/climb-calculator/">
+          <span class="tool-label">CYCLING PERFORMANCE</span>
+
+          <h2>Climb Calculator</h2>
+
+          <p>
+            Estimate climbing speed and performance based on power,
+            rider weight and gradient.
+          </p>
+        </a>
+
+        <a class="tool-card" href="/tools/bike-weight/">
+          <span class="tool-label">BIKE SETUP</span>
+
+          <h2>Bike Weight Calculator</h2>
+
+          <p>
+            Build your bike component by component and calculate
+            the estimated total weight.
+          </p>
+        </a>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

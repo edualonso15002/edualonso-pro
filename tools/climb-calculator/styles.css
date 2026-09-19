@@ -779,5 +779,58 @@ footer span:first-child {
   footer span:last-child {
     text-align: right;
   }
+}
 
+.tool-header {
+  width: min(1088px, calc(100% - 72px));
+  margin: 0 auto;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.logo {
+  color: #142d22;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+@media (max-width: 800px) {
+  .tool-header { width: calc(100% - 44px); }
+}
+@media (max-width: 520px) {
+  .tool-header { width: calc(100% - 34px); }
+}
+
+/* Navigation applies at every screen size. */
+.tool-header .logo { white-space: nowrap; }
+.tool-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+.tool-nav a {
+  color: #142d22;
+  text-decoration: none;
+  font-weight: 700;
+}
+.tool-nav span { color: #6f7d73; }
+.tool-header a:hover { opacity: 0.7; }
+.tool-header a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+@media (max-width: 600px) {
+  .tool-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 12px;
+  }
+  .tool-nav { width: 100%; }
 }
