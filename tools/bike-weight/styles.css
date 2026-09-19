@@ -1,0 +1,422 @@
+:root {
+  --bg: #f4f4f1;
+  --panel: #ffffff;
+  --text: #111111;
+  --muted: #6d6d68;
+  --line: #ddddda;
+  --accent: #d7ff64;
+  --dark: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+.tool-header {
+  height: 64px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark);
+  color: white;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.header-right {
+  font-size: 0.82rem;
+  color: #bdbdb8;
+  letter-spacing: 0.08em;
+}
+
+.calculator {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+.intro {
+  max-width: 760px;
+  margin-bottom: 46px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 5.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.intro-text {
+  max-width: 650px;
+  margin: 24px 0 0;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.calculator-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(320px, 0.9fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.components-panel,
+.build-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 26px;
+}
+
+.build-panel {
+  position: sticky;
+  top: 24px;
+}
+
+.section-heading,
+.build-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.section-heading > div,
+.build-header > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.section-heading h2,
+.build-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.step {
+  display: inline-flex;
+  min-width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--dark);
+  color: white;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.section-spacing {
+  margin-top: 38px;
+}
+
+.selector-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.selector-group label {
+  grid-column: span 1;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.selector-group select {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  color: var(--text);
+  outline: none;
+}
+
+.selector-group select:focus,
+.custom-component input:focus {
+  border-color: #999;
+}
+
+.selector-group select:disabled {
+  background: #f2f2ef;
+  color: #999;
+}
+
+.component-info {
+  margin-top: 16px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fafaf8;
+}
+
+.hidden {
+  display: none;
+}
+
+.component-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.component-name {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.component-config {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.component-main strong {
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
+
+.source-row {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.source-row a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.source-row a:hover {
+  text-decoration: underline;
+}
+
+.add-button {
+  width: 100%;
+  margin-top: 16px;
+  min-height: 48px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--dark);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.add-button:hover {
+  opacity: 0.88;
+}
+
+.add-button.secondary {
+  background: var(--accent);
+  color: var(--dark);
+}
+
+.custom-component {
+  margin-top: 22px;
+  display: grid;
+  gap: 12px;
+}
+
+.custom-component input {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  outline: none;
+}
+
+.custom-weight-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-weight-row span {
+  color: var(--muted);
+}
+
+.text-button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.text-button:hover {
+  color: var(--text);
+}
+
+.build-list {
+  margin-top: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.empty-build {
+  padding: 24px 0;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.build-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.build-item:last-child {
+  border-bottom: 0;
+}
+
+.build-item-main {
+  min-width: 0;
+}
+
+.build-item-name {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.build-item-meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.build-item-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.build-item-weight {
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.remove-item {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: white;
+  cursor: pointer;
+}
+
+.total-block {
+  margin-top: 26px;
+  padding: 22px;
+  border-radius: 16px;
+  background: var(--dark);
+  color: white;
+}
+
+.total-block span,
+.total-block small {
+  display: block;
+  color: #bdbdb8;
+}
+
+.total-block strong {
+  display: block;
+  margin: 6px 0;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  letter-spacing: -0.05em;
+}
+
+@media (max-width: 860px) {
+  .calculator {
+    width: min(100% - 20px, 760px);
+    padding-top: 34px;
+  }
+
+  .tool-header {
+    padding: 0 16px;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .calculator-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .build-panel {
+    position: static;
+  }
+
+  .selector-group {
+    grid-template-columns: 1fr;
+  }
+
+  .selector-group label {
+    margin-top: 4px;
+  }
+
+  .intro {
+    margin-bottom: 30px;
+  }
+
+  .components-panel,
+  .build-panel {
+    padding: 18px;
+    border-radius: 16px;
+  }
+}

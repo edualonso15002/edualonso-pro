@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bike Weight Calculator | Edu Alonso</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="tool-header">
+    <a class="logo" href="/">EDU ALONSO</a>
+
+    <div class="header-right">
+      <span>BIKE WEIGHT CALCULATOR</span>
+    </div>
+  </header>
+
+
+  <main class="calculator">
+
+    <section class="intro">
+      <p class="eyebrow">WHAT IF?</p>
+
+      <h1>Build your bike.<br>Gram by gram.</h1>
+
+      <p class="intro-text">
+        Select your components and calculate the estimated weight
+        of your complete bike using verified manufacturer and
+        real-world weight data.
+      </p>
+    </section>
+
+
+    <div class="calculator-layout">
+
+      <!-- LEFT SIDE -->
+      <section class="components-panel">
+
+        <div class="section-heading">
+          <div>
+            <span class="step">01</span>
+            <h2>Frameset</h2>
+          </div>
+        </div>
+
+
+        <div class="selector-group">
+
+          <label for="frame-brand">Brand</label>
+
+          <select id="frame-brand">
+            <option value="">Select brand</option>
+          </select>
+
+
+          <label for="frame-model">Frame</label>
+
+          <select id="frame-model" disabled>
+            <option value="">Select frame</option>
+          </select>
+
+        </div>
+
+
+        <div id="frame-info" class="component-info hidden">
+
+          <div class="component-main">
+
+            <div>
+              <span id="frame-name" class="component-name"></span>
+              <span id="frame-config" class="component-config"></span>
+            </div>
+
+            <strong id="frame-weight"></strong>
+
+          </div>
+
+          <div class="source-row">
+            <span id="frame-source-type"></span>
+
+            <a
+              id="frame-source"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source
+            </a>
+          </div>
+
+          <button id="add-frame" class="add-button">
+            Add to build
+          </button>
+
+        </div>
+
+
+        <div class="section-heading section-spacing">
+          <div>
+            <span class="step">02</span>
+            <h2>Groupset</h2>
+          </div>
+        </div>
+
+
+        <div class="selector-group">
+
+          <label for="groupset-brand">Brand</label>
+
+          <select id="groupset-brand">
+            <option value="">Select brand</option>
+          </select>
+
+
+          <label for="groupset-component">Component</label>
+
+          <select id="groupset-component" disabled>
+            <option value="">Select component</option>
+          </select>
+
+        </div>
+
+
+        <div id="groupset-info" class="component-info hidden">
+
+          <div class="component-main">
+
+            <div>
+              <span id="groupset-name" class="component-name"></span>
+              <span id="groupset-config" class="component-config"></span>
+            </div>
+
+            <strong id="groupset-weight"></strong>
+
+          </div>
+
+          <div class="source-row">
+
+            <span id="groupset-source-type"></span>
+
+            <a
+              id="groupset-source"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source
+            </a>
+
+          </div>
+
+          <button id="add-groupset" class="add-button">
+            Add to build
+          </button>
+
+        </div>
+
+
+        <div class="section-heading section-spacing">
+
+          <div>
+            <span class="step">03</span>
+            <h2>Custom component</h2>
+          </div>
+
+        </div>
+
+
+        <div class="custom-component">
+
+          <input
+            id="custom-name"
+            type="text"
+            placeholder="Component name"
+          >
+
+          <div class="custom-weight-row">
+
+            <input
+              id="custom-weight"
+              type="number"
+              min="0"
+              step="1"
+              placeholder="Weight"
+            >
+
+            <span>g</span>
+
+          </div>
+
+          <button id="add-custom" class="add-button secondary">
+            Add custom component
+          </button>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- RIGHT SIDE -->
+      <aside class="build-panel">
+
+        <div class="build-header">
+
+          <div>
+            <span class="step">BUILD</span>
+            <h2>Your bike</h2>
+          </div>
+
+          <button id="reset-build" class="text-button">
+            Reset
+          </button>
+
+        </div>
+
+
+        <div id="build-list" class="build-list">
+
+          <div class="empty-build">
+            No components added yet.
+          </div>
+
+        </div>
+
+
+        <div class="total-block">
+
+          <span>Estimated weight</span>
+
+          <strong id="total-weight">
+            0.00 kg
+          </strong>
+
+          <small id="total-grams">
+            0 g
+          </small>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
