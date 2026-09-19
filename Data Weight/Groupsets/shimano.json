@@ -1,0 +1,1962 @@
+[
+  {
+    "id": "shimano-fc-r9200-170-46-36",
+    "brand": "Shimano",
+    "model": "FC-R9200",
+    "series": "Dura-Ace R9200",
+    "category": "crankset",
+    "variant": {
+      "crank_length_mm": 170,
+      "chainrings": "46/36"
+    },
+    "weight_g": 693,
+    "weight_type": "manufacturer",
+"source_type": "official",
+    "configuration": "170 mm, 46/36T, without bottom bracket",
+    "source_name": "Shimano Product Information / 2026-2027 Specifications Handbook",
+    "source_url": "https://productinfo.shimano.com/en/product/FC-R9200",
+    "verified": true,
+    "verified_date": "2026-09-19",
+    "notes": "Shimano average weight."
+  },
+  {
+    "id": "shimano-fc-r9200-170-50-34",
+    "brand": "Shimano",
+    "model": "FC-R9200",
+    "series": "Dura-Ace R9200",
+    "category": "crankset",
+    "variant": {
+      "crank_length_mm": 170,
+      "chainrings": "50/34"
+    },
+    "weight_g": 685,
+    "weight_type": "manufacturer",
+"source_type": "official",
+    "configuration": "170 mm, 50/34T, without bottom bracket",
+    "source_name": "Shimano Product Information / 2026-2027 Specifications Handbook",
+    "source_url": "https://productinfo.shimano.com/en/product/FC-R9200",
+    "verified": true,
+    "verified_date": "2026-09-19",
+    "notes": "Shimano average weight."
+  },
+  {
+    "id": "shimano-fc-r9200-170-52-36",
+    "brand": "Shimano",
+    "model": "FC-R9200",
+    "series": "Dura-Ace R9200",
+    "category": "crankset",
+    "variant": {
+      "crank_length_mm": 170,
+      "chainrings": "52/36"
+    },
+    "weight_g": 692,
+    "weight_type": "manufacturer",
+"source_type": "official",
+    "configuration": "170 mm, 52/36T, without bottom bracket",
+    "source_name": "Shimano Product Information / 2026-2027 Specifications Handbook",
+    "source_url": "https://productinfo.shimano.com/en/product/FC-R9200",
+    "verified": true,
+    "verified_date": "2026-09-19",
+    "notes": "Shimano average weight."
+  },
+  {
+    "id": "shimano-fc-r9200-170-54-40",
+    "brand": "Shimano",
+    "model": "FC-R9200",
+    "series": "Dura-Ace R9200",
+    "category": "crankset",
+    "variant": {
+      "crank_length_mm": 170,
+      "chainrings": "54/40"
+    },
+    "weight_g": 714,
+    "weight_type": "manufacturer",
+"source_type": "official",
+    "configuration": "170 mm, 54/40T, without bottom bracket",
+    "source_name": "Shimano Product Information / 2026-2027 Specifications Handbook",
+    "source_url": "https://productinfo.shimano.com/en/product/FC-R9200",
+    "verified": true,
+    "verified_date": "2026-09-19",
+    "notes": "Shimano average weight."
+  },
+  {
+  "id": "shimano-fc-r8100-170-46-36",
+  "brand": "Shimano",
+  "model": "FC-R8100",
+  "series": "Ultegra R8100",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "46/36"
+  },
+  "weight_g": 702,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 46/36T, without bottom bracket",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/FC-R8100",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r8100-170-50-34",
+  "brand": "Shimano",
+  "model": "FC-R8100",
+  "series": "Ultegra R8100",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "50/34"
+  },
+  "weight_g": 700,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 50/34T, without bottom bracket",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/FC-R8100",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r8100-170-52-36",
+  "brand": "Shimano",
+  "model": "FC-R8100",
+  "series": "Ultegra R8100",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "52/36"
+  },
+  "weight_g": 711,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 52/36T, without bottom bracket",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/FC-R8100",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-st-r9270-pair",
+  "brand": "Shimano",
+  "model": "ST-R9270",
+  "series": "Dura-Ace R9200",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "brake_type": "hydraulic disc"
+  },
+  "weight_g": 350,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Pair of left and right Di2 hydraulic shift/brake levers",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight for pair."
+},
+{
+  "id": "shimano-st-r8170-pair",
+  "brand": "Shimano",
+  "model": "ST-R8170",
+  "series": "Ultegra R8100",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "brake_type": "hydraulic disc"
+  },
+  "weight_g": 391,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Pair of left and right Di2 hydraulic shift/brake levers",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/ST-R8170-L",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight for pair."
+},
+{
+  "id": "shimano-st-r7170-pair",
+  "brand": "Shimano",
+  "model": "ST-R7170",
+  "series": "Shimano 105 R7100",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "brake_type": "hydraulic disc"
+  },
+  "weight_g": 423,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Pair of left and right Di2 hydraulic shift/brake levers",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight for pair."
+},
+{
+  "id": "shimano-fd-r9250",
+  "brand": "Shimano",
+  "model": "FD-R9250",
+  "series": "Dura-Ace R9200",
+  "category": "front_derailleur",
+  "variant": {
+    "mount": "braze-on"
+  },
+  "weight_g": 96,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Direct type with fixing screw",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fd-r8150",
+  "brand": "Shimano",
+  "model": "FD-R8150",
+  "series": "Ultegra R8100",
+  "category": "front_derailleur",
+  "variant": {
+    "mount": "braze-on"
+  },
+  "weight_g": 110,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Direct type with fixing screw",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fd-r7150",
+  "brand": "Shimano",
+  "model": "FD-R7150",
+  "series": "Shimano 105 R7100",
+  "category": "front_derailleur",
+  "variant": {
+    "mount": "braze-on"
+  },
+  "weight_g": 142,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Direct type with fixing screw",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r9250",
+  "brand": "Shimano",
+  "model": "RD-R9250",
+  "series": "Dura-Ace R9200",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 12,
+    "max_sprocket": "34T"
+  },
+  "weight_g": 215,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-speed Di2 rear derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/RD-R9250",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r8150",
+  "brand": "Shimano",
+  "model": "RD-R8150",
+  "series": "Ultegra R8100",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 12,
+    "max_sprocket": "34T"
+  },
+  "weight_g": 262,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-speed Di2 rear derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/RD-R8150",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r7150",
+  "brand": "Shimano",
+  "model": "RD-R7150",
+  "series": "Shimano 105 R7100",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 12,
+    "max_sprocket": "36T"
+  },
+  "weight_g": 302,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-speed Di2 rear derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/RD-R7150",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r9200-11-30",
+  "brand": "Shimano",
+  "model": "CS-R9200-12",
+  "series": "Dura-Ace R9200",
+  "category": "cassette",
+  "variant": {
+    "speeds": 12,
+    "range": "11-30T"
+  },
+  "weight_g": 223,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-30T, 12-speed",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r9200-11-34",
+  "brand": "Shimano",
+  "model": "CS-R9200-12",
+  "series": "Dura-Ace R9200",
+  "category": "cassette",
+  "variant": {
+    "speeds": 12,
+    "range": "11-34T"
+  },
+  "weight_g": 253,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-34T, 12-speed",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r8101-11-30",
+  "brand": "Shimano",
+  "model": "CS-R8101-12",
+  "series": "Ultegra R8100",
+  "category": "cassette",
+  "variant": {
+    "speeds": 12,
+    "range": "11-30T"
+  },
+  "weight_g": 291,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-30T, 12-speed",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/ja/product/CS-R8101-12",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r8101-11-34",
+  "brand": "Shimano",
+  "model": "CS-R8101-12",
+  "series": "Ultegra R8100",
+  "category": "cassette",
+  "variant": {
+    "speeds": 12,
+    "range": "11-34T"
+  },
+  "weight_g": 345,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-34T, 12-speed",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/ja/product/CS-R8101-12",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r7101-11-34",
+  "brand": "Shimano",
+  "model": "CS-R7101-12",
+  "series": "Shimano 105 R7100",
+  "category": "cassette",
+  "variant": {
+    "speeds": 12,
+    "range": "11-34T"
+  },
+  "weight_g": 361,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-34T, 12-speed",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-bt-dn300",
+  "brand": "Shimano",
+  "model": "BT-DN300",
+  "series": "Shimano Di2",
+  "category": "battery",
+  "variant": {
+    "type": "internal"
+  },
+  "weight_g": 52,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Internal Di2 battery",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Compatible with RD-R9250, RD-R8150 and RD-R7150."
+}
+,
+{
+  "id": "shimano-br-r9270-single",
+  "brand": "Shimano",
+  "model": "BR-R9270",
+  "series": "Dura-Ace R9200",
+  "category": "brake_caliper",
+  "variant": {
+    "quantity": "single",
+    "brake_type": "hydraulic_disc",
+    "mount": "flat_mount"
+  },
+  "weight_g": 97,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Single hydraulic disc brake caliper",
+  "source_name": "Shimano 2026-2027 Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/thisyear/2026-2027_Specifications_v023_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight. One caliper only."
+},
+{
+  "id": "shimano-br-r8170-single",
+  "brand": "Shimano",
+  "model": "BR-R8170",
+  "series": "Ultegra R8100",
+  "category": "brake_caliper",
+  "variant": {
+    "quantity": "single",
+    "brake_type": "hydraulic_disc",
+    "mount": "flat_mount"
+  },
+  "weight_g": 123,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Single hydraulic disc brake caliper",
+  "source_name": "Shimano 2026-2027 Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/thisyear/2026-2027_Specifications_v023_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight. One caliper only."
+},
+{
+  "id": "shimano-br-r7170-single",
+  "brand": "Shimano",
+  "model": "BR-R7170",
+  "series": "Shimano 105 R7100",
+  "category": "brake_caliper",
+  "variant": {
+    "quantity": "single",
+    "brake_type": "hydraulic_disc",
+    "mount": "flat_mount"
+  },
+  "weight_g": 123,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Single hydraulic disc brake caliper",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/BR-R7170",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight. One caliper only."
+}
+,
+{
+  "id": "shimano-rt-cl800-140",
+  "brand": "Shimano",
+  "model": "RT-CL800",
+  "series": "Ultegra / Shimano",
+  "category": "disc_rotor",
+  "variant": {
+    "diameter_mm": 140,
+    "mount": "center_lock"
+  },
+  "weight_g": 97,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "140 mm Center Lock rotor, without lock ring",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-CN/product/RT-CL800",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight. Lock ring excluded."
+},
+{
+  "id": "shimano-rt-cl800-160",
+  "brand": "Shimano",
+  "model": "RT-CL800",
+  "series": "Ultegra / Shimano",
+  "category": "disc_rotor",
+  "variant": {
+    "diameter_mm": 160,
+    "mount": "center_lock"
+  },
+  "weight_g": 114,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "160 mm Center Lock rotor, without lock ring",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-CN/product/RT-CL800",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight. Lock ring excluded."
+}
+,
+{
+  "id": "shimano-cn-m9100-114",
+  "brand": "Shimano",
+  "model": "CN-M9100",
+  "series": "Shimano 12-speed",
+  "category": "chain",
+  "variant": {
+    "speeds": 12,
+    "links": 114
+  },
+  "weight_g": 242,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "114 links, including QUICK-LINK",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-CN/spec/general-chain",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight for 114 links. Hollow-pin chain."
+}
+,
+{
+  "id": "shimano-st-r9100-pair",
+  "brand": "Shimano",
+  "model": "ST-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "speeds": 11,
+    "brake_type": "mechanical_rim"
+  },
+  "weight_g": 365,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Pair of mechanical 11-speed Dual Control levers",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano official average weight for pair."
+},
+{
+  "id": "shimano-fd-r9100-f",
+  "brand": "Shimano",
+  "model": "FD-R9100-F",
+  "series": "Dura-Ace R9100",
+  "category": "front_derailleur",
+  "variant": {
+    "speeds": 11,
+    "mount": "braze-on"
+  },
+  "weight_g": 70,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Braze-on mechanical front derailleur with fixing screw",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight for direct type with screw."
+},
+{
+  "id": "shimano-rd-r9100-ss",
+  "brand": "Shimano",
+  "model": "RD-R9100-SS",
+  "series": "Dura-Ace R9100",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 11,
+    "cage": "SS",
+    "max_sprocket": "30T"
+  },
+  "weight_g": 158,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed mechanical short-cage rear derailleur",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r9100-170-50-34",
+  "brand": "Shimano",
+  "model": "FC-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "50/34"
+  },
+  "weight_g": 614,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 50/34T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r9100-170-52-36",
+  "brand": "Shimano",
+  "model": "FC-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "52/36"
+  },
+  "weight_g": 624,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 52/36T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r9100-170-53-39",
+  "brand": "Shimano",
+  "model": "FC-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "53/39"
+  },
+  "weight_g": 626,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 53/39T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r9100-170-54-42",
+  "brand": "Shimano",
+  "model": "FC-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "54/42"
+  },
+  "weight_g": 642,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 54/42T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r9100-170-55-42",
+  "brand": "Shimano",
+  "model": "FC-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "55/42"
+  },
+  "weight_g": 650,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 55/42T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-br-r9100-pair",
+  "brand": "Shimano",
+  "model": "BR-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "rim_brakes",
+  "variant": {
+    "quantity": "pair",
+    "type": "dual_pivot"
+  },
+  "weight_g": 327,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Front and rear SLR-EV dual-pivot rim brake calipers",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight for pair."
+},
+{
+  "id": "shimano-cs-r9100-11-25",
+  "brand": "Shimano",
+  "model": "CS-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-25T"
+  },
+  "weight_g": 175,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-25T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r9100-11-28",
+  "brand": "Shimano",
+  "model": "CS-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-28T"
+  },
+  "weight_g": 193,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-28T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r9100-11-30",
+  "brand": "Shimano",
+  "model": "CS-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-30T"
+  },
+  "weight_g": 211,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-30T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r9100-12-25",
+  "brand": "Shimano",
+  "model": "CS-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "12-25T"
+  },
+  "weight_g": 189,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-25T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r9100-12-28",
+  "brand": "Shimano",
+  "model": "CS-R9100",
+  "series": "Dura-Ace R9100",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "12-28T"
+  },
+  "weight_g": 205,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-28T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cn-hg901-114",
+  "brand": "Shimano",
+  "model": "CN-HG901-11",
+  "series": "Dura-Ace / Shimano 11-speed",
+  "category": "chain",
+  "variant": {
+    "speeds": 11,
+    "links": 114
+  },
+  "weight_g": 247,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "114 links",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/CN-HG901-11",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+
+{
+  "id": "shimano-st-r8000-pair",
+  "brand": "Shimano",
+  "model": "ST-R8000",
+  "series": "Ultegra R8000",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "speeds": 11,
+    "brake_type": "mechanical_rim"
+  },
+  "weight_g": 438,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "ST-R8000-R 220 g + ST-R8000-L 218 g",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Pair total calculated from Shimano official individual weights: 220 g right + 218 g left."
+},
+{
+  "id": "shimano-fd-r8000-f",
+  "brand": "Shimano",
+  "model": "FD-R8000-F",
+  "series": "Ultegra R8000",
+  "category": "front_derailleur",
+  "variant": {
+    "speeds": 11,
+    "mount": "braze-on"
+  },
+  "weight_g": 92,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Braze-on mechanical front derailleur with fixing screw",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r8000-ss",
+  "brand": "Shimano",
+  "model": "RD-R8000-SS",
+  "series": "Ultegra R8000",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 11,
+    "cage": "SS",
+    "max_sprocket": "30T"
+  },
+  "weight_g": 200,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed mechanical short-cage rear derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/RD-R8000-SS",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r8000-gs",
+  "brand": "Shimano",
+  "model": "RD-R8000-GS",
+  "series": "Ultegra R8000",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 11,
+    "cage": "GS",
+    "max_sprocket": "34T"
+  },
+  "weight_g": 210,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed mechanical medium-cage rear derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/RD-R8000-GS",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r8000-170-46-36",
+  "brand": "Shimano",
+  "model": "FC-R8000",
+  "series": "Ultegra R8000",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "46/36"
+  },
+  "weight_g": 668,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 46/36T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r8000-170-50-34",
+  "brand": "Shimano",
+  "model": "FC-R8000",
+  "series": "Ultegra R8000",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "50/34"
+  },
+  "weight_g": 674,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 50/34T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r8000-170-52-36",
+  "brand": "Shimano",
+  "model": "FC-R8000",
+  "series": "Ultegra R8000",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "52/36"
+  },
+  "weight_g": 681,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 52/36T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r8000-170-53-39",
+  "brand": "Shimano",
+  "model": "FC-R8000",
+  "series": "Ultegra R8000",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "53/39"
+  },
+  "weight_g": 690,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 53/39T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-br-r8000-pair",
+  "brand": "Shimano",
+  "model": "BR-R8000",
+  "series": "Ultegra R8000",
+  "category": "rim_brakes",
+  "variant": {
+    "quantity": "pair",
+    "type": "dual_pivot"
+  },
+  "weight_g": 362,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Front 182 g + rear 180 g",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Pair total calculated from Shimano official front and rear weights."
+},
+{
+  "id": "shimano-cs-r8000-11-25",
+  "brand": "Shimano",
+  "model": "CS-R8000",
+  "series": "Ultegra R8000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-25T"
+  },
+  "weight_g": 232,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-25T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r8000-11-28",
+  "brand": "Shimano",
+  "model": "CS-R8000",
+  "series": "Ultegra R8000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-28T"
+  },
+  "weight_g": 251,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-28T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r8000-11-30",
+  "brand": "Shimano",
+  "model": "CS-R8000",
+  "series": "Ultegra R8000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-30T"
+  },
+  "weight_g": 269,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-30T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r8000-11-32",
+  "brand": "Shimano",
+  "model": "CS-R8000",
+  "series": "Ultegra R8000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-32T"
+  },
+  "weight_g": 292,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-32T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r8000-12-25",
+  "brand": "Shimano",
+  "model": "CS-R8000",
+  "series": "Ultegra R8000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "12-25T"
+  },
+  "weight_g": 243,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-25T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r8000-14-28",
+  "brand": "Shimano",
+  "model": "CS-R8000",
+  "series": "Ultegra R8000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "14-28T"
+  },
+  "weight_g": 300,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "14-28T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cn-hg701-114",
+  "brand": "Shimano",
+  "model": "CN-HG701-11",
+  "series": "Ultegra / Shimano 11-speed",
+  "category": "chain",
+  "variant": {
+    "speeds": 11,
+    "links": 114
+  },
+  "weight_g": 257,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "114 links",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2024-2025_Specifications_v032_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+
+{
+  "id": "shimano-st-r7000-pair",
+  "brand": "Shimano",
+  "model": "ST-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "speeds": 11,
+    "brake_type": "mechanical_rim"
+  },
+  "weight_g": 500,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "ST-R7000-R 251 g + ST-R7000-L 249 g",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Pair total calculated from Shimano official individual weights."
+},
+{
+  "id": "shimano-fd-r7000-f",
+  "brand": "Shimano",
+  "model": "FD-R7000-F",
+  "series": "Shimano 105 R7000",
+  "category": "front_derailleur",
+  "variant": {
+    "speeds": 11,
+    "mount": "braze-on"
+  },
+  "weight_g": 96,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Braze-on mechanical front derailleur with fixing screw",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r7000-ss",
+  "brand": "Shimano",
+  "model": "RD-R7000-SS",
+  "series": "Shimano 105 R7000",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 11,
+    "cage": "SS",
+    "max_sprocket": "30T"
+  },
+  "weight_g": 225,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed mechanical short-cage rear derailleur",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r7000-gs",
+  "brand": "Shimano",
+  "model": "RD-R7000-GS",
+  "series": "Shimano 105 R7000",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 11,
+    "cage": "GS",
+    "max_sprocket": "34T"
+  },
+  "weight_g": 232,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed mechanical medium-cage rear derailleur",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r7000-170-50-34",
+  "brand": "Shimano",
+  "model": "FC-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "50/34"
+  },
+  "weight_g": 713.4,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 50/34T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r7000-170-52-36",
+  "brand": "Shimano",
+  "model": "FC-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "52/36"
+  },
+  "weight_g": 742.6,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 52/36T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-fc-r7000-170-53-39",
+  "brand": "Shimano",
+  "model": "FC-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "crankset",
+  "variant": {
+    "crank_length_mm": 170,
+    "chainrings": "53/39"
+  },
+  "weight_g": 757.8,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "170 mm, 53/39T, without bottom bracket",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-br-r7000-pair",
+  "brand": "Shimano",
+  "model": "BR-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "rim_brakes",
+  "variant": {
+    "quantity": "pair",
+    "type": "dual_pivot"
+  },
+  "weight_g": 379,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Front and rear SLR-EV dual-pivot rim brake calipers",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/BR-R7000",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano official average weight for pair."
+},
+{
+  "id": "shimano-cs-r7000-11-28",
+  "brand": "Shimano",
+  "model": "CS-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-28T"
+  },
+  "weight_g": 284,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-28T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/en/product/CS-R7000",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r7000-11-30",
+  "brand": "Shimano",
+  "model": "CS-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-30T"
+  },
+  "weight_g": 304,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-30T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/en/product/CS-R7000",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r7000-11-32",
+  "brand": "Shimano",
+  "model": "CS-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "11-32T"
+  },
+  "weight_g": 320,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-32T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/en/product/CS-R7000",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cs-r7000-12-25",
+  "brand": "Shimano",
+  "model": "CS-R7000",
+  "series": "Shimano 105 R7000",
+  "category": "cassette",
+  "variant": {
+    "speeds": 11,
+    "range": "12-25T"
+  },
+  "weight_g": 269,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-25T, 11-speed",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/en/product/CS-R7000",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-cn-hg601-114",
+  "brand": "Shimano",
+  "model": "CN-HG601-11",
+  "series": "Shimano 105 / Shimano 11-speed",
+  "category": "chain",
+  "variant": {
+    "speeds": 11,
+    "links": 114
+  },
+  "weight_g": 257,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "114 links",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2024-2025_Specifications_v032_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+}
+,
+{
+  "id": "shimano-st-r9150-pair",
+  "brand": "Shimano",
+  "model": "ST-R9150",
+  "series": "Dura-Ace R9150 Di2",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "speeds": 11,
+    "brake_type": "mechanical_rim",
+    "shifting": "Di2"
+  },
+  "weight_g": 230,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Pair of 11-speed Di2 Dual Control levers for rim brake",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano official average weight for pair."
+},
+{
+  "id": "shimano-fd-r9150",
+  "brand": "Shimano",
+  "model": "FD-R9150",
+  "series": "Dura-Ace R9150 Di2",
+  "category": "front_derailleur",
+  "variant": {
+    "speeds": 11,
+    "mount": "braze-on",
+    "shifting": "Di2"
+  },
+  "weight_g": 104,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed Di2 braze-on front derailleur, direct type with fixing screw",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r9150",
+  "brand": "Shimano",
+  "model": "RD-R9150",
+  "series": "Dura-Ace R9150 Di2",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 11,
+    "shifting": "Di2",
+    "max_sprocket": "30T"
+  },
+  "weight_g": 197,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed Di2 rear derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/RD-R9150",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-st-r9170-pair",
+  "brand": "Shimano",
+  "model": "ST-R9170",
+  "series": "Dura-Ace R9150 Di2",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "speeds": 11,
+    "brake_type": "hydraulic_disc",
+    "shifting": "Di2"
+  },
+  "weight_g": 320,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "ST-R9170-R 160 g + ST-R9170-L 160 g",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/ST-R9170-R",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Pair total calculated from Shimano official 160 g per lever."
+},
+{
+  "id": "shimano-br-r9170-front",
+  "brand": "Shimano",
+  "model": "BR-R9170-F",
+  "series": "Dura-Ace R9150 Di2",
+  "category": "brake_caliper",
+  "variant": {
+    "position": "front",
+    "brake_type": "hydraulic_disc",
+    "mount": "flat_mount"
+  },
+  "weight_g": 131,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Front hydraulic disc brake caliper",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/thisyear/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Front and rear calipers have different official weights."
+},
+{
+  "id": "shimano-br-r9170-rear",
+  "brand": "Shimano",
+  "model": "BR-R9170-R",
+  "series": "Dura-Ace R9150 Di2",
+  "category": "brake_caliper",
+  "variant": {
+    "position": "rear",
+    "brake_type": "hydraulic_disc",
+    "mount": "flat_mount"
+  },
+  "weight_g": 111,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Rear hydraulic disc brake caliper",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/thisyear/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Front and rear calipers have different official weights."
+},
+{
+  "id": "shimano-sm-rt900-140",
+  "brand": "Shimano",
+  "model": "SM-RT900",
+  "series": "Dura-Ace / Shimano",
+  "category": "disc_rotor",
+  "variant": {
+    "diameter_mm": 140,
+    "mount": "center_lock"
+  },
+  "weight_g": 99,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "140 mm Center Lock rotor, without lock ring",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-TW/product/SM-RT900",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Lock ring excluded."
+},
+{
+  "id": "shimano-sm-rt900-160",
+  "brand": "Shimano",
+  "model": "SM-RT900",
+  "series": "Dura-Ace / Shimano",
+  "category": "disc_rotor",
+  "variant": {
+    "diameter_mm": 160,
+    "mount": "center_lock"
+  },
+  "weight_g": 117,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "160 mm Center Lock rotor, without lock ring",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-TW/product/SM-RT900",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Lock ring excluded."
+},
+
+{
+  "id": "shimano-st-r8050-pair",
+  "brand": "Shimano",
+  "model": "ST-R8050",
+  "series": "Ultegra R8050 Di2",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "speeds": 11,
+    "brake_type": "mechanical_rim",
+    "shifting": "Di2"
+  },
+  "weight_g": 295,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Pair of 11-speed Di2 Dual Control levers for rim brake",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano official average weight for pair."
+},
+{
+  "id": "shimano-fd-r8050",
+  "brand": "Shimano",
+  "model": "FD-R8050",
+  "series": "Ultegra R8050 Di2",
+  "category": "front_derailleur",
+  "variant": {
+    "speeds": 11,
+    "mount": "braze-on",
+    "shifting": "Di2"
+  },
+  "weight_g": 132,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed Di2 braze-on front derailleur, direct type with fixing screw",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r8050-ss",
+  "brand": "Shimano",
+  "model": "RD-R8050-SS",
+  "series": "Ultegra R8050 Di2",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 11,
+    "cage": "SS",
+    "shifting": "Di2",
+    "max_sprocket": "30T"
+  },
+  "weight_g": 240,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed Di2 short-cage rear derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-CN/product/RD-R8050-SS",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-rd-r8050-gs",
+  "brand": "Shimano",
+  "model": "RD-R8050-GS",
+  "series": "Ultegra R8050 Di2",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 11,
+    "cage": "GS",
+    "shifting": "Di2",
+    "max_sprocket": "34T"
+  },
+  "weight_g": 247,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "11-speed Di2 medium-cage rear derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-TW/product/RD-R8050-GS",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano average weight."
+},
+{
+  "id": "shimano-st-r8070-pair",
+  "brand": "Shimano",
+  "model": "ST-R8070",
+  "series": "Ultegra R8050 Di2",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "speeds": 11,
+    "brake_type": "hydraulic_disc",
+    "shifting": "Di2"
+  },
+  "weight_g": 360,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "180 g right + 180 g left",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/archive/2024-2025_Specifications_v029_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Pair total calculated from Shimano official individual weights."
+},
+{
+  "id": "shimano-br-r8070-front",
+  "brand": "Shimano",
+  "model": "BR-R8070-F",
+  "series": "Ultegra R8050 Di2",
+  "category": "brake_caliper",
+  "variant": {
+    "position": "front",
+    "brake_type": "hydraulic_disc",
+    "mount": "flat_mount"
+  },
+  "weight_g": 141,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Front hydraulic disc brake caliper",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/thisyear/2025-2026_Specifications_v035_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Front and rear calipers have different official weights."
+},
+{
+  "id": "shimano-br-r8070-rear",
+  "brand": "Shimano",
+  "model": "BR-R8070-R",
+  "series": "Ultegra R8050 Di2",
+  "category": "brake_caliper",
+  "variant": {
+    "position": "rear",
+    "brake_type": "hydraulic_disc",
+    "mount": "flat_mount"
+  },
+  "weight_g": 124,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Rear hydraulic disc brake caliper",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/BR-R8070-R",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Front and rear calipers have different official weights."
+},
+{
+  "id": "shimano-sm-rt800-140",
+  "brand": "Shimano",
+  "model": "SM-RT800",
+  "series": "Ultegra / Shimano",
+  "category": "disc_rotor",
+  "variant": {
+    "diameter_mm": 140,
+    "mount": "center_lock"
+  },
+  "weight_g": 108,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "140 mm Center Lock rotor, without lock ring",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-CN/product/SM-RT800",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Lock ring excluded."
+},
+{
+  "id": "shimano-sm-rt800-160",
+  "brand": "Shimano",
+  "model": "SM-RT800",
+  "series": "Ultegra / Shimano",
+  "category": "disc_rotor",
+  "variant": {
+    "diameter_mm": 160,
+    "mount": "center_lock"
+  },
+  "weight_g": 128,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "160 mm Center Lock rotor, without lock ring",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-CN/product/SM-RT800",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Lock ring excluded."
+},
+
+{
+  "id": "shimano-bt-dn110",
+  "brand": "Shimano",
+  "model": "BT-DN110",
+  "series": "Shimano Di2 SD50",
+  "category": "battery",
+  "variant": {
+    "type": "internal"
+  },
+  "weight_g": 50,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Internal Li-Ion Di2 battery",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-CN/product/BT-DN110",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Used with Shimano SD50 Di2 systems."
+},
+{
+  "id": "shimano-ew-rs910",
+  "brand": "Shimano",
+  "model": "EW-RS910",
+  "series": "Shimano Di2 SD50",
+  "category": "di2_junction",
+  "variant": {
+    "type": "junction_a",
+    "mount": "internal"
+  },
+  "weight_g": 11,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Built-in Junction A",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/ja/product/EW-RS910",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "SD50 system."
+},
+{
+  "id": "shimano-sm-jc41",
+  "brand": "Shimano",
+  "model": "SM-JC41",
+  "series": "Shimano Di2 SD50",
+  "category": "di2_junction",
+  "variant": {
+    "type": "junction_b",
+    "mount": "internal"
+  },
+  "weight_g": 4.1,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Internal four-port Junction B",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/thisyear/2025-2026_Specifications_v033_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "SD50 system."
+},
+
+{
+  "id": "shimano-st-r7120-pair",
+  "brand": "Shimano",
+  "model": "ST-R7120",
+  "series": "Shimano 105 R7100 Mechanical",
+  "category": "shift_brake_levers",
+  "variant": {
+    "quantity": "pair",
+    "speeds": 12,
+    "brake_type": "hydraulic_disc",
+    "shifting": "mechanical"
+  },
+  "weight_g": 612,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "Pair of 12-speed mechanical hydraulic Dual Control levers",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/en/product/ST-R7120-R",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano official average weight for pair."
+},
+{
+  "id": "shimano-fd-r7100-f",
+  "brand": "Shimano",
+  "model": "FD-R7100-F",
+  "series": "Shimano 105 R7100 Mechanical",
+  "category": "front_derailleur",
+  "variant": {
+    "speeds": 12,
+    "mount": "braze-on",
+    "shifting": "mechanical"
+  },
+  "weight_g": 96,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-speed mechanical braze-on front derailleur",
+  "source_name": "Shimano Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Direct type with fixing screw."
+},
+{
+  "id": "shimano-fd-r7100-b",
+  "brand": "Shimano",
+  "model": "FD-R7100-B",
+  "series": "Shimano 105 R7100 Mechanical",
+  "category": "front_derailleur",
+  "variant": {
+    "speeds": 12,
+    "mount": "clamp",
+    "shifting": "mechanical"
+  },
+  "weight_g": 111,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-speed mechanical clamp-band front derailleur",
+  "source_name": "Shimano Product Information",
+  "source_url": "https://productinfo.shimano.com/zh-CN/product/FD-R7100-B",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Shimano weight for band type."
+},
+{
+  "id": "shimano-rd-r7100",
+  "brand": "Shimano",
+  "model": "RD-R7100",
+  "series": "Shimano 105 R7100 Mechanical",
+  "category": "rear_derailleur",
+  "variant": {
+    "speeds": 12,
+    "shifting": "mechanical",
+    "max_sprocket": "36T"
+  },
+  "weight_g": 249,
+  "weight_type": "manufacturer",
+"source_type": "official",
+  "configuration": "12-speed mechanical rear derailleur",
+  "source_name": "Shimano 2026-2027 Specifications Handbook",
+  "source_url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+  "verified": true,
+  "verified_date": "2026-09-19",
+  "notes": "Compatible with 11-34T and 11-36T cassettes."
+}
+]
