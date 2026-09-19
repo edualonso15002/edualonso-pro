@@ -32,9 +32,9 @@ input {
 .tool-header {
   min-height: 64px;
   gap: 18px;
-  flex-wrap: wrap;
   padding: 0 28px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   justify-content: space-between;
   background: var(--dark);
@@ -415,22 +415,30 @@ input {
   }
 }
 
-/* Navigation applies at every screen size. */
-.tool-header .logo { white-space: nowrap; }
-.tool-nav {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px 18px;
+/* Balanced columns keep the page title centered in the viewport. */
+.tool-header .logo { justify-self: start; white-space: nowrap; }
+.tool-title {
+  color: #bdbdb8;
   font-size: 0.82rem;
   letter-spacing: 0.08em;
+  text-align: center;
+}
+.tool-nav {
+  display: flex;
+  justify-self: end;
 }
 .tool-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   color: #ffffff;
   text-decoration: none;
+  font-size: 1rem;
   font-weight: 700;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
 }
-.tool-nav span { color: #bdbdb8; }
+.tool-nav svg { flex: none; }
 .tool-header a:hover { opacity: 0.7; }
 .tool-header a:focus-visible {
   outline: 2px solid currentColor;
@@ -439,9 +447,14 @@ input {
 }
 @media (max-width: 600px) {
   .tool-header {
+    grid-template-columns: 1fr 1fr;
     padding-top: 16px;
     padding-bottom: 16px;
-    gap: 12px;
+    gap: 16px;
   }
-  .tool-nav { width: 100%; }
+  .tool-title {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .tool-nav { grid-column: 2; grid-row: 1; }
 }
