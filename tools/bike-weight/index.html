@@ -63,10 +63,10 @@
           </select>
 
 
-          <label for="frame-model">Frame</label>
+          <label for="frame-model">Frameset</label>
 
           <select id="frame-model" disabled>
-            <option value="">Select frame</option>
+            <option value="">Select frameset</option>
           </select>
 
         </div>
@@ -81,7 +81,10 @@
               <span id="frame-config" class="component-config"></span>
             </div>
 
-            <strong id="frame-weight"></strong>
+            <div class="weight-block">
+              <strong id="frame-weight"></strong>
+              <span id="frame-includes" class="weight-includes"></span>
+            </div>
 
           </div>
 
@@ -106,65 +109,53 @@
 
 
         <div class="section-heading section-spacing">
-          <div>
-            <span class="step">02</span>
-            <h2>Groupset</h2>
-          </div>
+          <div><span class="step">02</span><h2>Drivetrain &amp; brakes</h2></div>
         </div>
-
-
+        <p class="component-config">Select a component, then add it to your build. Check whether its weight includes chainrings, calipers or other parts before adding those separately.</p>
+        <p id="data-status" class="component-config hidden" role="status"></p>
         <div class="selector-group">
-
-          <label for="groupset-brand">Brand</label>
-
-          <select id="groupset-brand">
-            <option value="">Select brand</option>
-          </select>
-
-
-          <label for="groupset-component">Component</label>
-
-          <select id="groupset-component" disabled>
-            <option value="">Select component</option>
-          </select>
-
+          <label for="shifters"><span class="component-label-icon component-image-shifters" aria-hidden="true"></span>Shifters</label>
+          <select id="shifters" disabled><option value="">Loading components…</option></select>
+          <label for="rear-derailleur"><span class="component-label-icon component-image-rear-derailleur" aria-hidden="true"></span>Rear derailleur</label>
+          <select id="rear-derailleur" disabled><option value="">Loading components…</option></select>
+          <label for="front-derailleur"><span class="component-label-icon component-image-front-derailleur" aria-hidden="true"></span>Front derailleur</label>
+          <select id="front-derailleur" disabled><option value="">Loading components…</option></select>
+          <label for="crankset"><span class="component-label-icon component-image-crankset" aria-hidden="true"></span>Crankset</label>
+          <select id="crankset" disabled><option value="">Loading components…</option></select>
+          <label for="chainrings"><span class="component-label-icon component-image-chainrings" aria-hidden="true"></span>Chainrings</label>
+          <select id="chainrings" disabled><option value="">Loading components…</option></select>
+          <label for="cassette"><span class="component-label-icon component-image-cassette" aria-hidden="true"></span>Cassette</label>
+          <select id="cassette" disabled><option value="">Loading components…</option></select>
+          <label for="chain"><span class="component-label-icon component-image-chain" aria-hidden="true"></span>Chain</label>
+          <select id="chain" disabled><option value="">Loading components…</option></select>
+          <label for="bottom-bracket"><span class="component-label-icon component-image-bottom-bracket" aria-hidden="true"></span>Bottom bracket</label>
+          <select id="bottom-bracket" disabled><option value="">Loading components…</option></select>
+          <label for="brakes"><span class="component-label-icon component-image-brakes" aria-hidden="true"></span>Brakes / calipers</label>
+          <select id="brakes" disabled><option value="">Loading components…</option></select>
+          <label for="disc-rotors"><span class="component-label-icon component-image-disc-rotors" aria-hidden="true"></span>Disc rotors</label>
+          <select id="disc-rotors" disabled><option value="">Loading components…</option></select>
+          <label for="batteries"><span class="component-label-icon component-image-batteries" aria-hidden="true"></span>Batteries</label>
+          <select id="batteries" disabled><option value="">Loading components…</option></select>
+          <label for="electronic-connections"><span class="component-label-icon component-image-electronic-connections" aria-hidden="true"></span>Electronic connections</label>
+          <select id="electronic-connections" disabled><option value="">Loading components…</option></select>
         </div>
-
-
-        <div id="groupset-info" class="component-info hidden">
-
+        <div id="component-info" class="component-info hidden" aria-live="polite">
           <div class="component-main">
-
             <div>
-              <span id="groupset-name" class="component-name"></span>
-              <span id="groupset-config" class="component-config"></span>
+              <span id="component-name" class="component-name"></span>
+              <span id="component-config" class="component-config"></span>
             </div>
-
-            <strong id="groupset-weight"></strong>
-
+            <div class="weight-block">
+              <strong id="component-weight"></strong>
+              <span id="component-includes" class="weight-includes"></span>
+            </div>
           </div>
-
           <div class="source-row">
-
-            <span id="groupset-source-type"></span>
-
-            <a
-              id="groupset-source"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View source
-            </a>
-
+            <span id="component-source-type"></span>
+            <a id="component-source" href="#" target="_blank" rel="noopener noreferrer">View source</a>
           </div>
-
-          <button id="add-groupset" class="add-button">
-            Add to build
-          </button>
-
+          <button id="add-component" class="add-button">Add selected components</button>
         </div>
-
 
         <div class="section-heading section-spacing">
 

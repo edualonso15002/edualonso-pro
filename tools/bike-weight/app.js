@@ -1,21 +1,19 @@
 const DATA_PATHS = {
-  frames: {
-    Specialized: "../../data/frames/specialized.json"
+  frameset: {
+    Specialized: "/data/frameset/specialized.json"
   },
 
-  groupsets: {
-    Shimano: "../../data/groupsets/shimano.json",
-    SRAM: "../../data/groupsets/sram.json"
+  components: {
+    Shimano: "/data/components/shimano.json",
+    SRAM: "/data/components/sram.json"
   }
 };
 
-
 const state = {
-  frames: {},
-  groupsets: {},
+  frameset: {},
+  components: {},
   build: []
 };
-
 
 const frameBrandSelect = document.getElementById("frame-brand");
 const frameModelSelect = document.getElementById("frame-model");
@@ -24,38 +22,51 @@ const frameInfo = document.getElementById("frame-info");
 const frameName = document.getElementById("frame-name");
 const frameConfig = document.getElementById("frame-config");
 const frameWeight = document.getElementById("frame-weight");
-const frameSourceType = document.getElementById("frame-source-type");
-const frameSource = document.getElementById("frame-source");
+const frameIncludes = document.getElementById("frame-includes");
+const framesetSourceType = document.getElementById("frame-source-type");
+const framesetSource = document.getElementById("frame-source");
 const addFrameButton = document.getElementById("add-frame");
 
+// Add categories here to extend the component selectors; data stays in JSON.
+const COMPONENT_TYPES = [
+  { id: "shifters", label: "Shifters", categories: ["shifters", "shift_brake_levers", "shift_brake_system"] },
+  { id: "rear-derailleur", label: "Rear derailleur", categories: ["rear_derailleur"] },
+  { id: "front-derailleur", label: "Front derailleur", categories: ["front_derailleur"] },
+  { id: "crankset", label: "Crankset", categories: ["crankset", "crankset_power_meter"] },
+  { id: "chainrings", label: "Chainrings", categories: ["chainrings", "chainring"] },
+  { id: "cassette", label: "Cassette", categories: ["cassette"] },
+  { id: "chain", label: "Chain", categories: ["chain"] },
+  { id: "bottom-bracket", label: "Bottom bracket", categories: ["bottom_bracket"] },
+  { id: "brakes", label: "Brakes / calipers", categories: ["brakes", "brake_caliper", "brake_calipers", "rim_brakes"] },
+  { id: "disc-rotors", label: "Disc rotors", categories: ["disc_rotor", "disc_rotors"] },
+  { id: "batteries", label: "Batteries", categories: ["battery"] },
+  { id: "electronic-connections", label: "Electronic connections", categories: ["di2_junction"] }
+];
+const componentSelectors = COMPONENT_TYPES.map((type) => ({
+  ...type, select: document.getElementById(type.id), items: []
+}));
 
-const groupsetBrandSelect = document.getElementById("groupset-brand");
-const groupsetComponentSelect = document.getElementById("groupset-component");
-
-const groupsetInfo = document.getElementById("groupset-info");
-const groupsetName = document.getElementById("groupset-name");
-const groupsetConfig = document.getElementById("groupset-config");
-const groupsetWeight = document.getElementById("groupset-weight");
-const groupsetSourceType = document.getElementById("groupset-source-type");
-const groupsetSource = document.getElementById("groupset-source");
-const addGroupsetButton = document.getElementById("add-groupset");
-
+const componentInfo = document.getElementById("component-info");
+const componentName = document.getElementById("component-name");
+const componentConfig = document.getElementById("component-config");
+const componentWeight = document.getElementById("component-weight");
+const componentIncludes = document.getElementById("component-includes");
+const componentSourceType = document.getElementById("component-source-type");
+const componentSource = document.getElementById("component-source");
+const addComponentButton = document.getElementById("add-component");
 
 const customNameInput = document.getElementById("custom-name");
 const customWeightInput = document.getElementById("custom-weight");
 const addCustomButton = document.getElementById("add-custom");
-
 
 const buildList = document.getElementById("build-list");
 const totalWeight = document.getElementById("total-weight");
 const totalGrams = document.getElementById("total-grams");
 const resetBuildButton = document.getElementById("reset-build");
 
-
 let selectedFrame = null;
-let selectedGroupsetComponent = null;
-
-
+let selectedComponent = null;
+const selectedComponents = new Map();
 
 async function loadJSON(path) {
   const response = await fetch(path);
@@ -67,35 +78,31 @@ async function loadJSON(path) {
   return response.json();
 }
 
-
-
 async function loadData() {
-  try {
-
-    for (const [brand, path] of Object.entries(DATA_PATHS.frames)) {
-      state.frames[brand] = await loadJSON(path);
-    }
-
-    for (const [brand, path] of Object.entries(DATA_PATHS.groupsets)) {
-      state.groupsets[brand] = await loadJSON(path);
-    }
-
-    populateFrameBrands();
-    populateGroupsetBrands();
-
-  } catch (error) {
-    console.error(error);
-
-    alert(
-      "Some component data could not be loaded. Check the JSON paths and run the site through a local server."
-    );
-  }
+  const errors = [];
+  await Promise.all(Object.entries(DATA_PATHS).flatMap(([kind, paths]) =>
+    Object.entries(paths).map(async ([brand, path]) => {
+      try {
+        const records = await loadJSON(path);
+        if (!Array.isArray(records)) throw new Error(`Expected an array: ${path}`);
+        state[kind][brand] = records;
+      } catch (error) {
+        console.error(error);
+        errors.push(brand);
+      }
+    })
+  ));
+  populateFrameBrands();
+  populateComponentSelectors();
+  const status = document.getElementById("data-status");
+  status.textContent = errors.length
+    ? `Some data could not be loaded (${errors.join(", ")}). Available data and custom components can still be used.`
+    : "";
+  status.classList.toggle("hidden", !errors.length);
 }
 
-
-
 function populateFrameBrands() {
-  Object.keys(state.frames).forEach((brand) => {
+  Object.keys(state.frameset).forEach((brand) => {
     const option = document.createElement("option");
 
     option.value = brand;
@@ -105,20 +112,81 @@ function populateFrameBrands() {
   });
 }
 
+function sortFramesetsNewestFirst(a, b) {
+  const aText = `${a.model} ${a.generation}`;
+  const bText = `${b.model} ${b.generation}`;
+  const aSl = Number(aText.match(/\bSL\s*(\d+)/i)?.[1] || 0);
+  const bSl = Number(bText.match(/\bSL\s*(\d+)/i)?.[1] || 0);
 
+  // Keep the Tarmac generations together in the expected order: SL8, SL7...
+  if (aSl !== bSl) return bSl - aSl;
 
-function populateGroupsetBrands() {
-  Object.keys(state.groupsets).forEach((brand) => {
-    const option = document.createElement("option");
+  const aTarmac = /tarmac/i.test(a.model) ? 0 : 1;
+  const bTarmac = /tarmac/i.test(b.model) ? 0 : 1;
+  if (aTarmac !== bTarmac) return aTarmac - bTarmac;
 
-    option.value = brand;
-    option.textContent = brand;
+  const aYear = Number(a.model_year || a.year || 0);
+  const bYear = Number(b.model_year || b.year || 0);
+  if (aYear !== bYear) return bYear - aYear;
 
-    groupsetBrandSelect.appendChild(option);
+  return `${a.model} ${a.generation}`.localeCompare(`${b.model} ${b.generation}`);
+}
+
+function generationRank(value) {
+  const match = String(value || "").match(/\b([A-Z])([0-9]+)\b/i);
+  if (!match) return 0;
+  return (match[1].toUpperCase().charCodeAt(0) * 100) + Number(match[2]);
+}
+
+function sortComponentsNewestFirst(a, b) {
+  const aYear = Number(a.year || a.model_year || 0);
+  const bYear = Number(b.year || b.model_year || 0);
+  if (aYear !== bYear) return bYear - aYear;
+
+  const aGeneration = generationRank(a.generation);
+  const bGeneration = generationRank(b.generation);
+  if (aGeneration !== bGeneration) return bGeneration - aGeneration;
+
+  const versionNumber = (item) => {
+    const match = `${item.model} ${item.series}`.match(/(?:R|XG|FC|ST|RD|FD)[-_]?([0-9]{3,4})/i);
+    return Number(match?.[1] || 0);
+  };
+  const aVersion = versionNumber(a);
+  const bVersion = versionNumber(b);
+  if (aVersion !== bVersion) return bVersion - aVersion;
+
+  return formatComponentOption(a).localeCompare(formatComponentOption(b));
+}
+
+function populateComponentSelectors() {
+  const records = Object.values(state.components).flat();
+  componentSelectors.forEach((type) => {
+    type.items = records
+      .filter((item) => type.categories.includes(item.category))
+      .sort(sortComponentsNewestFirst);
+    type.select.replaceChildren(new Option(
+      type.items.length ? `Select ${type.label.toLowerCase()}` : "No data available yet", ""
+    ));
+    type.items.forEach((item, index) => {
+      const weight = validWeight(item.weight_g) ? `${item.weight_g} g` : "Weight unavailable";
+      type.select.add(new Option(`${formatComponentOption(item)} · ${weight}`, String(index)));
+    });
+    type.select.disabled = !type.items.length;
   });
 }
 
-
+componentSelectors.forEach((type) => {
+  type.select.addEventListener("change", () => {
+    selectedComponent = type.select.value === "" ? null : type.items[Number(type.select.value)];
+    if (selectedComponent) {
+      selectedComponents.set(type.id, selectedComponent);
+    } else {
+      selectedComponents.delete(type.id);
+    }
+    componentInfo.classList.toggle("hidden", !selectedComponent);
+    if (selectedComponent) showComponent(selectedComponent);
+  });
+});
 
 frameBrandSelect.addEventListener("change", () => {
   const brand = frameBrandSelect.value;
@@ -128,7 +196,7 @@ frameBrandSelect.addEventListener("change", () => {
   frameInfo.classList.add("hidden");
 
   frameModelSelect.innerHTML = `
-    <option value="">Select frame</option>
+    <option value="">Select frameset</option>
   `;
 
   if (!brand) {
@@ -136,9 +204,11 @@ frameBrandSelect.addEventListener("change", () => {
     return;
   }
 
-  const frames = state.frames[brand];
+  const frameset = state.frameset[brand]
+    .slice()
+    .sort(sortFramesetsNewestFirst);
 
-  frames.forEach((frame, index) => {
+  frameset.forEach((frame, index) => {
     const option = document.createElement("option");
 
     option.value = index;
@@ -156,8 +226,6 @@ frameBrandSelect.addEventListener("change", () => {
   frameModelSelect.disabled = false;
 });
 
-
-
 frameModelSelect.addEventListener("change", () => {
   const brand = frameBrandSelect.value;
   const index = frameModelSelect.value;
@@ -168,14 +236,14 @@ frameModelSelect.addEventListener("change", () => {
     return;
   }
 
-  const frame = state.frames[brand][index];
+  const frameset = state.frameset[brand]
+    .slice()
+    .sort(sortFramesetsNewestFirst)[index];
 
-  selectedFrame = frame;
+  selectedFrame = frameset;
 
-  showFrame(frame);
+  showFrame(frameset);
 });
-
-
 
 function showFrame(frame) {
   frameName.textContent =
@@ -188,22 +256,22 @@ function showFrame(frame) {
 
   if (weight === null) {
     frameWeight.textContent = "Weight unavailable";
+    frameIncludes.textContent = formatWeightIncludes(frame);
+    frameConfig.textContent += " · Complete frame + fork weight unavailable";
     addFrameButton.disabled = true;
   } else {
     frameWeight.textContent = `${weight} g`;
+    frameIncludes.textContent = formatWeightIncludes(frame);
     addFrameButton.disabled = false;
   }
 
-  frameSourceType.textContent =
+  framesetSourceType.textContent =
     getSourceLabel(frame);
 
-  frameSource.href =
-    frame.source_url || "#";
+  setSourceLink(framesetSource, frame.source_url);
 
   frameInfo.classList.remove("hidden");
 }
-
-
 
 function buildFrameDescription(frame) {
   const parts = [];
@@ -226,107 +294,50 @@ function buildFrameDescription(frame) {
   return parts.join(" · ");
 }
 
+const INCLUDE_LABELS = {
+  frame: "cuadro",
+  fork: "horquilla",
+  seatpost: "tija",
+  seat_clamp: "cierre de tija",
+  chainrings: "platos",
+  calipers: "pinzas",
+  battery: "batería",
+  cables: "cables",
+  charger: "cargador"
+};
 
+function formatWeightIncludes(item) {
+  const parts = [];
+  const includes = Array.isArray(item.includes)
+    ? item.includes.map((value) => INCLUDE_LABELS[value] || String(value).replaceAll("_", " "))
+    : [];
+
+  if (includes.length) {
+    parts.push(`Incluye ${includes.join(" + ")}`);
+  }
+
+  if (item.weight_scope) {
+    parts.push(item.weight_scope);
+  }
+
+  return parts.join(" · ");
+}
+
+function validWeight(weight) {
+  return typeof weight === "number" && Number.isFinite(weight) && weight > 0;
+}
 
 function getFrameWeight(frame) {
-
-  if (
-    typeof frame.frameset_weight_g === "number"
-  ) {
-    return frame.frameset_weight_g;
+  if (validWeight(frame.frame_fork_weight_g)) return frame.frame_fork_weight_g;
+  if (validWeight(frame.frameset_weight_g)) return frame.frameset_weight_g;
+  if (validWeight(frame.frame_weight_g) && validWeight(frame.fork_weight_g)) {
+    return frame.frame_weight_g + frame.fork_weight_g;
   }
-
-  if (
-    typeof frame.frame_weight_g === "number" &&
-    typeof frame.fork_weight_g === "number"
-  ) {
-    return (
-      frame.frame_weight_g +
-      frame.fork_weight_g
-    );
-  }
-
-  if (
-    typeof frame.frame_weight_g === "number"
-  ) {
-    return frame.frame_weight_g;
-  }
-
   return null;
 }
 
-
-
-groupsetBrandSelect.addEventListener("change", () => {
-  const brand = groupsetBrandSelect.value;
-
-  selectedGroupsetComponent = null;
-
-  groupsetInfo.classList.add("hidden");
-
-  groupsetComponentSelect.innerHTML = `
-    <option value="">Select component</option>
-  `;
-
-  if (!brand) {
-    groupsetComponentSelect.disabled = true;
-    return;
-  }
-
-  const components =
-    state.groupsets[brand];
-
-  const usableComponents =
-    components.filter((component) => {
-      return (
-        typeof component.weight_g === "number" &&
-        component.category !== "groupset_reference"
-      );
-    });
-
-  usableComponents.forEach((component) => {
-
-    const option =
-      document.createElement("option");
-
-    option.value = component.id;
-
-    option.textContent =
-      formatComponentOption(component);
-
-    groupsetComponentSelect.appendChild(option);
-
-  });
-
-  groupsetComponentSelect.disabled = false;
-});
-
-
-
-groupsetComponentSelect.addEventListener("change", () => {
-  const brand = groupsetBrandSelect.value;
-  const id = groupsetComponentSelect.value;
-
-  if (!id) {
-    selectedGroupsetComponent = null;
-    groupsetInfo.classList.add("hidden");
-    return;
-  }
-
-  const component =
-    state.groupsets[brand].find(
-      (item) => item.id === id
-    );
-
-  selectedGroupsetComponent = component;
-
-  showGroupsetComponent(component);
-});
-
-
-
 function formatComponentOption(component) {
-  const pieces = [];
+  const pieces = [component.brand];
 
   if (component.series) {
     pieces.push(component.series);
@@ -347,31 +358,38 @@ function formatComponentOption(component) {
   return pieces.join(" · ");
 }
 
+function showComponent(component) {
 
-
-function showGroupsetComponent(component) {
-
-  groupsetName.textContent =
+  componentName.textContent =
     `${component.brand} ${component.model || component.series}`;
 
-  groupsetConfig.textContent =
-    component.configuration || "";
+  componentConfig.textContent =
+    [component.configuration, component.notes,
+      component.category === "shift_brake_system" ? "Includes brake calipers: do not add them again." : ""
+    ].filter(Boolean).join(" · ");
 
-  groupsetWeight.textContent =
-    `${component.weight_g} g`;
+  componentWeight.textContent =
+    validWeight(component.weight_g) ? `${component.weight_g} g` : "Weight unavailable";
+  componentIncludes.textContent = formatWeightIncludes(component);
+  addComponentButton.disabled = !validWeight(component.weight_g);
 
-  groupsetSourceType.textContent =
+  componentSourceType.textContent =
     getSourceLabel(component);
 
-  groupsetSource.href =
-    component.source_url || "#";
+  setSourceLink(componentSource, component.source_url);
 
-  groupsetInfo.classList.remove("hidden");
+  componentInfo.classList.remove("hidden");
 }
 
-
+function setSourceLink(link, url) {
+  const available = typeof url === "string" && /^https?:\/\//i.test(url);
+  link.classList.toggle("hidden", !available);
+  if (available) link.href = url;
+  else link.removeAttribute("href");
+}
 
 function getSourceLabel(component) {
+  if (!component.source_url) return "Source unavailable";
 
   if (
     component.source_type === "official" &&
@@ -396,8 +414,6 @@ function getSourceLabel(component) {
   return "Source available";
 }
 
-
-
 addFrameButton.addEventListener("click", () => {
 
   if (!selectedFrame) {
@@ -412,7 +428,7 @@ addFrameButton.addEventListener("click", () => {
   }
 
   addToBuild({
-    id: `build-${Date.now()}`,
+    id: crypto.randomUUID(),
     category: "Frameset",
     name:
       `${selectedFrame.brand} ${selectedFrame.model}`,
@@ -425,34 +441,37 @@ addFrameButton.addEventListener("click", () => {
 
 });
 
+addComponentButton.addEventListener("click", () => {
+  const componentsToAdd = [...selectedComponents.entries()]
+    .filter(([, component]) => validWeight(component.weight_g));
 
-
-addGroupsetButton.addEventListener("click", () => {
-
-  if (!selectedGroupsetComponent) {
+  if (!componentsToAdd.length) {
     return;
   }
 
-  addToBuild({
-    id: `build-${Date.now()}`,
-    category:
-      selectedGroupsetComponent.category || "Groupset",
-    name:
-      `${selectedGroupsetComponent.brand} ${
-        selectedGroupsetComponent.model ||
-        selectedGroupsetComponent.series
-      }`,
-    meta:
-      selectedGroupsetComponent.configuration || "",
-    weight_g:
-      selectedGroupsetComponent.weight_g,
-    source_type:
-      selectedGroupsetComponent.source_type || null
+  componentsToAdd.forEach(([typeId, component]) => {
+    const type = componentSelectors.find((item) => item.id === typeId);
+    addToBuild({
+      id: crypto.randomUUID(),
+      category: type?.label || "Component",
+      name:
+        `${component.brand} ${
+          component.model ||
+          component.series
+        }`,
+      meta: component.configuration || "",
+      weight_g: component.weight_g,
+      source_type: component.source_type || null
+    });
   });
 
+  selectedComponents.clear();
+  selectedComponent = null;
+  componentSelectors.forEach((type) => {
+    type.select.value = "";
+  });
+  componentInfo.classList.add("hidden");
 });
-
-
 
 addCustomButton.addEventListener("click", () => {
 
@@ -476,7 +495,7 @@ addCustomButton.addEventListener("click", () => {
   }
 
   addToBuild({
-    id: `build-${Date.now()}`,
+    id: crypto.randomUUID(),
     category: "Custom",
     name,
     meta: "User entered",
@@ -489,16 +508,12 @@ addCustomButton.addEventListener("click", () => {
 
 });
 
-
-
 function addToBuild(item) {
 
   state.build.push(item);
 
   renderBuild();
 }
-
-
 
 function removeFromBuild(id) {
 
@@ -509,8 +524,6 @@ function removeFromBuild(id) {
 
   renderBuild();
 }
-
-
 
 function renderBuild() {
 
@@ -527,7 +540,6 @@ function renderBuild() {
     updateTotal();
     return;
   }
-
 
   state.build.forEach((item) => {
 
@@ -581,11 +593,8 @@ function renderBuild() {
 
   });
 
-
   updateTotal();
 }
-
-
 
 function updateTotal() {
 
@@ -606,16 +615,12 @@ function updateTotal() {
     `${Math.round(grams)} g`;
 }
 
-
-
 resetBuildButton.addEventListener("click", () => {
 
   state.build = [];
 
   renderBuild();
 });
-
-
 
 function escapeHTML(value) {
 
@@ -626,7 +631,5 @@ function escapeHTML(value) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
-
-
 
 loadData();

@@ -7,22 +7,24 @@
     "discipline": "road",
     "material": "carbon",
     "brake_type": "disc",
-    "frame_weight_g": 685,
-    "fork_weight_g": null,
-    "frameset_weight_g": null,
-    "reference_size": null,
+    "frame_weight_g": 780,
+    "fork_weight_g": 371,
+    "frame_fork_weight_g": 1151,
+    "frameset_weight_g": 1151,
+    "reference_size": "56",
     "paint": "production",
     "weight_type": "manufacturer",
     "source_type": "official",
     "configuration": "FACT 10r Carbon road frame",
     "includes": [
-      "frame"
+      "frame",
+      "fork"
     ],
-    "source_name": "Specialized",
-    "source_url": "https://www.specialized.com/es/es/cuadro-tarmac-sl8/p/4221552",
+    "source_name": "Specialized Tarmac SL8 Development white paper",
+    "source_url": "https://specialized.a.bigcontent.io/v1/static/ROAD-5793-White-Paper-2023-Tarmac-SL8",
     "verified": true,
     "verified_date": "2026-09-19",
-    "notes": "Specialized currently states a 685 g frame weight on the Tarmac SL8 frameset page. Actual weight can vary by size and colour."
+    "notes": "Specialized lists 780 g for the 10r frame and 371 g for the 10r fork with 240 mm steerer. Sum: 1,151 g before seatpost and hardware. Actual weights vary by size, colour and hardware."
   },
   {
     "id": "specialized-sworks-tarmac-sl8-12r",
@@ -33,8 +35,9 @@
     "material": "carbon",
     "brake_type": "disc",
     "frame_weight_g": 685,
-    "fork_weight_g": null,
-    "frameset_weight_g": 1380,
+    "fork_weight_g": 358,
+    "frame_fork_weight_g": 1043,
+    "frameset_weight_g": 1043,
     "reference_size": "56",
     "paint": "production painted",
     "weight_type": "manufacturer",
@@ -46,11 +49,11 @@
       "seatpost",
       "seat_clamp"
     ],
-    "source_name": "Specialized",
-    "source_url": "https://www.specialized.com/gb/en/s-works-tarmac-sl8-frameset-ready-to-paint/p/4277463",
+    "source_name": "Specialized Tarmac SL8 Development white paper",
+    "source_url": "https://specialized.a.bigcontent.io/v1/static/ROAD-5793-White-Paper-2023-Tarmac-SL8",
     "verified": true,
     "verified_date": "2026-09-19",
-    "notes": "Specialized lists a 685 g frame and 1.38 kg complete frameset in size 56. Actual weights vary by colour, size and component variation."
+    "notes": "Specialized lists 685 g for the 12r frame and 358 g for the 12r fork with 240 mm steerer. Sum: 1,043 g before seatpost and hardware. Actual weights vary by colour, size and component variation."
   },
   {
     "id": "specialized-crux-10r-current",
@@ -61,21 +64,24 @@
     "material": "carbon",
     "brake_type": "disc",
     "frame_weight_g": 825,
-    "fork_weight_g": null,
-    "frameset_weight_g": null,
+    "fork_weight_g": 400,
+    "frame_fork_weight_g": 1225,
+    "frameset_weight_g": 1430,
     "reference_size": null,
     "paint": "production",
     "weight_type": "manufacturer",
     "source_type": "official",
     "configuration": "FACT 10r Carbon gravel frame",
     "includes": [
-      "frame"
+      "frame",
+      "fork"
     ],
-    "source_name": "Specialized",
-    "source_url": "https://www.specialized.com/es/es/cuadro-crux-10r/p/4223491",
+    "source_name": "Specialized Crux Frameset product page",
+    "source_url": "https://www.specialized.com/au/en/crux-frameset/p/221363",
     "verified": true,
     "verified_date": "2026-09-19",
-    "notes": "Specialized states 825 g for the FACT 10r frame."
+    "weight_scope": "comparación cuadro + horquilla (talla 56, estimado)",
+    "notes": "Specialized lists the 10r frame at 825 g and the shared FACT 12r fork is around 400 g with a 56 cm steerer, giving a comparable frame + fork estimate of 1,225 g. The 1,430 g product frameset figure is a different package scope and is retained separately."
   },
   {
     "id": "specialized-sworks-crux-12r-current",
@@ -86,21 +92,24 @@
     "material": "carbon",
     "brake_type": "disc",
     "frame_weight_g": 725,
-    "fork_weight_g": null,
-    "frameset_weight_g": null,
-    "reference_size": null,
+    "fork_weight_g": 400,
+    "frame_fork_weight_g": 1125,
+    "frameset_weight_g": 1500,
+    "reference_size": "56",
     "paint": "production",
     "weight_type": "manufacturer",
     "source_type": "official",
     "configuration": "FACT 12r Carbon gravel frame",
     "includes": [
-      "frame"
+      "frame",
+      "fork"
     ],
-    "source_name": "Specialized",
-    "source_url": "https://www.specialized.com/es/es/cuadro-s-works-crux/p/4223486",
+    "source_name": "Specialized S-Works Crux Frameset product page",
+    "source_url": "https://www.specialized.com/si/en/s-works-crux-frameset/p/221368",
     "verified": true,
     "verified_date": "2026-09-19",
-    "notes": "Specialized states 725 g for the FACT 12r frame."
+    "weight_scope": "comparación cuadro + horquilla (talla 56, estimado)",
+    "notes": "Specialized identifies the 725 g 12r frame; the shared FACT fork is around 400 g with a 56 cm steerer, giving a comparable frame + fork estimate of 1,125 g. Specialized's 1,500 g product figure includes the Roval Alpinist seatpost, so it is retained as the package weight rather than used for this comparison. Actual weights vary by colour, size and component variation."
   },
   {
     "id": "specialized-sworks-crux-2019",
@@ -113,20 +122,20 @@
     "brake_type": "disc",
     "frame_weight_g": 900,
     "fork_weight_g": null,
-    "frameset_weight_g": null,
-    "reference_size": "56",
+    "frameset_weight_g": 1762,
+    "reference_size": "54",
     "paint": "production",
-    "weight_type": "manufacturer",
-    "source_type": "official",
+    "weight_type": "measured",
+    "source_type": "independent",
     "configuration": "FACT 11r Carbon, size 56",
     "includes": [
       "frame"
     ],
-    "source_name": "Specialized",
-    "source_url": "https://www.specialized.com/es/es/s-works-crux-frameset/p/154299",
+    "source_name": "The Pro's Closet measured frameset listing",
+    "source_url": "https://www.theproscloset.com/products/specialized-s-works-crux-54cm-frameset-2019",
     "verified": true,
     "verified_date": "2026-09-19",
-    "notes": "Specialized states approximately 900 g for a size 56 frame; weight depends on size and colour."
+    "notes": "Listed weight 3 lb 14 oz (1,762 g) for a 54 cm 2019 S-Works CruX frameset. Used measured listing including supplied frameset hardware; Specialized separately claims approximately 900 g for the size-56 frame."
   }
   ,
 {
@@ -140,6 +149,7 @@
   "brake_type": "rim",
   "frame_weight_g": 970,
   "fork_weight_g": 390,
+  "frame_fork_weight_g": 1360,
   "frameset_weight_g": 1540,
   "reference_size": "52",
   "paint": "production",
@@ -167,7 +177,8 @@
   "brake_type": "rim",
   "frame_weight_g": 920,
   "fork_weight_g": 315,
-  "frameset_weight_g": null,
+  "frame_fork_weight_g": 1235,
+  "frameset_weight_g": 1235,
   "reference_size": null,
   "paint": "production",
   "weight_type": "measured",
@@ -180,7 +191,7 @@
   "source_url": "https://bikepartsreview.com/ProBikeParts17.html",
   "verified": true,
   "verified_date": "2026-09-19",
-  "notes": "Independent measured/reference weight. Specialized official archive confirms FACT 11r SL4 specification but does not provide a numeric weight."
+  "notes": "Independent measured/reference weight: 920 g frame plus 315 g fork = 1,235 g. Specialized official archive confirms FACT 11r SL4 specification."
 },
 {
   "id": "specialized-sworks-tarmac-sl6-rim-2018",
@@ -192,8 +203,9 @@
   "material": "carbon",
   "brake_type": "rim",
   "frame_weight_g": 733,
-  "fork_weight_g": null,
-  "frameset_weight_g": null,
+  "fork_weight_g": 325,
+  "frame_fork_weight_g": 1058,
+  "frameset_weight_g": 1058,
   "reference_size": "56",
   "paint": "production",
   "weight_type": "manufacturer",
@@ -202,11 +214,11 @@
   "includes": [
     "frame"
   ],
-  "source_name": "Specialized launch specification reported by road.cc",
-  "source_url": "https://road.cc/content/tech-news/225135-specialized-tarmac-2018-new-frame-200g-lighter-and-more-aero",
+  "source_name": "Specialized launch specification reported by Ducking Tiger",
+  "source_url": "https://www.duckingtiger.com/specialized-s-works-tarmac-sl6-preview/",
   "verified": true,
   "verified_date": "2026-09-19",
-  "notes": "Specialized claimed 733 g for a size 56 S-Works frame."
+  "notes": "Reported size-56 rim-brake weights: 733 g frame and 325 g fork. Sum: 1,058 g before seatpost and hardware."
 },
 {
   "id": "specialized-sworks-tarmac-sl7-2021",
@@ -218,8 +230,9 @@
   "material": "carbon",
   "brake_type": "disc",
   "frame_weight_g": 800,
-  "fork_weight_g": null,
-  "frameset_weight_g": null,
+  "fork_weight_g": 365,
+  "frame_fork_weight_g": 1165,
+  "frameset_weight_g": 1165,
   "reference_size": "56",
   "paint": "painted lightest colorway",
   "weight_type": "manufacturer",
@@ -232,7 +245,7 @@
   "source_url": "https://d1vy0qa05cdjr5.cloudfront.net/5ef23d00-310f-40b2-ae98-e7f4fb0a1626/USA/Tarmac%20SL7%20FAQpdf.pdf",
   "verified": true,
   "verified_date": "2026-09-19",
-  "notes": "Specialized states 800 g for the S-Works frame in the lightest painted colorways."
+  "notes": "Specialized's Tarmac SL8 white paper lists the SL7 fork at 365 g; combined with the published 800 g S-Works frame gives 1,165 g, excluding seatpost and hardware."
 },
 {
   "id": "specialized-tarmac-sl7-10r-2021",
@@ -244,8 +257,9 @@
   "material": "carbon",
   "brake_type": "disc",
   "frame_weight_g": 920,
-  "fork_weight_g": null,
-  "frameset_weight_g": null,
+  "fork_weight_g": 365,
+  "frame_fork_weight_g": 1285,
+  "frameset_weight_g": 1285,
   "reference_size": "56",
   "paint": "production",
   "weight_type": "manufacturer",
@@ -258,7 +272,7 @@
   "source_url": "https://d1vy0qa05cdjr5.cloudfront.net/5ef23d00-310f-40b2-ae98-e7f4fb0a1626/USA/Tarmac%20SL7%20FAQpdf.pdf",
   "verified": true,
   "verified_date": "2026-09-19",
-  "notes": "Specialized states 920 g for Pro/Expert FACT 10r frames."
+  "notes": "Specialized's Tarmac SL8 white paper lists the SL7 fork at 365 g; combined with the published 920 g FACT 10r frame gives 1,285 g, excluding seatpost and hardware."
 },
 {
   "id": "specialized-sworks-aethos",
@@ -270,20 +284,20 @@
   "brake_type": "disc",
   "frame_weight_g": 585,
   "fork_weight_g": null,
-  "frameset_weight_g": null,
+    "frameset_weight_g": 1112,
   "reference_size": "56",
   "paint": "production",
-  "weight_type": "manufacturer",
-  "source_type": "official",
+  "weight_type": "measured",
+  "source_type": "independent",
   "configuration": "S-Works Aethos frame, size 56",
   "includes": [
     "frame"
   ],
-  "source_name": "Specialized",
-  "source_url": "https://www.specialized.com/us/en/s-works-aethos-frameset-ready-to-paint/p/249166",
+  "source_name": "Cycle Exchange measured frameset listing",
+  "source_url": "https://www.cycleexchange.co.uk/products/specialized-s-works-aethos-56cm-2021",
   "verified": true,
   "verified_date": "2026-09-19",
-  "notes": "Specialized explicitly states 585 g for the S-Works frame in size 56."
+  "notes": "Measured 1,112 g as pictured for the 56 cm frameset, including frame, fork, headset, hanger, axles and brake adapter. Specialized's 585 g frame claim is retained as context."
 },
 {
   "id": "specialized-sworks-venge-2019",
@@ -295,21 +309,22 @@
   "material": "carbon",
   "brake_type": "disc",
   "frame_weight_g": 960,
-  "fork_weight_g": null,
-  "frameset_weight_g": null,
+  "fork_weight_g": 385,
+  "frame_fork_weight_g": 1345,
+    "frameset_weight_g": 1345,
   "reference_size": "56",
   "paint": "production",
   "weight_type": "manufacturer",
-  "source_type": "official",
+  "source_type": "independent",
   "configuration": "S-Works Venge Disc frame",
   "includes": [
     "frame"
   ],
-  "source_name": "Specialized claimed weight reported by BikeRadar",
-  "source_url": "https://www.bikeradar.com/news/2021-specialized-tarmac",
+  "source_name": "BikeRadar report of Specialized claimed weights",
+  "source_url": "https://www.bikeradar.com/news/specialized-s-works-venge-lighter-faster-and-all-in-on-shimano-discs",
   "verified": true,
   "verified_date": "2026-09-19",
-  "notes": "BikeRadar reports Specialized's claimed 960 g frame weight for the outgoing Venge."
+  "notes": "BikeRadar reports 960 g frame and 385 g fork for the 2019 S-Works Venge. Sum: 1,345 g, excluding seatpost and hardware."
 },
 {
   "id": "specialized-diverge-fact9r",
@@ -383,20 +398,20 @@
   "brake_type": "rim",
   "frame_weight_g": null,
   "fork_weight_g": null,
-  "frameset_weight_g": null,
-  "reference_size": null,
+  "frameset_weight_g": 1900,
+  "reference_size": "58",
   "paint": "production",
-  "weight_type": "unverified",
-  "source_type": "official",
+  "weight_type": "measured",
+  "source_type": "independent",
   "configuration": "S-Works FACT 11r Rider-First Engineered frame",
   "includes": [
     "frame"
   ],
-  "source_name": "Specialized",
-  "source_url": "https://www.specialized.com/us/en/s-works-tarmac-frameset/p/107430",
-  "verified": false,
+  "source_name": "Cycle Exchange measured frameset listing",
+  "source_url": "https://www.cycleexchange.co.uk/products/specialized-2015-tarmac-sl5-saxo-tinkoff-edition-58cm-58-2015",
+  "verified": true,
   "verified_date": "2026-09-19",
-  "notes": "Official Specialized archive confirms the model and specification but does not publish a numeric frame weight. SL6 launch material states the SL6 733 g frame was more than 200 g lighter than SL5, but no derived estimate is stored."
+  "notes": "Listed weight 1.9 kg for a 58 cm 2015 S-Works Tarmac SL5 frameset. Independent used listing including supplied frameset hardware; not a manufacturer size-56 claim."
 },
 {
   "id": "specialized-sworks-roubaix-sl8-2024",
@@ -439,7 +454,7 @@
   "brake_type": "disc",
   "frame_weight_g": null,
   "fork_weight_g": null,
-  "frameset_weight_g": null,
+  "frameset_weight_g": 2041,
   "reference_size": "56",
   "paint": "black production frame",
   "weight_type": "unverified_exact",
@@ -448,11 +463,11 @@
   "includes": [
     "frame"
   ],
-  "source_name": "Specialized",
-  "source_url": "https://www.specialized.com/us/en/s-works-roubaix-frameset/p/170278",
+  "source_name": "The Pro's Closet measured frameset listing",
+  "source_url": "https://www.theproscloset.com/products/8386435449024-specialized-roubaix-52cm-frameset-2020",
   "verified": false,
   "verified_date": "2026-09-19",
-  "notes": "Specialized states the size 56 black frame is below 900 g but does not publish an exact numeric value."
+  "notes": "Listed weight 4 lb 8 oz (2,041 g) for a 52 cm 2020 Roubaix frameset with Future Shock 1.5. Used measured listing including supplied frameset hardware; not a size-56 manufacturer claim."
 },
 {
   "id": "specialized-allez-sprint-current",
