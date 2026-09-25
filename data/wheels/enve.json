@@ -1,0 +1,42 @@
+[
+  {
+    "id": "enve-ses-45-current",
+    "brand": "ENVE",
+    "model": "SES 4.5",
+    "category": "road",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 53,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1432,
+    "yearFrom": 2023,
+    "yearTo": null,
+    "weightScope": "manufacturer wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "official_product_page",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://enve.com/collections/wheels/products/ses-4-5",
+    "verified": true,
+    "notes": "50/56 mm front/rear profile; published average includes ENVE hubset."
+  },
+  {
+    "id": "enve-g-ses-45-current",
+    "brand": "ENVE",
+    "model": "G SES 4.5",
+    "category": "gravel",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 52,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1565,
+    "yearFrom": 2024,
+    "yearTo": null,
+    "weightScope": "manufacturer wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "official_product_page",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://enve.com/products/g-ses-4-5",
+    "verified": true,
+    "notes": "49/55 mm front/rear profile; includes tape and valves with HG freehub."
+  }
+]

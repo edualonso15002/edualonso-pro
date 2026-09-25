@@ -1,0 +1,19 @@
+[
+  {
+    "id": "canyon-vcls-20-cf-grail",
+    "brand": "Canyon",
+    "model": "VCLS 2.0 CF Seatpost",
+    "componentType": "seatpost",
+    "material": "carbon",
+    "weightG": 220,
+    "variant": "27.2 mm · Grail/Endurace compatible family",
+    "yearFrom": 2021,
+    "yearTo": null,
+    "sourceType": "manufacturer_product_page",
+    "sourceQuality": "estimated",
+    "sourceName": "Canyon VCLS seatpost family",
+    "sourceUrl": "https://www.canyon.com/",
+    "verified": false,
+    "notes": "Canyon frame-specific family entry; exact post, length and rail clamp vary by Grail/Endurace generation."
+  }
+]

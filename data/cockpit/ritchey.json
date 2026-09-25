@@ -1,0 +1,4 @@
+[
+  {"id":"ritchey-superlogic-streem-380","brand":"Ritchey","model":"SuperLogic Streem","cockpitType":"handlebar","material":"carbon","weightG":230,"yearFrom":2023,"yearTo":null,"variant":"380 mm","widthMm":380,"sourceType":"official_product_page","sourceQuality":"manufacturer","sourceUrl":"https://ritcheylogic.com/bike/handlebars/superlogic-streem-handlebar","verified":true,"notes":"Published 230 g reference for 38 cm."},
+  {"id":"ritchey-wcs-venturemax-420","brand":"Ritchey","model":"WCS VentureMax","cockpitType":"handlebar","material":"aluminum","weightG":270,"yearFrom":2023,"yearTo":null,"variant":"420 mm","widthMm":420,"dropMm":102,"reachMm":75,"flareDegrees":24,"sourceType":"independent_review","sourceQuality":"independent_report","sourceUrl":"https://www.cyclingnews.com/features/best-gravel-handlebars-for-all-your-off-road-needs/","verified":true,"notes":"Published reference weight for 42 cm."}
+]

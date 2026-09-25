@@ -1,1 +1,5 @@
-[]
+[
+  {"brand":"Bianchi","model":"Oltre RC","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.bianchi.com/en/road/","notes":"Current road family entry; frame and fork weights require a published technical source."},
+  {"brand":"Bianchi","model":"Impulso PRO","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.bianchi.com/en/gravel/","notes":"Current gravel frameset entry; frame and fork weights require a published technical source."},
+  {"brand":"Bianchi","model":"Arcadex PRO","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.bianchi.com/en/gravel/","notes":"Current adventure-gravel family entry; frame and fork weights require a published technical source."}
+]

@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"BH","model":"RS1","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.bhbikes.com/en_GB/bikes/road","notes":"Road family inventory; verify size and configuration before adding a measured weight."},
+  {"brand":"BH","model":"GravelX","category":"gravel","frameWeight":1050,"referenceSize":"M","weightType":"manufacturer","sourceQuality":"manufacturer","sourceUrl":"https://www.bhbikes.com/en_CR/bikes/road/gravel/gravelx-at","notes":"BH lists 1,050 g for the medium GravelX frame. Fork weight is not published on the product page, so this remains a partial frame value."}
+]

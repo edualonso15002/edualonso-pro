@@ -16,5 +16,18 @@
     "sourceQuality": "manufacturer",
     "sourceUrl": "https://www.giant-bicycles.com/es/tcr-testing",
     "notes": "Giant reports 690 g frame and 330 g fork before paint, seatpost and frame hardware; the complete painted frameset test figure is 1,358.6 g."
+  },
+  {
+    "brand": "Giant",
+    "model": "Revolt Advanced",
+    "category": "gravel",
+    "frameWeight": 839,
+    "forkWeight": 385,
+    "framesetWeightG": 1224,
+    "referenceSize": "M",
+    "weightType": "manufacturer",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://www.giant-bicycles.com/tw/revolt-sl-testing",
+    "notes": "Giant Revolt Advanced SL testing data: 839 g frame and 385 g fork in medium. The range record is labelled Revolt Advanced; confirm exact SL generation before using as a final production value."
   }
 ]

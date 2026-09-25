@@ -10,23 +10,100 @@ const DATA_PATHS = {
     BMC: "/data/frameset/bmc.json",
     "Cervélo": "/data/frameset/cervelo.json",
     Colnago: "/data/frameset/colnago.json",
-    Pinarello: "/data/frameset/pinarello.json"
+    Pinarello: "/data/frameset/pinarello.json",
+    "Argon 18": "/data/frameset/argon-18.json",
+    BH: "/data/frameset/bh.json",
+    Bianchi: "/data/frameset/bianchi.json",
+    Boardman: "/data/frameset/boardman.json",
+    BULLS: "/data/frameset/bulls.json",
+    CUBE: "/data/frameset/cube.json",
+    Devinci: "/data/frameset/devinci.json",
+    Factor: "/data/frameset/factor.json",
+    Felt: "/data/frameset/felt.json",
+    FOCUS: "/data/frameset/focus.json",
+    GHOST: "/data/frameset/ghost.json",
+    GT: "/data/frameset/gt.json",
+    Ibis: "/data/frameset/ibis.json",
+    Kona: "/data/frameset/kona.json",
+    Lapierre: "/data/frameset/lapierre.json",
+    LOOK: "/data/frameset/look.json",
+    Marin: "/data/frameset/marin.json",
+    Merida: "/data/frameset/merida.json",
+    Niner: "/data/frameset/niner.json",
+    Norco: "/data/frameset/norco.json",
+    Pivot: "/data/frameset/pivot.json",
+    Radon: "/data/frameset/radon.json",
+    Ridley: "/data/frameset/ridley.json",
+    "Rocky Mountain": "/data/frameset/rocky-mountain.json",
+    ROSE: "/data/frameset/rose.json",
+    "Santa Cruz": "/data/frameset/santa-cruz.json",
+    Stevens: "/data/frameset/stevens.json",
+    TIME: "/data/frameset/time.json",
+    Wilier: "/data/frameset/wilier.json"
   },
 
   wheels: {
-    "DT Swiss": "/data/wheels/dt-swiss.json"
+    "DT Swiss": "/data/wheels/dt-swiss.json",
+    Zipp: "/data/wheels/zipp.json",
+    ENVE: "/data/wheels/enve.json",
+    HUNT: "/data/wheels/hunt.json",
+    Mavic: "/data/wheels/mavic.json",
+    Fulcrum: "/data/wheels/fulcrum.json",
+    Campagnolo: "/data/wheels/campagnolo.json",
+    Reserve: "/data/wheels/reserve.json",
+    Shimano: "/data/wheels/shimano.json",
+    Vision: "/data/wheels/vision.json",
+    CADEX: "/data/wheels/cadex.json",
+    Giant: "/data/wheels/giant.json",
+    Scope: "/data/wheels/scope.json"
   },
 
   cockpit: {
-    PRO: "/data/cockpit/pro.json"
+    PRO: "/data/cockpit/pro.json",
+    "3T": "/data/cockpit/3t.json",
+    Deda: "/data/cockpit/deda.json",
+    FSA: "/data/cockpit/fsa.json",
+    Zipp: "/data/cockpit/zipp.json",
+    ENVE: "/data/cockpit/enve.json",
+    Ritchey: "/data/cockpit/ritchey.json",
+    Easton: "/data/cockpit/easton.json",
+    Specialized: "/data/cockpit/specialized.json",
+    Giant: "/data/cockpit/giant.json",
+    Bontrager: "/data/cockpit/bontrager.json",
+    Syncros: "/data/cockpit/syncros.json",
+    Canyon: "/data/cockpit/canyon.json"
   },
 
   saddles: {
-    PRO: "/data/saddles/pro.json"
+    PRO: "/data/saddles/pro.json",
+    Fizik: "/data/saddles/fizik.json",
+    Specialized: "/data/saddles/specialized.json",
+    "Selle Italia": "/data/saddles/selle-italia.json",
+    Prologo: "/data/saddles/prologo.json",
+    "Selle San Marco": "/data/saddles/selle-san-marco.json",
+    WTB: "/data/saddles/wtb.json",
+    SMP: "/data/saddles/smp.json",
+    ISM: "/data/saddles/ism.json",
+    Bontrager: "/data/saddles/bontrager.json",
+    Giant: "/data/saddles/giant.json"
   },
 
   finishing: {
-    Core: "/data/finishing/core.json"
+    Core: "/data/finishing/core.json",
+    Continental: "/data/finishing/continental.json",
+    Schwalbe: "/data/finishing/schwalbe.json",
+    Vittoria: "/data/finishing/vittoria.json",
+    "3T": "/data/finishing/3t.json",
+    ENVE: "/data/finishing/enve.json",
+    Ritchey: "/data/finishing/ritchey.json",
+    Easton: "/data/finishing/easton.json",
+    Zipp: "/data/finishing/zipp.json",
+    Deda: "/data/finishing/deda.json",
+    FSA: "/data/finishing/fsa.json",
+    Specialized: "/data/finishing/specialized.json",
+    Canyon: "/data/finishing/canyon.json",
+    BMC: "/data/finishing/bmc.json",
+    Factor: "/data/finishing/factor.json"
   },
 
   components: {
@@ -292,23 +369,41 @@ function populateSaddleBrands() {
   });
 }
 
-function populateSeatpostSelector() {
+function populateSeatpostSelector(frame = null) {
   const seatposts = Object.values(state.finishing)
     .flat()
     .filter((item) => item.componentType === "seatpost")
     .sort(sortFinishingNewestFirst);
 
+  const specificIds = Array.isArray(frame?.seatpostIds)
+    ? frame.seatpostIds
+    : frame?.seatpostId
+      ? [frame.seatpostId]
+      : [];
+  const specific = specificIds.length
+    ? seatposts.filter((item) => specificIds.includes(item.id))
+    : [];
+  const remaining = specificIds.length
+    ? seatposts.filter((item) => !specificIds.includes(item.id))
+    : seatposts;
+  const records = [...specific, ...remaining];
+
   seatpostModelSelect.replaceChildren(new Option(
-    seatposts.length ? "Select seatpost" : "No data available yet",
+    records.length
+      ? (specific.length ? "Select seatpost (frame-specific first)" : "Select seatpost")
+      : "No data available yet",
     ""
   ));
 
-  seatposts.forEach((item, index) => {
-    seatpostModelSelect.add(new Option(formatFinishingOption(item), String(index)));
+  records.forEach((item, index) => {
+    const label = specificIds.includes(item.id)
+      ? `Frame-specific · ${formatFinishingOption(item)}`
+      : formatFinishingOption(item);
+    seatpostModelSelect.add(new Option(label, String(index)));
   });
 
-  seatpostModelSelect.disabled = !seatposts.length;
-  seatpostModelSelect.dataset.items = JSON.stringify(seatposts);
+  seatpostModelSelect.disabled = !records.length;
+  seatpostModelSelect.dataset.items = JSON.stringify(records);
 }
 
 function populateFinishingSelectors() {
@@ -443,6 +538,7 @@ frameBrandSelect.addEventListener("change", () => {
   frameModelSelect.innerHTML = `
     <option value="">Select frameset</option>
   `;
+  populateSeatpostSelector();
 
   if (!brand) {
     frameModelSelect.disabled = true;
@@ -473,6 +569,7 @@ frameModelSelect.addEventListener("change", () => {
   if (index === "") {
     selectedFrame = null;
     frameInfo.classList.add("hidden");
+    populateSeatpostSelector();
     return;
   }
 
@@ -482,6 +579,7 @@ frameModelSelect.addEventListener("change", () => {
 
   selectedFrame = frameset;
 
+  populateSeatpostSelector(frameset);
   showFrame(frameset);
 });
 
@@ -833,16 +931,22 @@ addSaddleButton.addEventListener("click", () => {
 });
 
 function showSeatpost(seatpost) {
+  const includedInFrame = Boolean(
+    selectedFrame?.seatpostIncludedInFrameset &&
+    selectedFrame?.seatpostId === seatpost.id
+  );
   seatpostName.textContent = `${seatpost.brand} ${formatFinishingOption(seatpost)}`;
   seatpostConfig.textContent = buildFinishingDescription(seatpost);
   seatpostWeight.textContent = validWeight(seatpost.weightG)
     ? `${seatpost.weightG} g`
     : "Weight unavailable";
-  seatpostIncludes.textContent = seatpost.variant || "";
+  seatpostIncludes.textContent = includedInFrame
+    ? `${seatpost.variant || ""} · Included in selected frameset`
+    : seatpost.variant || "";
   seatpostSourceType.textContent = seatpost.sourceQuality === "manufacturer"
     ? "✓ Manufacturer verified"
     : "Initial estimate";
-  addSeatpostButton.disabled = !validWeight(seatpost.weightG);
+  addSeatpostButton.disabled = includedInFrame || !validWeight(seatpost.weightG);
 
   setSourceLink(seatpostSource, seatpost.sourceUrl);
   seatpostInfo.classList.remove("hidden");
@@ -974,8 +1078,13 @@ function showFrame(frame) {
   const weight = getFrameWeight(frame);
 
   if (weight === null) {
-    frameWeight.textContent = "Weight unavailable";
-    frameIncludes.textContent = formatFrameIncludes(frame);
+    if (validWeight(frame.frameWeight ?? frame.frame_weight_g)) {
+      frameWeight.textContent = `${frame.frameWeight ?? frame.frame_weight_g} g`;
+      frameIncludes.textContent = "Frame only · Fork weight unavailable";
+    } else {
+      frameWeight.textContent = "Weight unavailable";
+      frameIncludes.textContent = formatFrameIncludes(frame);
+    }
     frameConfig.textContent += " · Complete frame + fork weight unavailable";
     addFrameButton.disabled = true;
   } else {

@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Lapierre","model":"Xelius","category":"road","frameWeight":845,"forkWeight":392,"framesetWeightG":1237,"referenceSize":"M","weightType":"manufacturer","sourceQuality":"independent_report","sourceUrl":"https://www.cyclingweekly.com/news/lapierre-releases-latest-version-of-its-xelius-road-bike-thats-lighter-than-ever-before","notes":"Xelius SL3 standard frame 845 g and matched fork 392 g for size M, as reported from Lapierre's claimed figures."},
+  {"brand":"Lapierre","model":"Crosshill","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.lapierre-bike.com/gb-en/bikes/gravel","notes":"Gravel family inventory; frameset weight not published on the range page."}
+]

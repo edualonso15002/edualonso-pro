@@ -16,5 +16,18 @@
     "sourceQuality": "manufacturer",
     "sourceUrl": "https://www.trekbikes.com/cz/cs_CZ/FAQ/madone-gen8/",
     "notes": "Trek lists the painted ML frame without hardware at 796 g and the fork at 350 g."
+  },
+  {
+    "brand": "Trek",
+    "model": "Checkpoint",
+    "category": "gravel",
+    "frameWeight": 1385,
+    "forkWeight": 536,
+    "framesetWeightG": 1921,
+    "referenceSize": "ML",
+    "weightType": "manufacturer_specification",
+    "sourceQuality": "manufacturer_specification",
+    "sourceUrl": "https://velopedia.com/bikes/trek/2025/checkpoint-sl-gen-3-frameset-900000800/",
+    "notes": "2025 Checkpoint SL Gen 3 published specifications: painted ML frame 1,385 g and fork 536 g. Generation and paint affect weight."
   }
 ]

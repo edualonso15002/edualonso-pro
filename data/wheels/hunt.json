@@ -1,0 +1,42 @@
+[
+  {
+    "id": "hunt-42-limitless-gravel-aero",
+    "brand": "HUNT",
+    "model": "42 Limitless Gravel Aero",
+    "category": "gravel",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 42,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1548,
+    "yearFrom": 2022,
+    "yearTo": null,
+    "weightScope": "manufacturer wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "official_product_page",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://us.huntbikewheels.com/products/hunt-42-limitless-gravel-aero-wheelset",
+    "verified": true,
+    "notes": "Published weight for 700c wheelset."
+  },
+  {
+    "id": "hunt-42-limitless-gravel-adventure",
+    "brand": "HUNT",
+    "model": "42 Limitless Gravel Adventure",
+    "category": "gravel_adventure",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 42,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1642,
+    "yearFrom": 2023,
+    "yearTo": null,
+    "weightScope": "manufacturer wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "official_product_page",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://us.huntbikewheels.com/products/hunt-42-limitless-gravel-adventure-wheelset",
+    "verified": true,
+    "notes": "Higher spoke-count adventure build; published weight."
+  }
+]

@@ -6,12 +6,14 @@
     "category": "road",
     "yearFrom": 2024,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_archive",
-    "sourceUrl": "https://www.colnago.com/en/collections/past-models",
-    "notes": "Road family inventory; frame and fork weights pending."
+    "frameWeight": 685,
+    "forkWeight": 342,
+    "framesetWeightG": 1027,
+    "referenceSize": "485",
+    "weightType": "manufacturer",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://www.cyclingweekly.com/products/meet-tadej-pogacars-new-weapon-colnagos-lightest-frame-ever-the-all-new-v5rs",
+    "notes": "Cycling Weekly reproduces Colnago's table: 685 g unpainted frame, 342 g fork and 1,027 g total frame kit in size 485."
   },
   {
     "brand": "Colnago",
@@ -20,12 +22,14 @@
     "category": "road",
     "yearFrom": 2022,
     "yearTo": 2024,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_archive",
-    "sourceUrl": "https://www.colnago.com/en/collections/past-models",
-    "notes": "Road family inventory; frame and fork weights pending."
+    "frameWeight": 798,
+    "forkWeight": 375,
+    "framesetWeightG": 1173,
+    "referenceSize": "485",
+    "weightType": "manufacturer",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://www.cyclingweekly.com/products/meet-tadej-pogacars-new-weapon-colnagos-lightest-frame-ever-the-all-new-v5rs",
+    "notes": "Cycling Weekly comparison table reports 798 g frame, 375 g fork and 1,173 g total frame kit in size 485."
   },
   {
     "brand": "Colnago",

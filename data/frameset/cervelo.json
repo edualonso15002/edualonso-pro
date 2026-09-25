@@ -6,12 +6,14 @@
     "category": "road",
     "yearFrom": 2023,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_archive",
-    "sourceUrl": "https://www.cervelo.com/en-US/support/archive",
-    "notes": "Official archive record. Frame and fork weights pending a technical source."
+    "frameWeight": 919,
+    "forkWeight": 374,
+    "framesetWeightG": 1293,
+    "referenceSize": "56",
+    "weightType": "manufacturer_claimed",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://www.allcarbontube.com/news/first-look-review-cerv-lo-soloist/",
+    "notes": "Published painted size 56 claim: 919 g frame and 374 g fork. Generation and paint affect the value."
   },
   {
     "brand": "Cervélo",
@@ -20,12 +22,14 @@
     "category": "road",
     "yearFrom": 2023,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_archive",
-    "sourceUrl": "https://www.cervelo.com/en-US/support/archive",
-    "notes": "Official archive record. Frame and fork weights pending a technical source."
+    "frameWeight": 657,
+    "forkWeight": 302,
+    "framesetWeightG": 959,
+    "referenceSize": "56",
+    "weightType": "manufacturer_claimed",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://www.cyclist.co.uk/reviews/cervelo-r5-review-2025",
+    "notes": "Painted size 56 report: 657 g frame and 302 g fork. Paint and hardware can move the measured value."
   },
   {
     "brand": "Cervélo",
@@ -48,12 +52,14 @@
     "category": "road",
     "yearFrom": 2021,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_archive",
-    "sourceUrl": "https://www.cervelo.com/en-US/support/archive",
-    "notes": "Official archive record. Frame and fork weights pending a technical source."
+    "frameWeight": 936,
+    "forkWeight": 370,
+    "framesetWeightG": 1306,
+    "referenceSize": "56",
+    "weightType": "manufacturer_claimed",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://www.cyclingnews.com/news/cervelo-caledonia-5-road-bike-first-look/",
+    "notes": "Size 56 published claim: 936 g frame and 370 g fork."
   },
   {
     "brand": "Cervélo",
@@ -62,12 +68,14 @@
     "category": "road",
     "yearFrom": 2021,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_archive",
-    "sourceUrl": "https://www.cervelo.com/en-US/support/archive",
-    "notes": "Official archive record. Frame and fork weights pending a technical source."
+    "frameWeight": 1031,
+    "forkWeight": 432,
+    "framesetWeightG": 1463,
+    "referenceSize": "56",
+    "weightType": "manufacturer_claimed",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://www.cyclingnews.com/news/cervelo-caledonia-5-road-bike-first-look/",
+    "notes": "Size 56 published claim: 1031 g frame and 432 g fork."
   },
   {
     "brand": "Cervélo",
@@ -132,12 +140,14 @@
     "category": "gravel",
     "yearFrom": 2019,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer",
-    "sourceUrl": "https://www.cervelo.com/en-US/bikes",
-    "notes": "Cervélo gravel family. Frame and fork weights pending a technical source."
+    "frameWeight": 1141,
+    "forkWeight": 452,
+    "framesetWeightG": 1593,
+    "referenceSize": "56",
+    "weightType": "manufacturer_claimed",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://escapecollective.com/2024-cervelo-aspero/",
+    "notes": "2024 size 56 published claim: 1141 g frame and 452 g fork. Generation-specific; earlier versions differ."
   },
   {
     "brand": "Cervélo",
@@ -146,11 +156,13 @@
     "category": "gravel",
     "yearFrom": 2021,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer",
-    "sourceUrl": "https://www.cervelo.com/en-US/bikes",
-    "notes": "Cervélo gravel family. Frame and fork weights pending a technical source."
+    "frameWeight": 990,
+    "forkWeight": 458,
+    "framesetWeightG": 1448,
+    "referenceSize": "56",
+    "weightType": "manufacturer_claimed",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://road.cc/content/tech-news/cervelo-updates-aspero-gravel-bike-heres-what-we-think-308093",
+    "notes": "Published 56 cm claim: 990 g frame and 458 g fork."
   }
 ]

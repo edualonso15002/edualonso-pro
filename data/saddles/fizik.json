@@ -1,0 +1,4 @@
+[
+  {"id":"fizik-vento-argo-00-140","brand":"Fizik","model":"Vento Argo 00","category":"road","material":"carbon","railMaterial":"carbon","widthMm":140,"weightG":165,"yearFrom":2024,"yearTo":null,"sourceType":"official_product_page","sourceQuality":"manufacturer","sourceName":"Fizik Vento Argo 00","sourceUrl":"https://www.fizik.com/en-us/products/saddles-vento-argo-00-black-vargo00ea0","verified":true,"notes":"Full-carbon short-nose race saddle; size and rail length affect weight."},
+  {"id":"fizik-vento-argo-r1-140","brand":"Fizik","model":"Vento Argo R1","category":"road","material":"carbon_reinforced","railMaterial":"carbon","widthMm":140,"weightG":215,"yearFrom":2023,"yearTo":null,"sourceType":"official_product_page","sourceQuality":"manufacturer","sourceName":"Fizik Vento Argo R1","sourceUrl":"https://www.fizik.com/","verified":false,"notes":"Representative 140 mm configuration; verify current regional product page before final publication."}
+]

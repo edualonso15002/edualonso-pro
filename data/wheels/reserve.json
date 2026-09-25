@@ -1,0 +1,42 @@
+[
+  {
+    "id": "reserve-40-44-dt180",
+    "brand": "Reserve",
+    "model": "40|44",
+    "category": "road_endurance",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 42,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1381,
+    "yearFrom": 2023,
+    "yearTo": null,
+    "weightScope": "manufacturer wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "official_product_page",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://reservewheels.com/products/reserve-40-44-road-wheel",
+    "verified": true,
+    "notes": "DT180 hub build; manufacturer also lists DT240 1445 g and DT350 1472 g."
+  },
+  {
+    "id": "reserve-40-44-gr-dt180",
+    "brand": "Reserve",
+    "model": "40|44 GR",
+    "category": "gravel",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 42,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1376,
+    "yearFrom": 2024,
+    "yearTo": null,
+    "weightScope": "manufacturer wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "official_product_page",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://reservewheels.com/products/40-44-gr",
+    "verified": true,
+    "notes": "DT180 hub build; DT350 version is listed at 1454 g."
+  }
+]

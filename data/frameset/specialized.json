@@ -16,6 +16,7 @@
     "weight_type": "manufacturer",
     "source_type": "official",
     "configuration": "FACT 10r Carbon road frame",
+    "seatpostId": "specialized-roval-alpinist-sl8-300-0",
     "includes": [
       "frame",
       "fork"
@@ -43,6 +44,7 @@
     "weight_type": "manufacturer",
     "source_type": "official",
     "configuration": "FACT 12r Carbon frameset",
+    "seatpostId": "specialized-roval-alpinist-sl8-300-0",
     "includes": [
       "frame",
       "fork",
@@ -238,6 +240,7 @@
   "weight_type": "manufacturer",
   "source_type": "official",
   "configuration": "FACT 12r painted frame, size 56",
+  "seatpostId": "specialized-tarmac-sl7-carbon-post-300-20",
   "includes": [
     "frame"
   ],
@@ -265,6 +268,7 @@
   "weight_type": "manufacturer",
   "source_type": "official",
   "configuration": "FACT 10r frame",
+  "seatpostId": "specialized-tarmac-sl7-carbon-post-300-20",
   "includes": [
     "frame"
   ],
@@ -430,6 +434,8 @@
   "weight_type": "manufacturer",
   "source_type": "official",
   "configuration": "FACT 12R Carbon, size 56",
+  "seatpostId": "specialized-sworks-pave-sl-380-0",
+  "seatpostIncludedInFrameset": true,
   "includes": [
     "frame",
     "fork",
@@ -485,6 +491,8 @@
   "weight_type": "manufacturer",
   "source_type": "official",
   "configuration": "E5 Premium Aluminum Smartweld frameset, size 56",
+  "seatpostId": "specialized-tarmac-carbon-post-300-0-allez",
+  "seatpostIncludedInFrameset": true,
   "includes": [
     "frame",
     "fork",

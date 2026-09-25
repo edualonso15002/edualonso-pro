@@ -6,12 +6,14 @@
     "category": "road",
     "yearFrom": 2021,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_catalog",
-    "sourceUrl": "https://pinarello.com/usa/en/bikes/road",
-    "notes": "Road family inventory; frame and fork weights pending."
+    "frameWeight": 996,
+    "forkWeight": 424,
+    "framesetWeightG": 1420,
+    "referenceSize": "56",
+    "weightType": "measured",
+    "sourceQuality": "independent_measured",
+    "sourceUrl": "https://ccache.cc/blogs/newsroom/pinarello-dogma-f-actual-weight-and-initial-impressions",
+    "notes": "Independent scale measurement: 996 g frame including hanger and bottle bolts, plus 424 g uncut fork including compressor and crown race. Combined value is configuration-specific."
   },
   {
     "brand": "Pinarello",

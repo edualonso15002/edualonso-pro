@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"GT","model":"GTR","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://gtbicycles.com/collections/road-bikes","notes":"Road family inventory; frameset weight not published on the range page."},
+  {"brand":"GT","model":"Grade","category":"gravel","frameWeight":1067,"forkWeight":488,"framesetWeightG":1555,"referenceSize":"M","weightType":"measured","sourceQuality":"independent_measured","sourceUrl":"https://www.tour-magazin.de/en/gravel-bike/test-2015-gravel-bikes-gt-grade-carbon-ultegra-on-test/","notes":"TOUR test table reports 1,067 g frame and 488 g fork; steering bearing weight excluded from stored frameset value. Generation-specific measurement."}
+]

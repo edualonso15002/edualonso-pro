@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Rocky Mountain","model":"Solo","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.bikes.com/en-ca/bikes/solo","notes":"Drop-bar/all-road family inventory; dedicated road frameset weight not published."},
+  {"brand":"Rocky Mountain","model":"Solo","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.bikes.com/en-ca/bikes/solo","notes":"Gravel-capable drop-bar platform; frameset weight not published on the product page."}
+]

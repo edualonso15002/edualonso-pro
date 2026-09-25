@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fulcrum-wind-42-current",
+    "brand": "Fulcrum",
+    "model": "Wind 42",
+    "category": "road",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 42,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1510,
+    "yearFrom": 2024,
+    "yearTo": null,
+    "weightScope": "manufacturer wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "official_product_page",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://www.fulcrumwheels.com/en/wheels/triathlon-wheels/wind-42",
+    "verified": true,
+    "notes": "Published pair weight; HG, XDR and N3W versions available."
+  }
+]

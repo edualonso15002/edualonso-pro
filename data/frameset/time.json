@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"TIME","model":"Alpe d'Huez","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.timebicycles.com/collections/road-bikes","notes":"Road climbing family inventory; frameset weight varies by size and finish."},
+  {"brand":"TIME","model":"ADHX","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.timebicycles.com/collections/gravel-bikes","notes":"Gravel family inventory; frameset weight varies by size and finish."}
+]

@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Devinci","model":"Leo","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.devinci.com/en/bikes/road/","notes":"Road family inventory; verify current market availability and frameset weight."},
+  {"brand":"Devinci","model":"Hatchet","category":"gravel","frameWeight":1135,"forkWeight":460,"framesetWeightG":1595,"referenceSize":"M","weightType":"manufacturer_claimed","sourceQuality":"independent_report","sourceUrl":"https://www.bikeradar.com/news/devinci-hatchet-gravel-bike","notes":"Devinci claimed medium carbon frame with hardware and paint at 1,135 g, plus cut Super Leggera fork at 460 g."}
+]

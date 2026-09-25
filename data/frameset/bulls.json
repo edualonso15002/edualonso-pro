@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"BULLS","model":"Alpine Hawk","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.bulls.de/en-gb/bikes/road","notes":"Road family inventory; frameset weight not published on the range page."},
+  {"brand":"BULLS","model":"Grinder","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.bulls.de/en-gb/bikes/gravel","notes":"Gravel family inventory; frameset weight not published on the range page."}
+]

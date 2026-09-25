@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"LOOK","model":"795 Blade RS","category":"road","frameWeight":890,"forkWeight":425,"framesetWeightG":1315,"referenceSize":"S","weightType":"manufacturer","sourceQuality":"manufacturer","sourceUrl":"https://www.lookcycle.com/ja-ja/products/blade-rs-2/795-blade-rs-frameset","notes":"LOOK lists 890 g frame and 1,315 g frame + fork in size S; fork is the derived difference."},
+  {"brand":"LOOK","model":"765 Gravel RS","category":"gravel","frameWeight":1200,"forkWeight":350,"framesetWeightG":1550,"weightType":"manufacturer","sourceQuality":"manufacturer","sourceUrl":"https://www.lookcycle.com/download/BOOK_765-GRAVEL-RS_E-765-GRAVEL_MY21_EN_DIGITAL.pdf","notes":"Published claimed weights: 1,200 g frame and 350 g uncut fork."}
+]

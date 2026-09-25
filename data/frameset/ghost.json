@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"GHOST","model":"Road Rage","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.ghost-bikes.com/en/bikes/road","notes":"Road/all-road family inventory; frameset weight not published on the range page."},
+  {"brand":"GHOST","model":"Kato Gravel","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.ghost-bikes.com/en/bikes/gravel","notes":"Gravel family inventory; frameset weight not published on the range page."}
+]

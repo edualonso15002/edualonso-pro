@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Wilier","model":"Filante SLR","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://wilier.com/en/collections/road-bikes","notes":"Road aero family inventory; frameset weight varies by size and finish."},
+  {"brand":"Wilier","model":"Rave SLR","category":"gravel","frameWeight":950,"forkWeight":415,"framesetWeightG":1365,"referenceSize":"M","weightType":"manufacturer","sourceQuality":"manufacturer","sourceUrl":"https://api.wilier.com/media/2458/CatBici_WIlier_243x297_EN_low.pdf","notes":"Wilier technical catalogue: painted size M frame 950 g ±2% and fork 415 g ±2%; combined value excludes handlebar and seatpost."}
+]

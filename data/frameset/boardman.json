@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Boardman","model":"S LR","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.boardmanbikes.com/gb-en/bikes/road-bikes/","notes":"Road family inventory; frameset weight not published on the range page."},
+  {"brand":"Boardman","model":"ADV","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.boardmanbikes.com/gb-en/bikes/adventure-bikes/","notes":"Adventure/gravel family inventory; frameset weight not published on the range page."}
+]

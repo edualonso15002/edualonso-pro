@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Argon 18","model":"Krypton","category":"road","frameWeight":1308,"forkWeight":475,"framesetWeightG":1783,"referenceSize":"M","weightType":"manufacturer","sourceQuality":"manufacturer","sourceUrl":"https://storage.googleapis.com/argon18craft/files/Tech-Cards/kryptoncs-my2019-eng.pdf","notes":"Argon 18 technical card lists a 1,308 g frame; a period independent listing records a 475 g cut fork. Combined value is configuration-specific."},
+  {"brand":"Argon 18","model":"Dark Matter","category":"gravel","frameWeight":1460,"forkWeight":428,"framesetWeightG":1888,"weightType":"measured","sourceQuality":"independent_measured","sourceUrl":"https://www.youtube.com/watch?v=pWsTSL-haV0","notes":"Independent measurement: 1,460 g frame and 428 g fork. Frame includes removable hardware listed by the tester."}
+]

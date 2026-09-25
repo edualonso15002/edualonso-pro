@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"FOCUS","model":"Izalco Max","category":"road","frameWeight":890,"forkWeight":358,"framesetWeightG":1248,"referenceSize":"M","weightType":"manufacturer","sourceQuality":"manufacturer","sourceUrl":"https://www.scribd.com/document/532446084/FOCUS-IZALCO-MAX-Whitepaper-A4","notes":"Focus whitepaper figures for the 9-series: 890 g painted size M frame and 358 g painted medium fork; assembly parts excluded."},
+  {"brand":"FOCUS","model":"Atlas","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.focus-bikes.com/int_en/bikes/gravel-bikes","notes":"Gravel family inventory; frameset weight not published on the range page."}
+]

@@ -78,12 +78,11 @@
     "category": "road",
     "yearFrom": 2024,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_catalog",
-    "sourceUrl": "https://www.canyon.com/en-us/customer-service/faq/?fdid=bikeshelp-road",
-    "notes": "Current Aeroad family record; combined frameset weight pending."
+    "frameWeight": 960,
+    "weightType": "manufacturer_claimed_partial",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://velomore.dk/wp-content/uploads/2024/07/Canyon_Aeroad_Press_Kit_EN.pdf",
+    "notes": "Canyon press kit publishes a 960 g stealth-artwork CFR frame; fork weight is not included in the source, so this remains partial."
   },
   {
     "brand": "Canyon",
@@ -92,12 +91,14 @@
     "category": "road",
     "yearFrom": 2014,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_catalog",
-    "sourceUrl": "https://www.canyon.com/en-us/customer-service/faq/?fdid=bikeshelp-road",
-    "notes": "Endurance road family record; combined frameset weight pending."
+    "frameWeight": 980,
+    "forkWeight": 400,
+    "framesetWeightG": 1380,
+    "referenceSize": "M",
+    "weightType": "manufacturer_claimed",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://www.bicycling.com/bikes-gear/a44811264/canyon-endurace-review/",
+    "notes": "Canyon Endurace CF SLX figures reported for size M: 980 g frame and 400 g fork."
   },
   {
     "brand": "Canyon",
@@ -148,12 +149,14 @@
     "category": "gravel",
     "yearFrom": 2026,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_catalog",
-    "sourceUrl": "https://www.canyon.com/en-us/customer-service/faq/?fdid=sf-bike-models-gravel",
-    "notes": "Third-generation Grail family record; combined frameset weight pending."
+    "frameWeight": 992,
+    "forkWeight": 428,
+    "framesetWeightG": 1420,
+    "referenceSize": "XS",
+    "weightType": "manufacturer",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://www.canyon.com/en-mx/gravel-bikes/race/grail/cfr/grail-cfr-di2/4154.html",
+    "notes": "Current Grail CFR product page lists 992 g frame and 428 g fork for the displayed configuration; combined value excludes cockpit and seatpost."
   },
   {
     "brand": "Canyon",
@@ -176,12 +179,14 @@
     "category": "gravel",
     "yearFrom": 2026,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_catalog",
-    "sourceUrl": "https://www.canyon.com/en-us/customer-service/faq/?fdid=sf-bike-models-gravel",
-    "notes": "Current Grizl gravel adventure family record; combined frameset weight pending."
+    "frameWeight": 950,
+    "forkWeight": 430,
+    "framesetWeightG": 1380,
+    "referenceSize": "M/L",
+    "weightType": "manufacturer_plus_measured",
+    "sourceQuality": "mixed_sources",
+    "sourceUrl": "https://www.canyon.com/en-ie/gravel-bikes/adventure/grizl/trail/grizl-cf-slx-8-axs-trail/3701.html",
+    "notes": "Canyon publishes 950 g for the Grizl CF SLX frame; a component breakdown records a 430 g fork. Combined value is a practical estimate for the carbon rigid-fork configuration and is generation-specific."
   },
   {
     "brand": "Canyon",

@@ -1,19 +1,23 @@
 [
   {
+    "id": "bmc-teammachine-slr",
     "brand": "BMC",
     "model": "Teammachine",
     "generation": "SLR",
     "category": "road",
     "yearFrom": 2018,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_archive",
-    "sourceUrl": "https://us.bmc-switzerland.com/collections/bike-archive",
-    "notes": "Road family inventory; frame and fork weights pending."
+    "frameWeight": 997,
+    "forkWeight": 388,
+    "framesetWeightG": 1585,
+    "referenceSize": "54",
+    "weightType": "manufacturer",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://bmc-switzerland.pl/wp-content/uploads/2025/03/BMC-2025-Teammachine-SLR-DNA-EN.pdf",
+    "notes": "BMC 2025 technical document: Teammachine SLR frame 997 g, fork 388 g, frameset 1,585 g."
   },
   {
+    "id": "bmc-roadmachine-01",
     "brand": "BMC",
     "model": "Roadmachine",
     "generation": "01",
@@ -28,20 +32,24 @@
     "notes": "Road endurance family inventory; frame and fork weights pending."
   },
   {
+    "id": "bmc-teammachine-r-01",
     "brand": "BMC",
     "model": "Teammachine R",
     "generation": "01",
     "category": "road",
     "yearFrom": 2024,
     "yearTo": null,
-    "frameWeight": null,
-    "forkWeight": null,
-    "weightType": "not_published",
-    "sourceQuality": "manufacturer_archive",
-    "sourceUrl": "https://us.bmc-switzerland.com/collections/bike-archive",
-    "notes": "Aero road family inventory; frame and fork weights pending."
+    "frameWeight": 910,
+    "forkWeight": 395,
+    "framesetWeightG": 1305,
+    "referenceSize": "54",
+    "weightType": "manufacturer",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://bmc-switzerland.com/pages/platform/platform-teammachine-slr-01",
+    "notes": "BMC platform page lists painted size 54 Teammachine R 01 frame at 910 g and fork at 395 g; seatpost excluded."
   },
   {
+    "id": "bmc-kaius-01",
     "brand": "BMC",
     "model": "Kaius",
     "generation": "01",
@@ -53,11 +61,14 @@
     "forkWeight": 400,
     "referenceSize": "54",
     "weightType": "independent_measured",
+    "seatpostId": "bmc-kaius-01-seatpost-15",
+    "seatpostIncludedInFrameset": true,
     "sourceQuality": "independent",
     "sourceUrl": "https://www.cyclingweekly.com/products/bmc-throws-the-kitchen-sink-at-the-all-new-kaius-gravel-bike-platform",
     "notes": "Size 54 measured frame + fork + seatpost system at 1,469 g; frame 998 g and fork 400 g. The stored frameset weight excludes bottle cages, screws, axles, spacers, headset bearings, hanger and other hardware."
   },
   {
+    "id": "bmc-urs-01",
     "brand": "BMC",
     "model": "URS",
     "generation": "01",

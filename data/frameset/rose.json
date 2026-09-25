@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"ROSE","model":"X-Lite","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.rosebikes.com/bikes/road","notes":"Road race family inventory; frameset weight varies by configuration."},
+  {"brand":"ROSE","model":"Backroad","category":"gravel","frameWeight":1020,"forkWeight":425,"framesetWeightG":1445,"referenceSize":"M","weightType":"manufacturer_claimed","sourceQuality":"independent_report","sourceUrl":"https://road.cc/content/review/rose-backroad-grx-rx810-276217","notes":"Road.cc reports the claimed carbon frame weight around 1,020 g and fork 425 g for the 2020 Backroad generation."}
+]

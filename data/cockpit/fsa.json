@@ -1,0 +1,4 @@
+[
+  {"id":"fsa-k-wing-agx-400","brand":"FSA","model":"K-Wing AGX","cockpitType":"handlebar","material":"carbon","weightG":216,"yearFrom":2023,"yearTo":null,"variant":"400 mm","widthMm":400,"dropMm":115,"reachMm":76,"flareDegrees":12,"sourceType":"independent_review","sourceQuality":"independent_report","sourceUrl":"https://www.cyclingnews.com/features/best-gravel-handlebars-for-all-your-off-road-needs/","verified":true,"notes":"40 cm reference weight; sizes differ."},
+  {"id":"fsa-energy-stem-100","brand":"FSA","model":"Energy Stem","cockpitType":"stem","material":"aluminum","weightG":142,"yearFrom":2023,"yearTo":null,"variant":"100 mm","stemLengthMm":100,"sourceType":"manufacturer_catalog","sourceQuality":"manufacturer","sourceUrl":"https://fullspeedahead.com/en/","verified":false,"notes":"Common road stem inventory entry; verify exact angle and length before treating as exact."}
+]

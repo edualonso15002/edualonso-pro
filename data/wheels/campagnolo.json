@@ -1,0 +1,42 @@
+[
+  {
+    "id": "campagnolo-hyperon-current",
+    "brand": "Campagnolo",
+    "model": "Hyperon",
+    "category": "road",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 37,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1340,
+    "yearFrom": 2024,
+    "yearTo": null,
+    "weightScope": "manufacturer wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "official_product_page",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://www.campagnolo.com/es-es/hyperon/WWRHYPERON.html",
+    "verified": true,
+    "notes": "Published pair weight."
+  },
+  {
+    "id": "campagnolo-bora-x-current",
+    "brand": "Campagnolo",
+    "model": "Bora X",
+    "category": "gravel",
+    "brakeType": "disc",
+    "rimMaterial": "carbon",
+    "rimHeightMm": 50,
+    "wheelSize": "700c",
+    "wheelsetWeightG": 1430,
+    "yearFrom": 2026,
+    "yearTo": null,
+    "weightScope": "manufacturer claimed wheelset weight",
+    "tubelessReady": true,
+    "sourceType": "independent_review",
+    "sourceQuality": "independent_report",
+    "sourceUrl": "https://www.cyclingnews.com/cycling-tech-components/wheels-tyres/campagnolo-bora-x-wheelset-review/",
+    "verified": true,
+    "notes": "Claimed 1430 g; independent test measured 1463 g with valves and lockrings."
+  }
+]

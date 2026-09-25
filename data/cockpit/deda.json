@@ -1,0 +1,4 @@
+[
+  {"id":"deda-superzero-rs-420","brand":"Deda","model":"Superzero RS","cockpitType":"handlebar","material":"carbon","weightG":230,"yearFrom":2024,"yearTo":null,"variant":"420 mm","widthMm":420,"sourceType":"official_catalog","sourceQuality":"manufacturer","sourceUrl":"https://dedaelementi.com/media/wysiwyg/download/2026_Deda_Elementi_Catalogue_hd_v1.pdf","verified":true,"notes":"Catalog reference weight; width and DCR configuration affect the final value."},
+  {"id":"deda-superzero-stem-100","brand":"Deda","model":"Superzero Stem","cockpitType":"stem","material":"aluminum","weightG":118,"yearFrom":2024,"yearTo":null,"variant":"100 mm","stemLengthMm":100,"sourceType":"official_catalog","sourceQuality":"manufacturer","sourceUrl":"https://dedaelementi.com/media/wysiwyg/download/2026_Deda_Elementi_Catalogue_hd_v1.pdf","verified":true,"notes":"Reference catalog weight for 100 mm version."}
+]

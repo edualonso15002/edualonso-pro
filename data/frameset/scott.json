@@ -16,5 +16,18 @@
     "sourceQuality": "manufacturer",
     "sourceUrl": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-team-hmx-frame-set",
     "notes": "Scott lists approximate frame and fork weights of 690 g and 300 g."
+  },
+  {
+    "brand": "Scott",
+    "model": "Addict Gravel",
+    "category": "gravel",
+    "frameWeight": 990,
+    "forkWeight": 435,
+    "framesetWeightG": 1425,
+    "referenceSize": "M",
+    "weightType": "manufacturer",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://www.scott-sports.com/us/en/product/scott-addict-gravel-team-hmf-frame-set",
+    "notes": "Scott product page lists approximate frame 990 g and fork 435 g for the Addict Gravel Team HMF frameset."
   }
 ]

@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Marin","model":"Gestalt","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.marinbikes.com/bikes/family/gestalt","notes":"All-road/drop-bar family inventory; dedicated road frameset weight not published."},
+  {"brand":"Marin","model":"Headlands","category":"gravel","frameWeight":1390,"referenceSize":"56","weightType":"manufacturer_claimed","sourceQuality":"independent_report","sourceUrl":"https://www.bikeradar.com/reviews/bikes/gravel-bikes/marin-headlands-2","notes":"BikeRadar reports Marin's claimed painted size 56 frame at 1,390 g including bosses and grommets; fork weight is not published in the review."}
+]

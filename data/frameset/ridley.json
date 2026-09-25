@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Ridley","model":"Noah Fast","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.ridley-bikes.com/en_US/bikes/road","notes":"Aero road family inventory; frameset weight varies by configuration."},
+  {"brand":"Ridley","model":"Kanzo Fast","category":"gravel","frameWeight":1190,"forkWeight":490,"framesetWeightG":1680,"referenceSize":"M","weightType":"manufacturer","sourceQuality":"manufacturer","sourceUrl":"https://www.ridley-bikes.com/fr_CH/support/folders/63000157885/article/63000256221","notes":"Ridley frame passport: Kanzo Fast size M frame 1,190 g and fork 490 g. Real weight may vary by up to 10 percent."}
+]

@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Merida","model":"Scultura","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.merida-bikes.com/en/bikes/road","notes":"Road race family inventory; frameset weight varies by generation and size."},
+  {"brand":"Merida","model":"Silex","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.merida-bikes.com/en/bikes/gravel","notes":"Gravel family inventory; frameset weight varies by generation and size."}
+]

@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Stevens","model":"Izoard","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.stevensbikes.de/en/de/road/","notes":"Road family inventory; frameset weight not published on the range page."},
+  {"brand":"Stevens","model":"Camino","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.stevensbikes.de/en/de/gravel/","notes":"Gravel family inventory; frameset weight not published on the range page."}
+]

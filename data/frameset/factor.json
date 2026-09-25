@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Factor","model":"Ostro VAM","category":"road","frameWeight":820,"forkWeight":463,"framesetWeightG":1283,"referenceSize":"54","weightType":"manufacturer","seatpostId":"factor-ostro-vam-seatpost-0","sourceQuality":"manufacturer","sourceUrl":"https://road.cc/content/tech-news/factor-ostro-vam-benchmark-aero-lightweight-bike-306717","notes":"Published 54 cm painted frame and fork figures: 820 g + 463 g. Excludes the frame-specific OSTRO VAM seatpost, headset and cockpit."},
+  {"brand":"Factor","model":"Ostro Gravel","category":"gravel","frameWeight":1044,"forkWeight":532,"framesetWeightG":1576,"referenceSize":"56","weightType":"measured","sourceQuality":"independent_measured","sourceUrl":"https://www.tour-magazin.de/en/gravel-bike/factor-ostro-gravel-the-race-gravel-bike-in-the-tour-test/","notes":"TOUR test table reports frame/fork/steering-bearing weights of 1,044/532/88 g. Stored value is frame + fork."}
+]

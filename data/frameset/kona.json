@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Kona","model":"Rove","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://konaworld.com/en-us/rove","notes":"All-road/drop-bar family inventory; dedicated road frameset weight not published."},
+  {"brand":"Kona","model":"Libre","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://konaworld.com/en-us/libre","notes":"Gravel family inventory; frameset weight not published on the product page."}
+]

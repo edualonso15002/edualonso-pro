@@ -1,0 +1,4 @@
+[
+  {"id":"easton-ec90-alx-400","brand":"Easton","model":"EC90 ALX","cockpitType":"handlebar","material":"carbon","weightG":211,"yearFrom":2023,"yearTo":null,"variant":"400 mm","widthMm":400,"dropMm":123,"reachMm":80,"flareDegrees":10,"sourceType":"independent_review","sourceQuality":"independent_report","sourceUrl":"https://www.cyclingnews.com/features/best-gravel-handlebars-for-all-your-off-road-needs/","verified":true,"notes":"Published 40 cm reference weight."},
+  {"id":"easton-ec70-aero-400","brand":"Easton","model":"EC70 Aero","cockpitType":"handlebar","material":"carbon","weightG":250,"yearFrom":2022,"yearTo":null,"variant":"400 mm","widthMm":400,"sourceType":"manufacturer_product_page","sourceQuality":"estimated","sourceUrl":"https://eastoncycling.com/","verified":false,"notes":"Inventory estimate; exact current weight requires a model-specific technical sheet."}
+]

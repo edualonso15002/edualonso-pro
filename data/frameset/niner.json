@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Niner","model":"RLT 9 RDO","category":"road","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.ninerbikes.com/rlt-9-rdo-frameset/","notes":"Drop-bar road/gravel platform; listed as a frameset by Niner, weight pending."},
+  {"brand":"Niner","model":"RLT 9 Steel","category":"gravel","weightType":"not_published","sourceQuality":"manufacturer","sourceUrl":"https://www.ninerbikes.com/gravel/","notes":"Steel gravel platform; frameset weight pending."}
+]

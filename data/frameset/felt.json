@@ -1,1 +1,4 @@
-[]
+[
+  {"brand":"Felt","model":"FR","category":"road","frameWeight":684,"forkWeight":284,"framesetWeightG":968,"referenceSize":"56","weightType":"measured_report","sourceQuality":"independent_report","sourceUrl":"https://bikerumor.com/2017-felt-fr-vr-endurance-bikes-specs-pricing-actual-weights-first-rides/","notes":"FRD size 56 report: 684 g frame and 284 g fork. Felt quotes a complete frameset around 1180 g with headset and small hardware; calculator uses frame + fork."},
+  {"brand":"Felt","model":"Breed","category":"gravel","frameWeight":950,"referenceSize":"54","weightType":"manufacturer_claimed_partial","sourceQuality":"manufacturer","sourceUrl":"https://feltbicycles.com/collections/new-breed-gravel-lightest-bike","notes":"Current Breed FRD size 54 frame claim: 950 g. Fork weight is not published, so the calculator keeps this as frame-only until a technical fork value is verified."}
+]
