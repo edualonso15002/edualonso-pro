@@ -1,0 +1,20 @@
+[
+  {
+    "brand": "Trek",
+    "model": "Madone SLR",
+    "generation": "Gen 8",
+    "variant": "Matte Gloss / Carbon Smoke",
+    "category": "road",
+    "material": "carbon",
+    "brakeType": "disc",
+    "yearFrom": 2024,
+    "yearTo": null,
+    "frameWeight": 796,
+    "forkWeight": 350,
+    "referenceSize": "ML",
+    "weightType": "manufacturer",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://www.trekbikes.com/cz/cs_CZ/FAQ/madone-gen8/",
+    "notes": "Trek lists the painted ML frame without hardware at 796 g and the fork at 350 g."
+  }
+]

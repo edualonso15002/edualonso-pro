@@ -1,0 +1,72 @@
+[
+  {
+    "brand": "Pinarello",
+    "model": "Dogma F",
+    "generation": null,
+    "category": "road",
+    "yearFrom": 2021,
+    "yearTo": null,
+    "frameWeight": null,
+    "forkWeight": null,
+    "weightType": "not_published",
+    "sourceQuality": "manufacturer_catalog",
+    "sourceUrl": "https://pinarello.com/usa/en/bikes/road",
+    "notes": "Road family inventory; frame and fork weights pending."
+  },
+  {
+    "brand": "Pinarello",
+    "model": "F",
+    "generation": null,
+    "category": "road",
+    "yearFrom": 2023,
+    "yearTo": null,
+    "frameWeight": null,
+    "forkWeight": null,
+    "weightType": "not_published",
+    "sourceQuality": "manufacturer_catalog",
+    "sourceUrl": "https://pinarello.com/usa/en/bikes/road",
+    "notes": "Road family inventory; frame and fork weights pending."
+  },
+  {
+    "brand": "Pinarello",
+    "model": "X",
+    "generation": null,
+    "category": "road",
+    "yearFrom": 2023,
+    "yearTo": null,
+    "frameWeight": null,
+    "forkWeight": null,
+    "weightType": "not_published",
+    "sourceQuality": "manufacturer_catalog",
+    "sourceUrl": "https://pinarello.com/usa/en/bikes/road",
+    "notes": "Endurance road family inventory; frame and fork weights pending."
+  },
+  {
+    "brand": "Pinarello",
+    "model": "Grevil F",
+    "generation": null,
+    "category": "gravel",
+    "yearFrom": 2022,
+    "yearTo": null,
+    "frameWeight": null,
+    "forkWeight": null,
+    "weightType": "not_published",
+    "sourceQuality": "manufacturer_catalog",
+    "sourceUrl": "https://pinarello.com/usa/en/bikes/road",
+    "notes": "Gravel family inventory; frame and fork weights pending."
+  },
+  {
+    "brand": "Pinarello",
+    "model": "Dogma X",
+    "generation": null,
+    "category": "gravel",
+    "yearFrom": 2023,
+    "yearTo": null,
+    "frameWeight": null,
+    "forkWeight": null,
+    "weightType": "not_published",
+    "sourceQuality": "manufacturer_catalog",
+    "sourceUrl": "https://pinarello.com/usa/en/bikes/road",
+    "notes": "Endurance and rough-road family inventory; frame and fork weights pending."
+  }
+]

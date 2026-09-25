@@ -1,0 +1,20 @@
+[
+  {
+    "brand": "Giant",
+    "model": "TCR Advanced SL",
+    "generation": "10th generation",
+    "variant": "MY25 tested frameset",
+    "category": "road",
+    "material": "carbon",
+    "brakeType": "disc",
+    "yearFrom": 2025,
+    "yearTo": 2026,
+    "frameWeight": 690,
+    "forkWeight": 330,
+    "referenceSize": "M",
+    "weightType": "manufacturer_tested",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://www.giant-bicycles.com/es/tcr-testing",
+    "notes": "Giant reports 690 g frame and 330 g fork before paint, seatpost and frame hardware; the complete painted frameset test figure is 1,358.6 g."
+  }
+]

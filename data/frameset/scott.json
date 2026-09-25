@@ -1,0 +1,20 @@
+[
+  {
+    "brand": "Scott",
+    "model": "Addict RC",
+    "generation": "Team HMX",
+    "variant": "Frame set",
+    "category": "road",
+    "material": "carbon",
+    "brakeType": "disc",
+    "yearFrom": 2025,
+    "yearTo": null,
+    "frameWeight": 690,
+    "forkWeight": 300,
+    "referenceSize": null,
+    "weightType": "manufacturer_approximate",
+    "sourceQuality": "manufacturer",
+    "sourceUrl": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-team-hmx-frame-set",
+    "notes": "Scott lists approximate frame and fork weights of 690 g and 300 g."
+  }
+]

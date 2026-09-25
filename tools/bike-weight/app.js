@@ -1,6 +1,32 @@
 const DATA_PATHS = {
   frameset: {
-    Specialized: "/data/frameset/specialized.json"
+    Specialized: "/data/frameset/specialized.json",
+    Cannondale: "/data/frameset/cannondale.json",
+    Canyon: "/data/frameset/canyon.json",
+    Trek: "/data/frameset/trek.json",
+    Giant: "/data/frameset/giant.json",
+    Scott: "/data/frameset/scott.json",
+    Orbea: "/data/frameset/orbea.json",
+    BMC: "/data/frameset/bmc.json",
+    "Cervélo": "/data/frameset/cervelo.json",
+    Colnago: "/data/frameset/colnago.json",
+    Pinarello: "/data/frameset/pinarello.json"
+  },
+
+  wheels: {
+    "DT Swiss": "/data/wheels/dt-swiss.json"
+  },
+
+  cockpit: {
+    PRO: "/data/cockpit/pro.json"
+  },
+
+  saddles: {
+    PRO: "/data/saddles/pro.json"
+  },
+
+  finishing: {
+    Core: "/data/finishing/core.json"
   },
 
   components: {
@@ -11,8 +37,58 @@ const DATA_PATHS = {
 
 const state = {
   frameset: {},
+  wheels: {},
+  cockpit: {},
+  saddles: {},
+  finishing: {},
   components: {},
   build: []
+};
+
+const COCKPIT_TYPE_LABELS = {
+  integrated_cockpit: "Integrated cockpit",
+  handlebar: "Handlebar",
+  stem: "Stem"
+};
+
+const COMPONENT_BRAND_ORDER = {
+  Shimano: 0,
+  SRAM: 1
+};
+
+const COMPONENT_FAMILY_ORDER = {
+  Shimano: ["dura-ace", "ultegra", "105"],
+  SRAM: ["red", "force", "rival"]
+};
+
+const FINISHING_TYPES = [
+  { id: "tires", label: "Tires" },
+  { id: "pedals", label: "Pedals" },
+  { id: "tape-grips", label: "Bar tape / grips" },
+  { id: "tubes-tubeless", label: "Tubes / tubeless" },
+  { id: "bottle-cages", label: "Bottle cages" },
+  { id: "small-hardware", label: "Small hardware" }
+];
+
+const SPECIALIZED_YEAR_RANGES = {
+  "specialized-tarmac-sl8-10r": [2023, 2025],
+  "specialized-sworks-tarmac-sl8-12r": [2023, 2025],
+  "specialized-crux-10r-current": [2023, null],
+  "specialized-sworks-crux-12r-current": [2023, null],
+  "specialized-sworks-crux-2019": [2019, 2019],
+  "specialized-sworks-tarmac-sl3-2011": [2011, 2011],
+  "specialized-sworks-tarmac-sl4-measured": [2012, 2014],
+  "specialized-sworks-tarmac-sl6-rim-2018": [2018, 2018],
+  "specialized-sworks-tarmac-sl7-2021": [2021, 2021],
+  "specialized-tarmac-sl7-10r-2021": [2021, 2021],
+  "specialized-sworks-aethos": [2020, 2025],
+  "specialized-sworks-venge-2019": [2019, 2019],
+  "specialized-diverge-fact9r": [2023, null],
+  "specialized-sworks-diverge-str": [2023, 2024],
+  "specialized-sworks-tarmac-sl5-2015": [2015, 2015],
+  "specialized-sworks-roubaix-sl8-2024": [2024, 2025],
+  "specialized-sworks-roubaix-2020": [2020, 2020],
+  "specialized-allez-sprint-current": [2022, null]
 };
 
 const frameBrandSelect = document.getElementById("frame-brand");
@@ -26,6 +102,69 @@ const frameIncludes = document.getElementById("frame-includes");
 const framesetSourceType = document.getElementById("frame-source-type");
 const framesetSource = document.getElementById("frame-source");
 const addFrameButton = document.getElementById("add-frame");
+
+const wheelBrandSelect = document.getElementById("wheel-brand");
+const wheelModelSelect = document.getElementById("wheel-model");
+
+const wheelInfo = document.getElementById("wheel-info");
+const wheelName = document.getElementById("wheel-name");
+const wheelConfig = document.getElementById("wheel-config");
+const wheelWeight = document.getElementById("wheel-weight");
+const wheelIncludes = document.getElementById("wheel-includes");
+const wheelSourceType = document.getElementById("wheel-source-type");
+const wheelSource = document.getElementById("wheel-source");
+const addWheelButton = document.getElementById("add-wheel");
+
+const cockpitTypeSelect = document.getElementById("cockpit-type");
+const cockpitModelSelect = document.getElementById("cockpit-model");
+
+const cockpitInfo = document.getElementById("cockpit-info");
+const cockpitName = document.getElementById("cockpit-name");
+const cockpitConfig = document.getElementById("cockpit-config");
+const cockpitWeight = document.getElementById("cockpit-weight");
+const cockpitIncludes = document.getElementById("cockpit-includes");
+const cockpitSourceType = document.getElementById("cockpit-source-type");
+const cockpitSource = document.getElementById("cockpit-source");
+const addCockpitButton = document.getElementById("add-cockpit");
+
+const seatpostModelSelect = document.getElementById("seatpost-model");
+
+const seatpostInfo = document.getElementById("seatpost-info");
+const seatpostName = document.getElementById("seatpost-name");
+const seatpostConfig = document.getElementById("seatpost-config");
+const seatpostWeight = document.getElementById("seatpost-weight");
+const seatpostIncludes = document.getElementById("seatpost-includes");
+const seatpostSourceType = document.getElementById("seatpost-source-type");
+const seatpostSource = document.getElementById("seatpost-source");
+const addSeatpostButton = document.getElementById("add-seatpost");
+
+const saddleBrandSelect = document.getElementById("saddle-brand");
+const saddleModelSelect = document.getElementById("saddle-model");
+
+const saddleInfo = document.getElementById("saddle-info");
+const saddleName = document.getElementById("saddle-name");
+const saddleConfig = document.getElementById("saddle-config");
+const saddleWeight = document.getElementById("saddle-weight");
+const saddleIncludes = document.getElementById("saddle-includes");
+const saddleSourceType = document.getElementById("saddle-source-type");
+const saddleSource = document.getElementById("saddle-source");
+const addSaddleButton = document.getElementById("add-saddle");
+
+const finishingInfo = document.getElementById("finishing-info");
+const finishingName = document.getElementById("finishing-name");
+const finishingConfig = document.getElementById("finishing-config");
+const finishingWeight = document.getElementById("finishing-weight");
+const finishingIncludes = document.getElementById("finishing-includes");
+const finishingSourceType = document.getElementById("finishing-source-type");
+const finishingSource = document.getElementById("finishing-source");
+const addFinishingButton = document.getElementById("add-finishing");
+const selectAllFinishing = document.getElementById("select-all-finishing");
+
+const finishingSelectors = FINISHING_TYPES.map((type) => ({
+  ...type,
+  select: document.getElementById(type.id),
+  items: []
+}));
 
 // Add categories here to extend the component selectors; data stays in JSON.
 const COMPONENT_TYPES = [
@@ -60,13 +199,16 @@ const customWeightInput = document.getElementById("custom-weight");
 const addCustomButton = document.getElementById("add-custom");
 
 const buildList = document.getElementById("build-list");
+const buildCheck = document.getElementById("build-check");
 const totalWeight = document.getElementById("total-weight");
 const totalGrams = document.getElementById("total-grams");
 const resetBuildButton = document.getElementById("reset-build");
 
 let selectedFrame = null;
 let selectedComponent = null;
+let selectedFinishing = null;
 const selectedComponents = new Map();
+const selectedFinishingItems = new Map();
 
 async function loadJSON(path) {
   const response = await fetch(path);
@@ -93,6 +235,11 @@ async function loadData() {
     })
   ));
   populateFrameBrands();
+  populateWheelBrands();
+  populateCockpitTypes();
+  populateSeatpostSelector();
+  populateSaddleBrands();
+  populateFinishingSelectors();
   populateComponentSelectors();
   const status = document.getElementById("data-status");
   status.textContent = errors.length
@@ -102,7 +249,7 @@ async function loadData() {
 }
 
 function populateFrameBrands() {
-  Object.keys(state.frameset).forEach((brand) => {
+  Object.keys(DATA_PATHS.frameset).filter((brand) => state.frameset[brand]).forEach((brand) => {
     const option = document.createElement("option");
 
     option.value = brand;
@@ -110,6 +257,87 @@ function populateFrameBrands() {
 
     frameBrandSelect.appendChild(option);
   });
+}
+
+function populateWheelBrands() {
+  Object.keys(DATA_PATHS.wheels).filter((brand) => state.wheels[brand]).forEach((brand) => {
+    const option = document.createElement("option");
+
+    option.value = brand;
+    option.textContent = brand;
+
+    wheelBrandSelect.appendChild(option);
+  });
+}
+
+function populateCockpitTypes() {
+  Object.entries(COCKPIT_TYPE_LABELS).forEach(([type, label]) => {
+    const option = document.createElement("option");
+
+    option.value = type;
+    option.textContent = label;
+
+    cockpitTypeSelect.appendChild(option);
+  });
+}
+
+function populateSaddleBrands() {
+  Object.keys(DATA_PATHS.saddles).filter((brand) => state.saddles[brand]).forEach((brand) => {
+    const option = document.createElement("option");
+
+    option.value = brand;
+    option.textContent = brand;
+
+    saddleBrandSelect.appendChild(option);
+  });
+}
+
+function populateSeatpostSelector() {
+  const seatposts = Object.values(state.finishing)
+    .flat()
+    .filter((item) => item.componentType === "seatpost")
+    .sort(sortFinishingNewestFirst);
+
+  seatpostModelSelect.replaceChildren(new Option(
+    seatposts.length ? "Select seatpost" : "No data available yet",
+    ""
+  ));
+
+  seatposts.forEach((item, index) => {
+    seatpostModelSelect.add(new Option(formatFinishingOption(item), String(index)));
+  });
+
+  seatpostModelSelect.disabled = !seatposts.length;
+  seatpostModelSelect.dataset.items = JSON.stringify(seatposts);
+}
+
+function populateFinishingSelectors() {
+  const records = Object.values(state.finishing).flat();
+
+  finishingSelectors.forEach((type) => {
+    type.items = records
+      .filter((item) => item.componentType === type.id.replaceAll("-", "_"))
+      .sort(sortFinishingNewestFirst);
+
+    type.select.replaceChildren(new Option(
+      type.items.length ? `Select ${type.label.toLowerCase()}` : "No data available yet",
+      ""
+    ));
+
+    type.items.forEach((item, index) => {
+      type.select.add(new Option(formatFinishingOption(item), String(index)));
+    });
+
+    type.select.disabled = !type.items.length;
+
+    if (selectAllFinishing.checked && type.items.length) {
+      type.select.value = "0";
+      selectedFinishingItems.set(type.id, type.items[0]);
+    }
+  });
+
+  selectedFinishing = finishingSelectors.find((type) => type.items.length)?.items[0] || null;
+  if (selectedFinishing) showFinishing(selectedFinishing);
 }
 
 function sortFramesetsNewestFirst(a, b) {
@@ -125,8 +353,8 @@ function sortFramesetsNewestFirst(a, b) {
   const bTarmac = /tarmac/i.test(b.model) ? 0 : 1;
   if (aTarmac !== bTarmac) return aTarmac - bTarmac;
 
-  const aYear = Number(a.model_year || a.year || 0);
-  const bYear = Number(b.model_year || b.year || 0);
+  const aYear = Number(a.yearFrom || a.model_year || a.year || 0);
+  const bYear = Number(b.yearFrom || b.model_year || b.year || 0);
   if (aYear !== bYear) return bYear - aYear;
 
   return `${a.model} ${a.generation}`.localeCompare(`${b.model} ${b.generation}`);
@@ -139,6 +367,23 @@ function generationRank(value) {
 }
 
 function sortComponentsNewestFirst(a, b) {
+  const aBrand = COMPONENT_BRAND_ORDER[a.brand] ?? 99;
+  const bBrand = COMPONENT_BRAND_ORDER[b.brand] ?? 99;
+
+  if (aBrand !== bBrand) return aBrand - bBrand;
+
+  const familyRank = (item) => {
+    const familyNames = COMPONENT_FAMILY_ORDER[item.brand] || [];
+    const text = `${item.series} ${item.model}`.toLowerCase();
+    const familyIndex = familyNames.findIndex((family) => text.includes(family));
+
+    return familyIndex === -1 ? 99 : familyIndex;
+  };
+  const aFamily = familyRank(a);
+  const bFamily = familyRank(b);
+
+  if (aFamily !== bFamily) return aFamily - bFamily;
+
   const aYear = Number(a.year || a.model_year || 0);
   const bYear = Number(b.year || b.model_year || 0);
   if (aYear !== bYear) return bYear - aYear;
@@ -213,12 +458,7 @@ frameBrandSelect.addEventListener("change", () => {
 
     option.value = index;
 
-    const generation = frame.generation
-      ? ` · ${frame.generation}`
-      : "";
-
-    option.textContent =
-      `${frame.model}${generation}`;
+    option.textContent = formatFrameOption(frame);
 
     frameModelSelect.appendChild(option);
   });
@@ -245,9 +485,488 @@ frameModelSelect.addEventListener("change", () => {
   showFrame(frameset);
 });
 
+wheelBrandSelect.addEventListener("change", () => {
+  const brand = wheelBrandSelect.value;
+
+  wheelInfo.classList.add("hidden");
+
+  wheelModelSelect.innerHTML = `
+    <option value="">Select wheelset</option>
+  `;
+
+  if (!brand) {
+    wheelModelSelect.disabled = true;
+    return;
+  }
+
+  state.wheels[brand]
+    .slice()
+    .sort(sortWheelsNewestFirst)
+    .forEach((wheel, index) => {
+      const option = document.createElement("option");
+
+      option.value = index;
+      option.textContent = formatWheelOption(wheel);
+
+      wheelModelSelect.appendChild(option);
+    });
+
+  wheelModelSelect.disabled = false;
+});
+
+wheelModelSelect.addEventListener("change", () => {
+  const brand = wheelBrandSelect.value;
+  const index = wheelModelSelect.value;
+
+  if (index === "") {
+    wheelInfo.classList.add("hidden");
+    return;
+  }
+
+  const wheel = state.wheels[brand]
+    .slice()
+    .sort(sortWheelsNewestFirst)[index];
+
+  showWheel(wheel);
+});
+
+function sortWheelsNewestFirst(a, b) {
+  const aYear = Number(a.yearFrom || 0);
+  const bYear = Number(b.yearFrom || 0);
+
+  if (aYear !== bYear) return bYear - aYear;
+
+  return formatWheelOption(a).localeCompare(formatWheelOption(b));
+}
+
+function formatWheelOption(wheel) {
+  const years = wheel.yearFrom
+    ? `${wheel.yearFrom}${wheel.yearTo === wheel.yearFrom ? "" : `–${wheel.yearTo || "present"}`}`
+    : null;
+
+  return [wheel.model, wheel.rimHeightMm ? `${wheel.rimHeightMm} mm` : null, years]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+function buildWheelDescription(wheel) {
+  return [
+    wheel.category?.replaceAll("_", " "),
+    wheel.brakeType === "disc" ? "disc brake" : "rim brake",
+    wheel.rimMaterial?.replaceAll("_", " "),
+    wheel.wheelSize,
+    wheel.tubelessReady ? "tubeless ready" : null
+  ].filter(Boolean).join(" · ");
+}
+
+function showWheel(wheel) {
+  wheelName.textContent = `${wheel.brand} ${formatWheelOption(wheel)}`;
+  wheelConfig.textContent = buildWheelDescription(wheel);
+  wheelWeight.textContent = `${wheel.wheelsetWeightG} g`;
+  wheelIncludes.textContent = "Juego completo de ruedas";
+  wheelSourceType.textContent = wheel.sourceQuality === "manufacturer"
+    ? "✓ Manufacturer verified"
+    : "Source available";
+
+  setSourceLink(wheelSource, wheel.sourceUrl);
+  wheelInfo.classList.remove("hidden");
+}
+
+addWheelButton.addEventListener("click", () => {
+  const brand = wheelBrandSelect.value;
+  const index = wheelModelSelect.value;
+
+  if (index === "" || !brand) return;
+
+  const wheel = state.wheels[brand]
+    .slice()
+    .sort(sortWheelsNewestFirst)[index];
+
+  addToBuild({
+    id: crypto.randomUUID(),
+    category: "Wheels",
+    name: `${wheel.brand} ${wheel.model}`,
+    meta: formatWheelOption(wheel),
+    weight_g: wheel.wheelsetWeightG,
+    source_type: wheel.sourceType || null
+  });
+
+  wheelInfo.classList.add("hidden");
+});
+
+cockpitTypeSelect.addEventListener("change", () => {
+  const type = cockpitTypeSelect.value;
+
+  cockpitInfo.classList.add("hidden");
+  cockpitModelSelect.innerHTML = `
+    <option value="">Select component</option>
+  `;
+
+  if (!type) {
+    cockpitModelSelect.disabled = true;
+    return;
+  }
+
+  const records = Object.values(state.cockpit)
+    .flat()
+    .filter((item) => item.cockpitType === type)
+    .sort(sortCockpitNewestFirst);
+
+  records.forEach((cockpit, index) => {
+    const option = document.createElement("option");
+
+    option.value = index;
+    option.textContent = formatCockpitOption(cockpit);
+
+    cockpitModelSelect.appendChild(option);
+  });
+
+  cockpitModelSelect.disabled = !records.length;
+});
+
+cockpitModelSelect.addEventListener("change", () => {
+  const type = cockpitTypeSelect.value;
+  const index = cockpitModelSelect.value;
+
+  if (index === "") {
+    cockpitInfo.classList.add("hidden");
+    return;
+  }
+
+  const cockpit = Object.values(state.cockpit)
+    .flat()
+    .filter((item) => item.cockpitType === type)
+    .sort(sortCockpitNewestFirst)[index];
+
+  showCockpit(cockpit);
+});
+
+function sortCockpitNewestFirst(a, b) {
+  const aYear = Number(a.yearFrom || 0);
+  const bYear = Number(b.yearFrom || 0);
+
+  if (aYear !== bYear) return bYear - aYear;
+
+  return formatCockpitOption(a).localeCompare(formatCockpitOption(b));
+}
+
+function formatCockpitOption(cockpit) {
+  const years = cockpit.yearFrom
+    ? `${cockpit.yearFrom}${cockpit.yearTo === cockpit.yearFrom ? "" : `–${cockpit.yearTo || "present"}`}`
+    : null;
+
+  return [cockpit.model, cockpit.variant, years]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+function buildCockpitDescription(cockpit) {
+  const details = [
+    cockpit.material?.replaceAll("_", " "),
+    cockpit.widthMm ? `${cockpit.widthMm} mm width` : null,
+    cockpit.stemLengthMm ? `${cockpit.stemLengthMm} mm stem` : null,
+    cockpit.dropMm ? `${cockpit.dropMm} mm drop` : null,
+    cockpit.flareDegrees ? `${cockpit.flareDegrees}° flare` : null
+  ];
+
+  return details.filter(Boolean).join(" · ");
+}
+
+function showCockpit(cockpit) {
+  const includedParts = {
+    integrated_cockpit: "Integrated handlebar + stem",
+    handlebar: "Handlebar only",
+    stem: "Stem only"
+  };
+
+  cockpitName.textContent = `${cockpit.brand} ${formatCockpitOption(cockpit)}`;
+  cockpitConfig.textContent = buildCockpitDescription(cockpit);
+  cockpitWeight.textContent = `${cockpit.weightG} g`;
+  cockpitIncludes.textContent = includedParts[cockpit.cockpitType];
+  cockpitSourceType.textContent = cockpit.sourceQuality === "manufacturer"
+    ? "✓ Manufacturer verified"
+    : "Source available";
+
+  setSourceLink(cockpitSource, cockpit.sourceUrl);
+  cockpitInfo.classList.remove("hidden");
+}
+
+addCockpitButton.addEventListener("click", () => {
+  const type = cockpitTypeSelect.value;
+  const index = cockpitModelSelect.value;
+
+  if (index === "" || !type) return;
+
+  const cockpit = Object.values(state.cockpit)
+    .flat()
+    .filter((item) => item.cockpitType === type)
+    .sort(sortCockpitNewestFirst)[index];
+
+  addToBuild({
+    id: crypto.randomUUID(),
+    category: COCKPIT_TYPE_LABELS[type],
+    name: `${cockpit.brand} ${cockpit.model}`,
+    meta: formatCockpitOption(cockpit),
+    weight_g: cockpit.weightG,
+    source_type: cockpit.sourceType || null
+  });
+
+  cockpitInfo.classList.add("hidden");
+});
+
+saddleBrandSelect.addEventListener("change", () => {
+  const brand = saddleBrandSelect.value;
+
+  saddleInfo.classList.add("hidden");
+  saddleModelSelect.innerHTML = `
+    <option value="">Select saddle</option>
+  `;
+
+  if (!brand) {
+    saddleModelSelect.disabled = true;
+    return;
+  }
+
+  state.saddles[brand]
+    .slice()
+    .sort(sortSaddlesNewestFirst)
+    .forEach((saddle, index) => {
+      const option = document.createElement("option");
+
+      option.value = index;
+      option.textContent = formatSaddleOption(saddle);
+
+      saddleModelSelect.appendChild(option);
+    });
+
+  saddleModelSelect.disabled = false;
+});
+
+saddleModelSelect.addEventListener("change", () => {
+  const brand = saddleBrandSelect.value;
+  const index = saddleModelSelect.value;
+
+  if (index === "") {
+    saddleInfo.classList.add("hidden");
+    return;
+  }
+
+  const saddle = state.saddles[brand]
+    .slice()
+    .sort(sortSaddlesNewestFirst)[index];
+
+  showSaddle(saddle);
+});
+
+seatpostModelSelect.addEventListener("change", () => {
+  const index = seatpostModelSelect.value;
+  const seatposts = JSON.parse(seatpostModelSelect.dataset.items || "[]");
+
+  if (index === "") {
+    seatpostInfo.classList.add("hidden");
+    return;
+  }
+
+  showSeatpost(seatposts[Number(index)]);
+});
+
+function sortSaddlesNewestFirst(a, b) {
+  const aYear = Number(a.yearFrom || 0);
+  const bYear = Number(b.yearFrom || 0);
+
+  if (aYear !== bYear) return bYear - aYear;
+
+  return formatSaddleOption(a).localeCompare(formatSaddleOption(b));
+}
+
+function formatSaddleOption(saddle) {
+  const years = saddle.yearFrom
+    ? `${saddle.yearFrom}${saddle.yearTo === saddle.yearFrom ? "" : `–${saddle.yearTo || "present"}`}`
+    : null;
+
+  return [saddle.model, `${saddle.widthMm} mm`, years]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+function buildSaddleDescription(saddle) {
+  return [
+    saddle.category?.replaceAll("_", " "),
+    saddle.material?.replaceAll("_", " "),
+    saddle.railMaterial?.replaceAll("_", " ")
+  ].filter(Boolean).join(" · ");
+}
+
+function showSaddle(saddle) {
+  saddleName.textContent = `${saddle.brand} ${formatSaddleOption(saddle)}`;
+  saddleConfig.textContent = buildSaddleDescription(saddle);
+  saddleWeight.textContent = `${saddle.weightG} g`;
+  saddleIncludes.textContent = `${saddle.widthMm} mm saddle`;
+  saddleSourceType.textContent = saddle.sourceQuality === "manufacturer"
+    ? "✓ Manufacturer verified"
+    : "Source available";
+
+  setSourceLink(saddleSource, saddle.sourceUrl);
+  saddleInfo.classList.remove("hidden");
+}
+
+addSaddleButton.addEventListener("click", () => {
+  const brand = saddleBrandSelect.value;
+  const index = saddleModelSelect.value;
+
+  if (index === "" || !brand) return;
+
+  const saddle = state.saddles[brand]
+    .slice()
+    .sort(sortSaddlesNewestFirst)[index];
+
+  addToBuild({
+    id: crypto.randomUUID(),
+    category: "Saddle",
+    name: `${saddle.brand} ${saddle.model}`,
+    meta: formatSaddleOption(saddle),
+    weight_g: saddle.weightG,
+    source_type: saddle.sourceType || null
+  });
+
+  saddleInfo.classList.add("hidden");
+});
+
+function showSeatpost(seatpost) {
+  seatpostName.textContent = `${seatpost.brand} ${formatFinishingOption(seatpost)}`;
+  seatpostConfig.textContent = buildFinishingDescription(seatpost);
+  seatpostWeight.textContent = validWeight(seatpost.weightG)
+    ? `${seatpost.weightG} g`
+    : "Weight unavailable";
+  seatpostIncludes.textContent = seatpost.variant || "";
+  seatpostSourceType.textContent = seatpost.sourceQuality === "manufacturer"
+    ? "✓ Manufacturer verified"
+    : "Initial estimate";
+  addSeatpostButton.disabled = !validWeight(seatpost.weightG);
+
+  setSourceLink(seatpostSource, seatpost.sourceUrl);
+  seatpostInfo.classList.remove("hidden");
+}
+
+addSeatpostButton.addEventListener("click", () => {
+  const index = seatpostModelSelect.value;
+  const seatposts = JSON.parse(seatpostModelSelect.dataset.items || "[]");
+  const seatpost = index === "" ? null : seatposts[Number(index)];
+
+  if (!seatpost || !validWeight(seatpost.weightG)) return;
+
+  addToBuild({
+    id: crypto.randomUUID(),
+    category: "Seatpost",
+    name: `${seatpost.brand} ${seatpost.model}`,
+    meta: seatpost.variant || "",
+    weight_g: seatpost.weightG,
+    source_type: seatpost.sourceType || null
+  });
+
+  seatpostInfo.classList.add("hidden");
+});
+
+finishingSelectors.forEach((type) => {
+  type.select.addEventListener("change", () => {
+    const index = type.select.value;
+    selectedFinishing = index === "" ? null : type.items[Number(index)];
+
+    if (selectedFinishing) {
+      selectedFinishingItems.set(type.id, selectedFinishing);
+    } else {
+      selectedFinishingItems.delete(type.id);
+      selectAllFinishing.checked = false;
+    }
+
+    finishingInfo.classList.toggle("hidden", selectedFinishingItems.size === 0);
+
+    if (selectedFinishing) {
+      showFinishing(selectedFinishing);
+    }
+  });
+});
+
+selectAllFinishing.addEventListener("change", () => {
+  if (!selectAllFinishing.checked) return;
+
+  finishingSelectors.forEach((type) => {
+    if (!type.items.length) return;
+
+    type.select.value = "0";
+    selectedFinishingItems.set(type.id, type.items[0]);
+  });
+
+  selectedFinishing = finishingSelectors.find((type) => type.items.length)?.items[0] || null;
+  if (selectedFinishing) showFinishing(selectedFinishing);
+});
+
+function sortFinishingNewestFirst(a, b) {
+  const aYear = Number(a.yearFrom || 0);
+  const bYear = Number(b.yearFrom || 0);
+
+  if (aYear !== bYear) return bYear - aYear;
+
+  return formatFinishingOption(a).localeCompare(formatFinishingOption(b));
+}
+
+function formatFinishingOption(item) {
+  const weight = validWeight(item.weightG)
+    ? `${item.weightG} g`
+    : "Weight unavailable";
+
+  return [item.brand, item.model, item.variant, weight]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+function buildFinishingDescription(item) {
+  return [
+    item.material?.replaceAll("_", " "),
+    item.unitWeightG ? `${item.unitWeightG} g each` : null,
+    item.quantity ? `quantity ${item.quantity}` : null
+  ].filter(Boolean).join(" · ");
+}
+
+function showFinishing(item) {
+  finishingName.textContent = `${item.brand} ${item.model}`;
+  finishingConfig.textContent = buildFinishingDescription(item);
+  finishingWeight.textContent = validWeight(item.weightG)
+    ? `${item.weightG} g`
+    : "Weight unavailable";
+  finishingIncludes.textContent = item.variant || "";
+  finishingSourceType.textContent = item.sourceQuality === "manufacturer"
+    ? "✓ Manufacturer verified"
+    : "Initial estimate";
+  addFinishingButton.disabled = !Array.from(selectedFinishingItems.values())
+    .some((selectedItem) => validWeight(selectedItem.weightG));
+
+  setSourceLink(finishingSource, item.sourceUrl);
+  finishingInfo.classList.remove("hidden");
+}
+
+addFinishingButton.addEventListener("click", () => {
+  selectedFinishingItems.forEach((item, typeId) => {
+    if (!validWeight(item.weightG)) return;
+
+    const selectedType = finishingSelectors.find((type) => type.id === typeId);
+
+    addToBuild({
+      id: crypto.randomUUID(),
+      category: selectedType?.label || "Finishing component",
+      name: `${item.brand} ${item.model}`,
+      meta: item.variant || "",
+      weight_g: item.weightG,
+      source_type: item.sourceType || null
+    });
+  });
+
+  finishingInfo.classList.add("hidden");
+});
+
 function showFrame(frame) {
   frameName.textContent =
-    `${frame.brand} ${frame.model}`;
+    `${frame.brand} ${formatFrameOption(frame)}`;
 
   frameConfig.textContent =
     buildFrameDescription(frame);
@@ -256,42 +975,63 @@ function showFrame(frame) {
 
   if (weight === null) {
     frameWeight.textContent = "Weight unavailable";
-    frameIncludes.textContent = formatWeightIncludes(frame);
+    frameIncludes.textContent = formatFrameIncludes(frame);
     frameConfig.textContent += " · Complete frame + fork weight unavailable";
     addFrameButton.disabled = true;
   } else {
     frameWeight.textContent = `${weight} g`;
-    frameIncludes.textContent = formatWeightIncludes(frame);
+    frameIncludes.textContent = formatFrameIncludes(frame);
     addFrameButton.disabled = false;
   }
 
   framesetSourceType.textContent =
     getSourceLabel(frame);
 
-  setSourceLink(framesetSource, frame.source_url);
+  setSourceLink(framesetSource, frame.source_url || frame.sourceUrl);
 
   frameInfo.classList.remove("hidden");
 }
 
+function formatFrameOption(frame) {
+  const generation = frame.generation
+    ? (typeof frame.generation === "number" ? `Gen ${frame.generation}` : frame.generation)
+    : null;
+  const range = frame.yearFrom
+    ? [frame.yearFrom, frame.yearTo]
+    : SPECIALIZED_YEAR_RANGES[frame.id] || (frame.model_year ? [frame.model_year, frame.model_year] : null);
+  const years = range?.[0]
+    ? `${range[0]}${range[1] === range[0] ? "" : `–${range[1] || "present"}`}`
+    : null;
+  return [frame.model, generation, frame.variant, years].filter(Boolean).join(" · ");
+}
+
 function buildFrameDescription(frame) {
-  const parts = [];
+  const discipline = frame.category || frame.discipline;
+  const size = frame.referenceSize || frame.reference_size;
+  const parts = [discipline?.replaceAll("_", " "), size ? `Size ${size}` : null,
+    frame.brakeType || frame.brake_type];
+  if (frame.weightType) parts.push(frame.weightType.replaceAll("_", " "));
+  return parts.filter(Boolean).join(" · ");
+}
 
-  if (frame.generation) {
-    parts.push(frame.generation);
+// Support the new camelCase database and existing Specialized records.
+function getFrameParts(frame) {
+  return {
+    frame: frame.frameWeight ?? frame.frame_weight_g,
+    fork: frame.forkWeight ?? frame.fork_weight_g
+  };
+}
+
+function formatFrameIncludes(frame) {
+  const weights = getFrameParts(frame);
+  if (validWeight(weights.frame) && validWeight(weights.fork)) {
+    return `Frame ${weights.frame} g + fork ${weights.fork} g · Frame + fork`;
   }
-
-  if (frame.discipline) {
-    parts.push(
-      frame.discipline
-        .replaceAll("_", " ")
-    );
+  if (validWeight(frame.framesetWeightG) || validWeight(frame.framesetWeight) || validWeight(frame.frame_fork_weight_g) || validWeight(frame.frameset_weight_g)) {
+    return "Frame + fork · Complete frameset weight";
   }
-
-  if (frame.reference_size) {
-    parts.push(`Size ${frame.reference_size}`);
-  }
-
-  return parts.join(" · ");
+  if (getFrameWeight(frame) !== null) return formatWeightIncludes(frame);
+  return `Frame: ${validWeight(weights.frame) ? `${weights.frame} g` : "unavailable"} · Fork: ${validWeight(weights.fork) ? `${weights.fork} g` : "unavailable"}`;
 }
 
 const INCLUDE_LABELS = {
@@ -328,11 +1068,16 @@ function validWeight(weight) {
 }
 
 function getFrameWeight(frame) {
+  const weights = getFrameParts(frame);
+  if (validWeight(weights.frame) && validWeight(weights.fork)) {
+    return weights.frame + weights.fork;
+  }
+  // Preserve existing combined weights when separate measurements are missing.
+  if (validWeight(frame.framesetWeightG)) return frame.framesetWeightG;
+  if (validWeight(frame.framesetWeight)) return frame.framesetWeight;
   if (validWeight(frame.frame_fork_weight_g)) return frame.frame_fork_weight_g;
   if (validWeight(frame.frameset_weight_g)) return frame.frameset_weight_g;
-  if (validWeight(frame.frame_weight_g) && validWeight(frame.fork_weight_g)) {
-    return frame.frame_weight_g + frame.fork_weight_g;
-  }
+  if (validWeight(frame.weight)) return frame.weight;
   return null;
 }
 
@@ -389,25 +1134,27 @@ function setSourceLink(link, url) {
 }
 
 function getSourceLabel(component) {
-  if (!component.source_url) return "Source unavailable";
+  const sourceUrl = component.source_url || component.sourceUrl;
+  const sourceType = component.source_type || component.sourceQuality;
+  const weightType = component.weight_type || component.weightType;
+
+  if (!sourceUrl) return "Source unavailable";
 
   if (
-    component.source_type === "official" &&
-    component.weight_type === "manufacturer"
+    (sourceType === "official" || sourceType === "manufacturer") &&
+    (weightType === "manufacturer" || weightType === "manufacturer_tested" || weightType === "manufacturer_approximate")
   ) {
     return "✓ Manufacturer verified";
   }
 
   if (
-    component.source_type === "independent" &&
-    component.weight_type === "measured"
+    (sourceType === "independent" || sourceType === "independent_measured") &&
+    (weightType === "measured" || weightType === "independent_measured")
   ) {
     return "✓ Independently measured";
   }
 
-  if (
-    component.source_type === "official"
-  ) {
+  if (sourceType === "official" || sourceType === "manufacturer" || sourceType === "manufacturer_archive" || sourceType === "manufacturer_catalog") {
     return "✓ Official source";
   }
 
@@ -431,13 +1178,15 @@ addFrameButton.addEventListener("click", () => {
     id: crypto.randomUUID(),
     category: "Frameset",
     name:
-      `${selectedFrame.brand} ${selectedFrame.model}`,
+      `${selectedFrame.brand} ${formatFrameOption(selectedFrame)}`,
     meta:
       buildFrameDescription(selectedFrame),
     weight_g: weight,
     source_type:
-      selectedFrame.source_type || null
+      selectedFrame.source_type || selectedFrame.sourceQuality || null
   });
+
+  frameInfo.classList.add("hidden");
 
 });
 
@@ -467,9 +1216,6 @@ addComponentButton.addEventListener("click", () => {
 
   selectedComponents.clear();
   selectedComponent = null;
-  componentSelectors.forEach((type) => {
-    type.select.value = "";
-  });
   componentInfo.classList.add("hidden");
 });
 
@@ -537,6 +1283,7 @@ function renderBuild() {
       </div>
     `;
 
+    renderBuildCheck();
     updateTotal();
     return;
   }
@@ -593,7 +1340,71 @@ function renderBuild() {
 
   });
 
+  renderBuildCheck();
   updateTotal();
+}
+
+function renderBuildCheck() {
+  const requiredParts = [
+    {
+      label: "Frameset",
+      target: "frame-brand",
+      matches: (item) => item.category === "Frameset"
+    },
+    {
+      label: "Cockpit",
+      target: "cockpit-type",
+      matches: (item) => ["Integrated cockpit", "Handlebar", "Stem"].includes(item.category)
+    },
+    {
+      label: "Seatpost",
+      target: "seatpost-model",
+      matches: (item) => item.category === "Seatpost"
+    },
+    {
+      label: "Drivetrain & brakes",
+      target: "shifters",
+      matches: (item) => COMPONENT_TYPES.some((type) => type.label === item.category)
+    },
+    {
+      label: "Wheels",
+      target: "wheel-brand",
+      matches: (item) => item.category === "Wheels"
+    },
+    {
+      label: "Saddle",
+      target: "saddle-brand",
+      matches: (item) => item.category === "Saddle"
+    }
+  ];
+
+  const missing = requiredParts.filter((part) => !state.build.some(part.matches));
+  const completedCount = requiredParts.length - missing.length;
+
+  if (missing.length === 0) {
+    buildCheck.innerHTML = `
+      <div class="build-check-complete">
+        <strong>Bike check complete</strong>
+        <span>All essential sections have a component.</span>
+      </div>
+    `;
+    return;
+  }
+
+  buildCheck.innerHTML = `
+    <div class="build-check-header">
+      <strong>Build check</strong>
+      <span>${completedCount}/${requiredParts.length} essential sections</span>
+    </div>
+    <p class="build-check-message">You can still build a partial bike. Add the missing sections when ready:</p>
+    <ul class="build-check-list">
+      ${missing.map((part) => `
+        <li>
+          <a href="#${part.target}">${part.label} not selected</a>
+        </li>
+      `).join("")}
+    </ul>
+  `;
 }
 
 function updateTotal() {
@@ -632,4 +1443,5 @@ function escapeHTML(value) {
     .replaceAll("'", "&#039;");
 }
 
+renderBuildCheck();
 loadData();

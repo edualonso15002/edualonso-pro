@@ -149,6 +149,21 @@ input {
   margin-top: 22px;
 }
 
+.select-all-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.select-all-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--dark);
+}
+
 .selector-group label {
   grid-column: span 1;
   display: inline-flex;
@@ -222,6 +237,51 @@ input {
 
 .hidden {
   display: none;
+}
+
+.build-check {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fafaf8;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.build-check-header,
+.build-check-complete {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.build-check-header strong,
+.build-check-complete strong {
+  color: var(--text);
+}
+
+.build-check-message {
+  margin: 8px 0 6px;
+  line-height: 1.4;
+}
+
+.build-check-list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.build-check-list a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: #bdbdb5;
+  text-underline-offset: 3px;
+}
+
+.build-check-complete {
+  color: #4f6c55;
 }
 
 .component-main {

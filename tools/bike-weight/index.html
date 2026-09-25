@@ -109,7 +109,126 @@
 
 
         <div class="section-heading section-spacing">
-          <div><span class="step">02</span><h2>Drivetrain &amp; brakes</h2></div>
+          <div>
+            <span class="step">02</span>
+            <h2>Cockpit</h2>
+          </div>
+        </div>
+
+
+        <div class="selector-group">
+
+          <label for="cockpit-type">Type</label>
+
+          <select id="cockpit-type">
+            <option value="">Select type</option>
+          </select>
+
+
+          <label for="cockpit-model">Component</label>
+
+          <select id="cockpit-model" disabled>
+            <option value="">Select component</option>
+          </select>
+
+        </div>
+
+
+        <div id="cockpit-info" class="component-info hidden" aria-live="polite">
+
+          <div class="component-main">
+
+            <div>
+              <span id="cockpit-name" class="component-name"></span>
+              <span id="cockpit-config" class="component-config"></span>
+            </div>
+
+            <div class="weight-block">
+              <strong id="cockpit-weight"></strong>
+              <span id="cockpit-includes" class="weight-includes"></span>
+            </div>
+
+          </div>
+
+          <div class="source-row">
+            <span id="cockpit-source-type"></span>
+
+            <a
+              id="cockpit-source"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source
+            </a>
+          </div>
+
+          <button id="add-cockpit" class="add-button">
+            Add to build
+          </button>
+
+        </div>
+
+
+        <div class="section-heading section-spacing">
+
+          <div>
+            <span class="step">03</span>
+            <h2>Seatpost</h2>
+          </div>
+
+        </div>
+
+        <div class="selector-group">
+
+          <label for="seatpost-model">Seatpost</label>
+
+          <select id="seatpost-model" disabled>
+            <option value="">Loading seatposts…</option>
+          </select>
+
+        </div>
+
+        <div id="seatpost-info" class="component-info hidden" aria-live="polite">
+
+          <div class="component-main">
+
+            <div>
+              <span id="seatpost-name" class="component-name"></span>
+              <span id="seatpost-config" class="component-config"></span>
+            </div>
+
+            <div class="weight-block">
+              <strong id="seatpost-weight"></strong>
+              <span id="seatpost-includes" class="weight-includes"></span>
+            </div>
+
+          </div>
+
+          <div class="source-row">
+            <span id="seatpost-source-type"></span>
+
+            <a
+              id="seatpost-source"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source
+            </a>
+          </div>
+
+          <button id="add-seatpost" class="add-button">
+            Add to build
+          </button>
+
+        </div>
+
+        <div class="section-heading section-spacing">
+          <div>
+            <span class="step">04</span>
+            <h2>Drivetrain &amp; brakes</h2>
+          </div>
         </div>
         <p class="component-config">Select a component, then add it to your build. Check whether its weight includes chainrings, calipers or other parts before adding those separately.</p>
         <p id="data-status" class="component-config hidden" role="status"></p>
@@ -158,9 +277,205 @@
         </div>
 
         <div class="section-heading section-spacing">
+          <div>
+            <span class="step">05</span>
+            <h2>Wheels</h2>
+          </div>
+        </div>
+
+
+        <div class="selector-group">
+
+          <label for="wheel-brand">Brand</label>
+
+          <select id="wheel-brand">
+            <option value="">Select brand</option>
+          </select>
+
+
+          <label for="wheel-model">Wheelset</label>
+
+          <select id="wheel-model" disabled>
+            <option value="">Select wheelset</option>
+          </select>
+
+        </div>
+
+
+        <div id="wheel-info" class="component-info hidden" aria-live="polite">
+
+          <div class="component-main">
+
+            <div>
+              <span id="wheel-name" class="component-name"></span>
+              <span id="wheel-config" class="component-config"></span>
+            </div>
+
+            <div class="weight-block">
+              <strong id="wheel-weight"></strong>
+              <span id="wheel-includes" class="weight-includes"></span>
+            </div>
+
+          </div>
+
+          <div class="source-row">
+            <span id="wheel-source-type"></span>
+
+            <a
+              id="wheel-source"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source
+            </a>
+          </div>
+
+          <button id="add-wheel" class="add-button">
+            Add to build
+          </button>
+
+        </div>
+
+
+        <div class="section-heading section-spacing">
+          <div>
+            <span class="step">06</span>
+            <h2>Saddle</h2>
+          </div>
+        </div>
+
+
+        <div class="selector-group">
+
+          <label for="saddle-brand">Brand</label>
+
+          <select id="saddle-brand">
+            <option value="">Select brand</option>
+          </select>
+
+
+          <label for="saddle-model">Saddle</label>
+
+          <select id="saddle-model" disabled>
+            <option value="">Select saddle</option>
+          </select>
+
+        </div>
+
+
+        <div id="saddle-info" class="component-info hidden" aria-live="polite">
+
+          <div class="component-main">
+
+            <div>
+              <span id="saddle-name" class="component-name"></span>
+              <span id="saddle-config" class="component-config"></span>
+            </div>
+
+            <div class="weight-block">
+              <strong id="saddle-weight"></strong>
+              <span id="saddle-includes" class="weight-includes"></span>
+            </div>
+
+          </div>
+
+          <div class="source-row">
+            <span id="saddle-source-type"></span>
+
+            <a
+              id="saddle-source"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source
+            </a>
+          </div>
+
+          <button id="add-saddle" class="add-button">
+            Add to build
+          </button>
+
+        </div>
+
+        <div class="section-heading section-spacing">
 
           <div>
-            <span class="step">03</span>
+            <span class="step">07</span>
+            <h2>Finishing components</h2>
+          </div>
+
+        </div>
+
+        <p class="component-config">Add the finishing parts of the bike. Tires are entered as a pair; optional hardware may already be included in the frame or cockpit weight.</p>
+
+        <label class="select-all-row">
+          <input id="select-all-finishing" type="checkbox" checked>
+          Select all finishing components
+        </label>
+
+        <div class="selector-group">
+
+          <label for="tires">Tires</label>
+          <select id="tires" disabled><option value="">Loading tires…</option></select>
+
+          <label for="pedals">Pedals</label>
+          <select id="pedals" disabled><option value="">Loading pedals…</option></select>
+
+          <label for="tape-grips">Bar tape / grips</label>
+          <select id="tape-grips" disabled><option value="">Loading bar tape and grips…</option></select>
+
+          <label for="tubes-tubeless">Tubes / tubeless</label>
+          <select id="tubes-tubeless" disabled><option value="">Loading tubes and tubeless parts…</option></select>
+
+          <label for="bottle-cages">Bottle cages</label>
+          <select id="bottle-cages" disabled><option value="">Loading bottle cages…</option></select>
+
+          <label for="small-hardware">Small hardware</label>
+          <select id="small-hardware" disabled><option value="">Loading hardware…</option></select>
+
+        </div>
+
+        <div id="finishing-info" class="component-info hidden" aria-live="polite">
+
+          <div class="component-main">
+
+            <div>
+              <span id="finishing-name" class="component-name"></span>
+              <span id="finishing-config" class="component-config"></span>
+            </div>
+
+            <div class="weight-block">
+              <strong id="finishing-weight"></strong>
+              <span id="finishing-includes" class="weight-includes"></span>
+            </div>
+
+          </div>
+
+          <div class="source-row">
+            <span id="finishing-source-type"></span>
+
+            <a
+              id="finishing-source"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source
+            </a>
+          </div>
+
+          <button id="add-finishing" class="add-button">
+            Add selected finishing components
+          </button>
+
+        </div>
+
+        <div class="section-heading section-spacing">
+
+          <div>
+            <span class="step">08</span>
             <h2>Custom component</h2>
           </div>
 
@@ -223,6 +538,8 @@
           </div>
 
         </div>
+
+        <div id="build-check" class="build-check" aria-live="polite"></div>
 
 
         <div class="total-block">
