@@ -1,4 +1,5 @@
 {
+  "rewrites": [{"source": "/tools/registro/app.js", "destination": "/tools/registro/settings.js"}],
   "headers": [
     {
       "source": "/sitemap.xml",
